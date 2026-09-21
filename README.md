@@ -1,28 +1,26 @@
-# tikowikoFamily — Téléchargements Android
+# 🎮 tikowikoFamily — Téléchargements Android
 
-Bienvenue sur la page officielle de téléchargement des applications et jeux **tikowikoFamily**.
+Bienvenue sur la vitrine officielle des jeux et applications **tikowikoFamily**.
 
-## 📱 Télécharger les applications
+> 🔒 **Le code source n'est pas public.** Ce dépôt contient uniquement les téléchargements Android publiés.
 
-Les fichiers Android sont publiés dans l’onglet **Releases** de ce dépôt.
+## 📱 Catalogue
 
-➡️ **Releases :** https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases
+| Application | Mise à jour | Taille | Télécharger | Détails |
+|---|---:|---:|---|---|
+| 🎮 **Ecosylune** | 21/09/2026 | 16.8 Mo | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
+| 🎮 **Îlopolis** | 21/09/2026 | 3.8 Mo | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/ilopolis-latest/ilopolis.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/ilopolis-latest) |
 
-Chaque version indique le nom de l’application, sa version et contient uniquement le fichier APK à installer.
+## ℹ️ Installation
 
-## 🔒 Code source
+Télécharge l'APK de l'application souhaitée puis ouvre le fichier sur Android.
+Android peut demander l'autorisation d'installer une application provenant de ton navigateur ou de ton gestionnaire de fichiers.
 
-Ce dépôt public est réservé aux téléchargements.  
-Le code source des applications n’est pas publié ici.
+## 🔄 Mises à jour
 
-## Applications
-
-- Ecosylune
-- Îlopolis
-- Jackpot Sucré Casino
-- TikoWiko Aviator
-- Autres applications tikowikoFamily à venir
+Le catalogue est régénéré automatiquement lorsqu'une nouvelle Release APK est publiée.
+Les projets de développement restent dans des dépôts privés séparés.
 
 ---
 
-Copyright © 2026 tikowikoFamily
+Copyright © 2026 **tikowikoFamily**
