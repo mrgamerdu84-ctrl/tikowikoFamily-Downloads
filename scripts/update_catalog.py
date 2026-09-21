@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import os
+import re
 import urllib.request
 from datetime import datetime
 
@@ -8,12 +9,42 @@ OWNER = "mrgamerdu84-ctrl"
 REPO = "tikowikoFamily-Downloads"
 README = "README.md"
 
-FRIENDLY_NAMES = {
-    "tikowikocosystme": "Ecosylune",
+# Tous les dépôts privés existants au 21/09/2026.
+# Les futurs projets apparaissent automatiquement dès leur première Release APK publique.
+KNOWN_APPS = {
+    "batterie-super-intelligente": "Batterie Super Intelligente",
+    "chicken-coop-charm": "Chicken Coop Charm",
+    "clandestin-arcade-manager": "Clandestin Arcade Manager",
+    "divertissement-zen-": "Divertissement Zen +",
+    "Game-Booster4K": "Game Booster 4K",
+    "gang-de-serpent": "Gang de Serpent",
+    "gleam-mine-adventure": "Gleam Mine Adventure",
+    "Grimoix-petit-dragon": "Grimoix Petit Dragon",
+    "histoire-pour-enfants": "Histoire pour Enfants",
     "ilopolis": "Îlopolis",
     "jackpot-sucr-casino": "Jackpot Sucré Casino",
+    "l-attaque-des-dieux": "L'Attaque des Dieux",
+    "la-jungle-de-l-arcade": "La Jungle de l'Arcade",
+    "my-taxi-world-les-rue-sont-nous-bc60a008": "My Taxi World",
+    "N-on-Jetons-": "N-on Jetons",
+    "planete-sharky-game": "Planète Sharky",
+    "SmoothinCreams": "SmoothinCreams",
+    "snack-attack-": "Snack Attack",
+    "super-winner-de-la-fortune": "Super Winner de la Fortune",
+    "tapas-fiesta": "Tapas Fiesta",
+    "tikowiko-agenda-budg-taire": "Tikowiko Agenda Budgétaire",
+    "tikoWiko-Anti-virus-": "TikoWiko Anti-virus",
     "TikoWiko-Aviator": "TikoWiko Aviator",
+    "tikowiko-security": "Tikowiko Security",
+    "tikowikocity": "Tikowiko City",
+    "tikowikocosystme": "Ecosylune",
+    "tikowikointelligent-": "Tikowiko Intelligent",
+    "TikowikoMusic": "Tikowiko Music",
+    "TikowikoMusicV2": "Tikowiko Music V2",
 }
+
+def safe_tag(name):
+    return re.sub(r"[^a-z0-9._-]", "-", name.lower()) + "-latest"
 
 def api_get(url):
     headers = {
@@ -36,16 +67,6 @@ def human_size(size):
         value /= 1024
     return f"{int(size)} o"
 
-def friendly_name(release, apk):
-    asset_name = apk["name"]
-    base = asset_name[:-4] if asset_name.lower().endswith(".apk") else asset_name
-    if base in FRIENDLY_NAMES:
-        return FRIENDLY_NAMES[base]
-    title = (release.get("name") or "").replace(" — Android", "").strip()
-    if title in FRIENDLY_NAMES:
-        return FRIENDLY_NAMES[title]
-    return title or base.replace("-", " ").replace("_", " ").title()
-
 def formatted_date(value):
     if not value:
         return "—"
@@ -56,63 +77,90 @@ releases = api_get(
     f"https://api.github.com/repos/{OWNER}/{REPO}/releases?per_page=100"
 )
 
-rows = []
+release_by_tag = {
+    release.get("tag_name"): release
+    for release in releases
+    if not release.get("draft")
+}
+
+apps = dict(KNOWN_APPS)
+
+# Si un nouveau dépôt est publié plus tard, sa Release l'ajoute automatiquement au catalogue.
 for release in releases:
     if release.get("draft"):
         continue
-    apks = [
-        asset for asset in release.get("assets", [])
-        if asset.get("name", "").lower().endswith(".apk")
-    ]
+    apks = [a for a in release.get("assets", []) if a.get("name", "").lower().endswith(".apk")]
     if not apks:
         continue
-    apk = apks[0]
-    rows.append({
-        "name": friendly_name(release, apk),
-        "date": formatted_date(release.get("published_at") or release.get("updated_at")),
-        "size": human_size(apk.get("size", 0)),
-        "download": apk.get("browser_download_url", "#"),
-        "release": release.get("html_url", "#"),
-    })
+    apk_name = apks[0]["name"]
+    repo_name = apk_name[:-4] if apk_name.lower().endswith(".apk") else apk_name
+    if repo_name not in apps:
+        title = (release.get("name") or "").replace(" — Android", "").strip()
+        apps[repo_name] = title or repo_name.replace("-", " ").replace("_", " ").title()
 
-rows.sort(key=lambda item: item["name"].lower())
+rows = []
+for repo_name, display_name in apps.items():
+    release = release_by_tag.get(safe_tag(repo_name))
+    apk = None
+    if release:
+        apks = [a for a in release.get("assets", []) if a.get("name", "").lower().endswith(".apk")]
+        apk = apks[0] if apks else None
+
+    if release and apk:
+        rows.append({
+            "name": display_name,
+            "date": formatted_date(release.get("published_at") or release.get("updated_at")),
+            "size": human_size(apk.get("size", 0)),
+            "download": f"[⬇️ Télécharger l'APK]({apk.get('browser_download_url', '#')})",
+            "details": f"[Voir la Release]({release.get('html_url', '#')})",
+            "ready": True,
+        })
+    else:
+        rows.append({
+            "name": display_name,
+            "date": "—",
+            "size": "—",
+            "download": "⏳ APK pas encore publié",
+            "details": "—",
+            "ready": False,
+        })
+
+rows.sort(key=lambda item: (not item["ready"], item["name"].lower()))
+
+ready_count = sum(1 for row in rows if row["ready"])
 
 catalog = [
     "# 🎮 tikowikoFamily — Téléchargements Android",
     "",
     "Bienvenue sur la vitrine officielle des jeux et applications **tikowikoFamily**.",
     "",
-    "> 🔒 **Le code source n'est pas public.** Ce dépôt contient uniquement les téléchargements Android publiés.",
+    "> 🔒 **Le code source n'est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert uniquement aux téléchargements APK.",
     "",
-    "## 📱 Catalogue",
+    f"**{len(rows)} projets référencés · {ready_count} APK actuellement disponibles**",
     "",
+    "## 📱 Catalogue complet",
+    "",
+    "| Application | Mise à jour | Taille | Télécharger | Détails |",
+    "|---|---:|---:|---|---|",
 ]
 
-if rows:
-    catalog += [
-        "| Application | Mise à jour | Taille | Télécharger | Détails |",
-        "|---|---:|---:|---|---|",
-    ]
-    for item in rows:
-        catalog.append(
-            f"| 🎮 **{item['name']}** | {item['date']} | {item['size']} | "
-            f"[⬇️ Télécharger l'APK]({item['download']}) | "
-            f"[Voir la Release]({item['release']}) |"
-        )
-else:
-    catalog.append("_Aucun APK public pour le moment._")
+for item in rows:
+    catalog.append(
+        f"| 🎮 **{item['name']}** | {item['date']} | {item['size']} | "
+        f"{item['download']} | {item['details']} |"
+    )
 
 catalog += [
     "",
     "## ℹ️ Installation",
     "",
-    "Télécharge l'APK de l'application souhaitée puis ouvre le fichier sur Android.",
+    "Pour une application disponible, appuie sur **Télécharger l'APK**, puis ouvre le fichier sur Android.",
     "Android peut demander l'autorisation d'installer une application provenant de ton navigateur ou de ton gestionnaire de fichiers.",
     "",
-    "## 🔄 Mises à jour",
+    "## 🔄 Mises à jour automatiques",
     "",
-    "Le catalogue est régénéré automatiquement lorsqu'une nouvelle Release APK est publiée.",
-    "Les projets de développement restent dans des dépôts privés séparés.",
+    "Quand le Builder publie un nouvel APK, sa Release publique met automatiquement ce catalogue à jour.",
+    "Un futur projet non encore référencé sera ajouté automatiquement lors de sa première Release APK.",
     "",
     "---",
     "",
