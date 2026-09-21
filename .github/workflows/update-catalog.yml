@@ -1,0 +1,41 @@
+name: Mettre à jour le catalogue
+
+on:
+  release:
+    types: [published, edited, released]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalogue-public
+  cancel-in-progress: true
+
+jobs:
+  catalogue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Récupérer le dépôt public
+        uses: actions/checkout@v4
+
+      - name: Générer le catalogue depuis les Releases
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_catalog.py
+
+      - name: Publier le catalogue
+        run: |
+          set -e
+          if git diff --quiet README.md; then
+            echo "Catalogue déjà à jour."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Met à jour automatiquement le catalogue APK"
+          git push
