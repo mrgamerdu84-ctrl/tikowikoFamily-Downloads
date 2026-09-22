@@ -6,9 +6,7 @@
 
 ### Jeux & applications Android
 
-![Android](https://img.shields.io/badge/Android-APK-3DDC84?logo=android&logoColor=white)
-![Tests](https://img.shields.io/badge/Versions-Tests%20publics-orange)
-![Développement](https://img.shields.io/badge/Statut-En%20développement-blue)
+![Android](https://img.shields.io/badge/Android-APK-3DDC84?logo=android&logoColor=white) ![Tests](https://img.shields.io/badge/Versions-Tests%20publics-orange) ![Développement](https://img.shields.io/badge/Statut-En%20développement-blue)
 
 **Créateur : tikowikoFamily**  
 **Contact : mrgamerdu84@gmail.com**
@@ -30,9 +28,9 @@
 | Application | Statut | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---:|---:|---:|---|---|
 | 🎮 **Ecosylune** | 🧪 Test public · En développement | 21/09/2026 | 16.8 Mo | 1 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
-| 🎮 **Îlopolis** | 🧪 Test public · En développement | 21/09/2026 | 3.8 Mo | 2 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/ilopolis-latest/ilopolis.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/ilopolis-latest) |
 | 🎮 **Jackpot Sucré Casino** | 🧪 Test public · En développement | 22/09/2026 | 3.6 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
 | 🎮 **tikoWikoTaxi** | 🧪 Test public · En développement | 22/09/2026 | 4.1 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
+| 🎮 **Îlopolis** | 🧪 Test public · En développement | 21/09/2026 | 3.8 Mo | 2 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/ilopolis-latest/ilopolis.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/ilopolis-latest) |
 | 🎮 **Batterie Super Intelligente** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Chicken Coop Charm** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Clandestin Arcade Manager** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
@@ -68,13 +66,15 @@
 
 ## 👨‍💻 Développeur
 
+<img src="https://github.com/mrgamerdu84-ctrl.png" width="90" alt="Développeur tikowikoFamily">
+
 **tikowikoFamily**  
 Contact : **mrgamerdu84@gmail.com**
 
 ## ℹ️ Installation
 
-Pour une application disponible, appuie sur **Télécharger l'APK**, puis ouvre le fichier sur Android.
-Android peut demander l'autorisation d'installer une application provenant de ton navigateur ou de ton gestionnaire de fichiers.
+Pour une application disponible, appuie sur **Télécharger l’APK**, puis ouvre le fichier sur Android.
+Android peut demander l’autorisation d’installer une application provenant de ton navigateur ou de ton gestionnaire de fichiers.
 
 ## 🔄 Mises à jour automatiques
 
