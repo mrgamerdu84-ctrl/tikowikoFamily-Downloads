@@ -4,18 +4,20 @@ Bienvenue sur la vitrine officielle des jeux et applications **tikowikoFamily**.
 
 > 🔒 **Le code source n'est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert uniquement aux téléchargements APK.
 
-**30 projets référencés · 4 disponibles · 26 en développement · 3 téléchargements APK**
+**30 projets référencés · 4 tests publics disponibles · 26 sans APK · 3 téléchargements APK**
 
-> 🚧 Les applications marquées **En développement** ne sont pas encore publiées en APK final et peuvent encore évoluer.
+> 🧪 Les APK disponibles sont des **versions de test en développement** : elles sont installables et testables, mais ne sont pas encore considérées comme des versions finales.
+>
+> 🚧 Les applications sans APK sont encore en cours de développement.
 
 ## 📱 Catalogue complet
 
 | Application | Statut | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---:|---:|---:|---|---|
-| 🎮 **Ecosylune** | ✅ Disponible | 21/09/2026 | 16.8 Mo | 1 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
-| 🎮 **Îlopolis** | ✅ Disponible | 21/09/2026 | 3.8 Mo | 2 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/ilopolis-latest/ilopolis.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/ilopolis-latest) |
-| 🎮 **Jackpot Sucré Casino** | ✅ Disponible | 22/09/2026 | 3.6 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
-| 🎮 **tikoWikoTaxi** | ✅ Disponible | 22/09/2026 | 4.1 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
+| 🎮 **Ecosylune** | 🧪 Test public · En développement | 21/09/2026 | 16.8 Mo | 1 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
+| 🎮 **Îlopolis** | 🧪 Test public · En développement | 21/09/2026 | 3.8 Mo | 2 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/ilopolis-latest/ilopolis.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/ilopolis-latest) |
+| 🎮 **Jackpot Sucré Casino** | 🧪 Test public · En développement | 22/09/2026 | 3.6 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
+| 🎮 **tikoWikoTaxi** | 🧪 Test public · En développement | 22/09/2026 | 4.1 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
 | 🎮 **Batterie Super Intelligente** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Chicken Coop Charm** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Clandestin Arcade Manager** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
@@ -48,6 +50,11 @@ Bienvenue sur la vitrine officielle des jeux et applications **tikowikoFamily**.
 - **Téléchargements APK comptabilisés par GitHub : 3**
 - Les compteurs sont actualisés automatiquement plusieurs fois par jour.
 - Les statistiques par pays ne sont pas encore affichées : GitHub ne fournit pas directement le pays des téléchargements de Releases.
+
+## 👨‍💻 Développeur
+
+**tikowikoFamily**  
+Contact : **mrgamerdu84@gmail.com**
 
 ## ℹ️ Installation
 
