@@ -1,8 +1,23 @@
-# 🎮 tikowikoFamily — Téléchargements Android
+<div align="center">
 
-Bienvenue sur la vitrine officielle des jeux et applications **tikowikoFamily**.
+<img src="https://github.com/mrgamerdu84-ctrl.png" width="130" alt="tikowikoFamily">
 
-> 🔒 **Le code source n'est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert uniquement aux téléchargements APK.
+# 🎮 tikowikoFamily
+
+### Jeux & applications Android
+
+![Android](https://img.shields.io/badge/Android-APK-3DDC84?logo=android&logoColor=white)
+![Tests](https://img.shields.io/badge/Versions-Tests%20publics-orange)
+![Développement](https://img.shields.io/badge/Statut-En%20développement-blue)
+
+**Créateur : tikowikoFamily**  
+**Contact : mrgamerdu84@gmail.com**
+
+</div>
+
+---
+
+> 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
 **30 projets référencés · 4 tests publics disponibles · 26 sans APK · 3 téléchargements APK**
 
