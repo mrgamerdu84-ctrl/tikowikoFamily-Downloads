@@ -39,6 +39,7 @@ KNOWN_APPS = {
     "tikowikocity": "Tikowiko City",
     "tikowikocosystme": "Ecosylune",
     "tikowikointelligent-": "Tikowiko Intelligent",
+    "tikoWiko-taxi-": "tikoWikoTaxi",
     "TikowikoMusic": "Tikowiko Music",
     "TikowikoMusicV2": "Tikowiko Music V2",
 }
@@ -113,6 +114,8 @@ for repo_name, display_name in apps.items():
             "size": human_size(apk.get("size", 0)),
             "download": f"[⬇️ Télécharger l'APK]({apk.get('browser_download_url', '#')})",
             "details": f"[Voir la Release]({release.get('html_url', '#')})",
+            "downloads": int(apk.get("download_count", 0) or 0),
+            "status": "✅ Disponible",
             "ready": True,
         })
     else:
@@ -122,12 +125,16 @@ for repo_name, display_name in apps.items():
             "size": "—",
             "download": "⏳ APK pas encore publié",
             "details": "—",
+            "downloads": 0,
+            "status": "🚧 En développement",
             "ready": False,
         })
 
 rows.sort(key=lambda item: (not item["ready"], item["name"].lower()))
 
 ready_count = sum(1 for row in rows if row["ready"])
+dev_count = len(rows) - ready_count
+download_total = sum(row["downloads"] for row in rows)
 
 catalog = [
     "# 🎮 tikowikoFamily — Téléchargements Android",
@@ -136,18 +143,20 @@ catalog = [
     "",
     "> 🔒 **Le code source n'est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert uniquement aux téléchargements APK.",
     "",
-    f"**{len(rows)} projets référencés · {ready_count} APK actuellement disponibles**",
+    f"**{len(rows)} projets référencés · {ready_count} disponibles · {dev_count} en développement · {download_total} téléchargements APK**",
+    "",
+    "> 🚧 Les applications marquées **En développement** ne sont pas encore publiées en APK final et peuvent encore évoluer.",
     "",
     "## 📱 Catalogue complet",
     "",
-    "| Application | Mise à jour | Taille | Télécharger | Détails |",
-    "|---|---:|---:|---|---|",
+    "| Application | Statut | Mise à jour | Taille | Téléchargements | Télécharger | Détails |",
+    "|---|---|---:|---:|---:|---|---|",
 ]
 
 for item in rows:
     catalog.append(
-        f"| 🎮 **{item['name']}** | {item['date']} | {item['size']} | "
-        f"{item['download']} | {item['details']} |"
+        f"| 🎮 **{item['name']}** | {item['status']} | {item['date']} | {item['size']} | "
+        f"{item['downloads']} | {item['download']} | {item['details']} |"
     )
 
 catalog += [
