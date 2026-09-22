@@ -115,7 +115,7 @@ for repo_name, display_name in apps.items():
             "download": f"[⬇️ Télécharger l'APK]({apk.get('browser_download_url', '#')})",
             "details": f"[Voir la Release]({release.get('html_url', '#')})",
             "downloads": int(apk.get("download_count", 0) or 0),
-            "status": "✅ Disponible",
+            "status": "🧪 Test public · En développement",
             "ready": True,
         })
     else:
@@ -143,9 +143,9 @@ catalog = [
     "",
     "> 🔒 **Le code source n'est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert uniquement aux téléchargements APK.",
     "",
-    f"**{len(rows)} projets référencés · {ready_count} disponibles · {dev_count} en développement · {download_total} téléchargements APK**",
+    f"**{len(rows)} projets référencés · {ready_count} tests publics disponibles · {dev_count} sans APK · {download_total} téléchargements APK**",
     "",
-    "> 🚧 Les applications marquées **En développement** ne sont pas encore publiées en APK final et peuvent encore évoluer.",
+    "> 🧪 Les APK disponibles sont des **versions de test en développement** : elles sont jouables/installables, mais ne sont pas encore considérées comme des versions finales.\n> 🚧 Les applications sans APK sont encore en cours de développement.",
     "",
     "## 📱 Catalogue complet",
     "",
