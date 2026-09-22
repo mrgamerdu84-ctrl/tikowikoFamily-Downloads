@@ -4,41 +4,50 @@ Bienvenue sur la vitrine officielle des jeux et applications **tikowikoFamily**.
 
 > 🔒 **Le code source n'est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert uniquement aux téléchargements APK.
 
-**29 projets référencés · 2 APK actuellement disponibles**
+**30 projets référencés · 4 disponibles · 26 en développement · 3 téléchargements APK**
+
+> 🚧 Les applications marquées **En développement** ne sont pas encore publiées en APK final et peuvent encore évoluer.
 
 ## 📱 Catalogue complet
 
-| Application | Mise à jour | Taille | Télécharger | Détails |
-|---|---:|---:|---|---|
-| 🎮 **Ecosylune** | 21/09/2026 | 16.8 Mo | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
-| 🎮 **Îlopolis** | 21/09/2026 | 3.8 Mo | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/ilopolis-latest/ilopolis.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/ilopolis-latest) |
-| 🎮 **Batterie Super Intelligente** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Chicken Coop Charm** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Clandestin Arcade Manager** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Divertissement Zen +** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Game Booster 4K** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Gang de Serpent** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Gleam Mine Adventure** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Grimoix Petit Dragon** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Histoire pour Enfants** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Jackpot Sucré Casino** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **L'Attaque des Dieux** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **La Jungle de l'Arcade** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **My Taxi World** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **N-on Jetons** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Planète Sharky** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **SmoothinCreams** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Snack Attack** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Super Winner de la Fortune** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Tapas Fiesta** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko Agenda Budgétaire** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **TikoWiko Anti-virus** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **TikoWiko Aviator** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko City** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko Intelligent** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko Music** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko Music V2** | — | — | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko Security** | — | — | ⏳ APK pas encore publié | — |
+| Application | Statut | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
+|---|---|---:|---:|---:|---|---|
+| 🎮 **Ecosylune** | ✅ Disponible | 21/09/2026 | 16.8 Mo | 1 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
+| 🎮 **Îlopolis** | ✅ Disponible | 21/09/2026 | 3.8 Mo | 2 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/ilopolis-latest/ilopolis.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/ilopolis-latest) |
+| 🎮 **Jackpot Sucré Casino** | ✅ Disponible | 22/09/2026 | 3.6 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
+| 🎮 **tikoWikoTaxi** | ✅ Disponible | 22/09/2026 | 4.1 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
+| 🎮 **Batterie Super Intelligente** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Chicken Coop Charm** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Clandestin Arcade Manager** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Divertissement Zen +** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Game Booster 4K** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Gang de Serpent** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Gleam Mine Adventure** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Grimoix Petit Dragon** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Histoire pour Enfants** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **L'Attaque des Dieux** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **La Jungle de l'Arcade** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **My Taxi World** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **N-on Jetons** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Planète Sharky** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **SmoothinCreams** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Snack Attack** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Super Winner de la Fortune** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tapas Fiesta** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tikowiko Agenda Budgétaire** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **TikoWiko Anti-virus** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **TikoWiko Aviator** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tikowiko City** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tikowiko Intelligent** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tikowiko Music** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tikowiko Music V2** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tikowiko Security** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
+
+## 📊 Statistiques
+
+- **Téléchargements APK comptabilisés par GitHub : 3**
+- Les compteurs sont actualisés automatiquement plusieurs fois par jour.
+- Les statistiques par pays ne sont pas encore affichées : GitHub ne fournit pas directement le pays des téléchargements de Releases.
 
 ## ℹ️ Installation
 
