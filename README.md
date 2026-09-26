@@ -21,9 +21,9 @@
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
-> **Couleurs d’avancement :** 🟢 Terminé · 🟠 Partiellement terminé · 🔴 Pas fini (APK non disponible) · ⚪ Non classé.
+> **Couleurs automatiques :** 🟠 Correction active · 🔵 Développement actif · ⚪ Stable pour le moment · 🔴 APK non disponible.
 >
-> Les couleurs sont choisies manuellement dans **STATUTS_COULEURS.txt**.
+> La couleur est recalculée automatiquement à chaque mise à jour du catalogue selon la dernière APK et les changements indiqués dans la Release.
 >
 > 🧪 Les APK disponibles sont des **versions de test en développement** : elles sont installables et testables, mais ne sont pas encore considérées comme des versions finales.
 >
@@ -37,54 +37,52 @@ _Aucune application signalée actuellement._
 
 Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt** : une application par ligne. Tu peux écrire soit le nom du dépôt, soit le nom affiché dans le catalogue.
 
-## 🎨 Couleurs d’avancement
+## 🎨 Couleurs automatiques
 
-- 🟢 **Vert** : application terminée
-- 🟠 **Orange** : application partiellement terminée / encore en finition
-- 🔴 **Rouge** : application pas encore finie — **APK non disponible dans le catalogue Download**
-- ⚪ **Blanc** : aucun statut choisi
+- 🟠 **Orange — Correction active** : la dernière Release parle de correction, bug, patch, réparation, erreur ou problème.
+- 🔵 **Bleu — Développement actif** : une APK a été publiée ou mise à jour dans les 14 derniers jours, sans correctif explicitement détecté.
+- ⚪ **Gris — Stable pour le moment** : une APK existe mais aucune correction récente n’est détectée.
+- 🔴 **Rouge — Pas disponible** : aucune APK publique n’est disponible dans Download.
 
-Pour choisir une couleur, édite **STATUTS_COULEURS.txt** avec le format `couleur: nom de l’application`.
-
-⚠️ Une application en **rouge** reste visible dans la liste, mais son bouton APK et son lien Release sont masqués du catalogue tant qu’elle reste rouge.
+Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été choisie.
 
 ## 📱 Catalogue complet
 
-| Application | Statut | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
-|---|---|---:|---:|---:|---|---|
-| 🎮 **Ecosylune** | ⚪ Non classé · 🧪 Test public | 21/09/2026 | 16.8 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
-| 🎮 **Jackpot Sucré Casino** | ⚪ Non classé · 🧪 Test public | 22/09/2026 | 4.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
-| 🎮 **tiko-express** | ⚪ Non classé · 🧪 Test public | 26/09/2026 | 20.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tiko-express-latest/tiko-express-v75-20260926-1600.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tiko-express-latest) |
-| 🎮 **tikoWiko-taxi-** | ⚪ Non classé · 🧪 Test public | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
-| 🎮 **tikowikocitybulder** | 🟠 Partiellement terminé · 🧪 Test public | 26/09/2026 | 17.1 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocitybulder-latest/tikowikocitybulder-v79-20260926-1914.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocitybulder-latest) |
-| 🎮 **tikoWikoTaxi** | ⚪ Non classé · 🧪 Test public | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
-| 🎮 **Batterie Super Intelligente** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Chicken Coop Charm** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Clandestin Arcade Manager** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Divertissement Zen +** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Game Booster 4K** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Gang de Serpent** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Gleam Mine Adventure** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Grimoix Petit Dragon** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Histoire pour Enfants** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **L'Attaque des Dieux** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **La Jungle de l'Arcade** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **My Taxi World** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **N-on Jetons** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Planète Sharky** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **SmoothinCreams** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Snack Attack** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Super Winner de la Fortune** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Tapas Fiesta** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko Agenda Budgétaire** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **TikoWiko Anti-virus** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **TikoWiko Aviator** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko City** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko Intelligent** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko Music** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko Music V2** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko Security** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Îlopolis** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
+| Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
+|---|---|---|---:|---:|---:|---|---|
+| 🎮 **Ecosylune** | 🔵 Développement actif | APK mise à jour récemment (5 jour(s)) sans correction de bug explicitement détectée. | 21/09/2026 | 16.8 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
+| 🎮 **Jackpot Sucré Casino** | 🔵 Développement actif | APK mise à jour récemment (4 jour(s)) sans correction de bug explicitement détectée. | 22/09/2026 | 4.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
+| 🎮 **tiko-express** | 🔵 Développement actif | APK mise à jour récemment (0 jour(s)) sans correction de bug explicitement détectée. | 26/09/2026 | 20.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tiko-express-latest/tiko-express-v75-20260926-1600.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tiko-express-latest) |
+| 🎮 **tikoWiko-taxi-** | 🔵 Développement actif | APK mise à jour récemment (4 jour(s)) sans correction de bug explicitement détectée. | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
+| 🎮 **tikowikocitybulder** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. APK mise à jour il y a 0 jour(s). | 26/09/2026 | 17.1 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocitybulder-latest/tikowikocitybulder-v79-20260926-1914.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocitybulder-latest) |
+| 🎮 **tikoWikoTaxi** | 🔵 Développement actif | APK mise à jour récemment (4 jour(s)) sans correction de bug explicitement détectée. | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
+| 🎮 **Batterie Super Intelligente** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Chicken Coop Charm** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Clandestin Arcade Manager** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Divertissement Zen +** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Game Booster 4K** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Gang de Serpent** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Gleam Mine Adventure** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Grimoix Petit Dragon** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Histoire pour Enfants** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **L'Attaque des Dieux** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **La Jungle de l'Arcade** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **My Taxi World** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **N-on Jetons** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Planète Sharky** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **SmoothinCreams** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Snack Attack** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Super Winner de la Fortune** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tapas Fiesta** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tikowiko Agenda Budgétaire** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **TikoWiko Anti-virus** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **TikoWiko Aviator** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tikowiko City** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tikowiko Intelligent** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tikowiko Music** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tikowiko Security** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Îlopolis** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 
 ## 📊 Statistiques
 
