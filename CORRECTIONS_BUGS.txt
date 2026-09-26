@@ -1,0 +1,14 @@
+# Applications en correction de bugs
+#
+# Ajoute UNE application par ligne.
+# Tu peux utiliser :
+# - le nom du dépôt, par exemple : ilopolis
+# - ou le nom affiché dans le catalogue, par exemple : Îlopolis
+#
+# Une ligne qui commence par # est ignorée.
+# Pour retirer le statut "Correction de bugs", supprime simplement la ligne.
+#
+# Exemples (laissés en commentaire, donc NON activés) :
+# Îlopolis
+# tiko-express
+# tikowikocitybulder
