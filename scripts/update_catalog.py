@@ -8,6 +8,7 @@ from datetime import datetime
 OWNER = "mrgamerdu84-ctrl"
 REPO = "tikowikoFamily-Downloads"
 README = "README.md"
+BUGFIX_FILE = "CORRECTIONS_BUGS.txt"
 
 # Tous les dépôts privés existants au 21/09/2026.
 # Les futurs projets apparaissent automatiquement dès leur première Release APK publique.
@@ -74,6 +75,26 @@ def formatted_date(value):
     dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
     return dt.strftime("%d/%m/%Y")
 
+def load_bugfix_apps():
+    selected = set()
+    if not os.path.exists(BUGFIX_FILE):
+        return selected
+    with open(BUGFIX_FILE, "r", encoding="utf-8") as handle:
+        for raw_line in handle:
+            line = raw_line.strip()
+            if not line or line.startswith("#"):
+                continue
+            selected.add(line.casefold())
+    return selected
+
+BUGFIX_APPS = load_bugfix_apps()
+
+def is_bugfix_selected(repo_name, display_name):
+    return (
+        repo_name.casefold() in BUGFIX_APPS
+        or display_name.casefold() in BUGFIX_APPS
+    )
+
 releases = api_get(
     f"https://api.github.com/repos/{OWNER}/{REPO}/releases?per_page=100"
 )
@@ -86,17 +107,21 @@ release_by_tag = {
 
 apps = dict(KNOWN_APPS)
 
-# Si un nouveau dépôt est publié plus tard, sa Release l'ajoute automatiquement au catalogue.
+# Si un nouveau dépôt est publié plus tard, sa Release "-latest" l'ajoute automatiquement.
+# Les Releases versionnées (v76, v77, etc.) ne créent pas de doublons dans le catalogue.
 for release in releases:
     if release.get("draft"):
+        continue
+    tag = release.get("tag_name") or ""
+    if not tag.endswith("-latest"):
         continue
     apks = [a for a in release.get("assets", []) if a.get("name", "").lower().endswith(".apk")]
     if not apks:
         continue
-    apk_name = apks[0]["name"]
-    repo_name = apk_name[:-4] if apk_name.lower().endswith(".apk") else apk_name
+    repo_name = tag[:-7]
     if repo_name not in apps:
         title = (release.get("name") or "").replace(" — Android", "").strip()
+        title = re.sub(r"\s+v\d+\s*\(dernière\)$", "", title, flags=re.IGNORECASE)
         apps[repo_name] = title or repo_name.replace("-", " ").replace("_", " ").title()
 
 rows = []
@@ -107,6 +132,8 @@ for repo_name, display_name in apps.items():
         apks = [a for a in release.get("assets", []) if a.get("name", "").lower().endswith(".apk")]
         apk = apks[0] if apks else None
 
+    bugfix = is_bugfix_selected(repo_name, display_name)
+
     if release and apk:
         rows.append({
             "name": display_name,
@@ -115,8 +142,9 @@ for repo_name, display_name in apps.items():
             "download": f"[⬇️ Télécharger l'APK]({apk.get('browser_download_url', '#')})",
             "details": f"[Voir la Release]({release.get('html_url', '#')})",
             "downloads": int(apk.get("download_count", 0) or 0),
-            "status": "🧪 Test public · En développement",
+            "status": "🛠️ Correction de bugs · Test public · En développement" if bugfix else "🧪 Test public · En développement",
             "ready": True,
+            "bugfix": bugfix,
         })
     else:
         rows.append({
@@ -126,13 +154,15 @@ for repo_name, display_name in apps.items():
             "download": "⏳ APK pas encore publié",
             "details": "—",
             "downloads": 0,
-            "status": "🚧 En développement",
+            "status": "🛠️ Correction de bugs · En développement" if bugfix else "🚧 En développement",
             "ready": False,
+            "bugfix": bugfix,
         })
 
-rows.sort(key=lambda item: (not item["ready"], item["name"].lower()))
+rows.sort(key=lambda item: (not item["bugfix"], not item["ready"], item["name"].lower()))
 
 ready_count = sum(1 for row in rows if row["ready"])
+bugfix_count = sum(1 for row in rows if row["bugfix"])
 dev_count = len(rows) - ready_count
 download_total = sum(row["downloads"] for row in rows)
 
@@ -156,11 +186,21 @@ catalog = [
     '',
     '> 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.',
     '',
-    f'**{len(rows)} projets référencés · {ready_count} tests publics disponibles · {dev_count} sans APK · {download_total} téléchargements APK**',
+    f'**{len(rows)} projets référencés · {ready_count} tests publics disponibles · {bugfix_count} en correction de bugs · {dev_count} sans APK · {download_total} téléchargements APK**',
     '',
+    '> ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.',
+    '>',
     '> 🧪 Les APK disponibles sont des **versions de test en développement** : elles sont installables et testables, mais ne sont pas encore considérées comme des versions finales.',
     '>',
+    '> 🛠️ Les applications marquées **Correction de bugs** ont été sélectionnées manuellement comme nécessitant des corrections. Elles peuvent rester téléchargeables pendant que les bugs sont corrigés.',
+    '>',
     '> 🚧 Les applications sans APK sont encore en cours de développement.',
+    '',
+    '## 🛠️ Applications en correction de bugs',
+    '',
+    *([f"- **{row['name']}**" for row in rows if row["bugfix"]] or ["_Aucune application signalée actuellement._"]),
+    '',
+    'Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt** : une application par ligne. Tu peux écrire soit le nom du dépôt, soit le nom affiché dans le catalogue.',
     '',
     '## 📱 Catalogue complet',
     '',
