@@ -125,8 +125,9 @@ STATUS_COLORS = load_status_colors()
 def app_color_status(repo_name, display_name):
     color = STATUS_COLORS.get(repo_name.casefold()) or STATUS_COLORS.get(display_name.casefold())
     if not color:
-        return "⚪", "Non classé"
-    return STATUS_DEFS[color]
+        return "⚪", "Non classé", None
+    icon, label = STATUS_DEFS[color]
+    return icon, label, color
 
 releases = api_get(
     f"https://api.github.com/repos/{OWNER}/{REPO}/releases?per_page=100"
@@ -166,9 +167,10 @@ for repo_name, display_name in apps.items():
         apk = apks[0] if apks else None
 
     bugfix = is_bugfix_selected(repo_name, display_name)
-    color_icon, progress_label = app_color_status(repo_name, display_name)
+    color_icon, progress_label, color_key = app_color_status(repo_name, display_name)
+    download_blocked = color_key in ("rouge", "red")
 
-    if release and apk:
+    if release and apk and not download_blocked:
         rows.append({
             "name": display_name,
             "date": formatted_date(release.get("published_at") or release.get("updated_at")),
@@ -180,6 +182,21 @@ for repo_name, display_name in apps.items():
             "ready": True,
             "bugfix": bugfix,
             "progress": progress_label,
+            "download_blocked": False,
+        })
+    elif release and apk and download_blocked:
+        rows.append({
+            "name": display_name,
+            "date": formatted_date(release.get("published_at") or release.get("updated_at")),
+            "size": "—",
+            "download": "🚫 APK non disponible · développement en cours",
+            "details": "—",
+            "downloads": 0,
+            "status": f"{color_icon} {progress_label} · 🛠️ Correction de bugs" if bugfix else f"{color_icon} {progress_label}",
+            "ready": False,
+            "bugfix": bugfix,
+            "progress": progress_label,
+            "download_blocked": True,
         })
     else:
         rows.append({
@@ -193,6 +210,7 @@ for repo_name, display_name in apps.items():
             "ready": False,
             "bugfix": bugfix,
             "progress": progress_label,
+            "download_blocked": download_blocked,
         })
 
 rows.sort(key=lambda item: (not item["bugfix"], not item["ready"], item["name"].lower()))
@@ -226,7 +244,7 @@ catalog = [
     '',
     '> ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.',
     '>',
-    '> **Couleurs d’avancement :** 🟢 Terminé · 🟠 Partiellement terminé · 🔴 Pas fini · ⚪ Non classé.',
+    '> **Couleurs d’avancement :** 🟢 Terminé · 🟠 Partiellement terminé · 🔴 Pas fini (APK non disponible) · ⚪ Non classé.',
     '>',
     '> Les couleurs sont choisies manuellement dans **STATUTS_COULEURS.txt**.',
     '>',
@@ -246,10 +264,12 @@ catalog = [
     '',
     '- 🟢 **Vert** : application terminée',
     '- 🟠 **Orange** : application partiellement terminée / encore en finition',
-    '- 🔴 **Rouge** : application pas encore finie',
+    '- 🔴 **Rouge** : application pas encore finie — **APK non disponible dans le catalogue Download**',
     '- ⚪ **Blanc** : aucun statut choisi',
     '',
     'Pour choisir une couleur, édite **STATUTS_COULEURS.txt** avec le format `couleur: nom de l’application`.',
+    '',
+    '⚠️ Une application en **rouge** reste visible dans la liste, mais son bouton APK et son lien Release sont masqués du catalogue tant qu’elle reste rouge.',
     '',
     '## 📱 Catalogue complet',
     '',
