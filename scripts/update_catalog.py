@@ -9,6 +9,7 @@ OWNER = "mrgamerdu84-ctrl"
 REPO = "tikowikoFamily-Downloads"
 README = "README.md"
 BUGFIX_FILE = "CORRECTIONS_BUGS.txt"
+STATUS_FILE = "STATUTS_COULEURS.txt"
 
 # Tous les dépôts privés existants au 21/09/2026.
 # Les futurs projets apparaissent automatiquement dès leur première Release APK publique.
@@ -95,6 +96,38 @@ def is_bugfix_selected(repo_name, display_name):
         or display_name.casefold() in BUGFIX_APPS
     )
 
+STATUS_DEFS = {
+    "vert": ("🟢", "Terminé"),
+    "green": ("🟢", "Terminé"),
+    "orange": ("🟠", "Partiellement terminé"),
+    "rouge": ("🔴", "Pas fini"),
+    "red": ("🔴", "Pas fini"),
+}
+
+def load_status_colors():
+    selected = {}
+    if not os.path.exists(STATUS_FILE):
+        return selected
+    with open(STATUS_FILE, "r", encoding="utf-8") as handle:
+        for raw_line in handle:
+            line = raw_line.strip()
+            if not line or line.startswith("#") or ":" not in line:
+                continue
+            color, app = line.split(":", 1)
+            color = color.strip().casefold()
+            app = app.strip()
+            if color in STATUS_DEFS and app:
+                selected[app.casefold()] = color
+    return selected
+
+STATUS_COLORS = load_status_colors()
+
+def app_color_status(repo_name, display_name):
+    color = STATUS_COLORS.get(repo_name.casefold()) or STATUS_COLORS.get(display_name.casefold())
+    if not color:
+        return "⚪", "Non classé"
+    return STATUS_DEFS[color]
+
 releases = api_get(
     f"https://api.github.com/repos/{OWNER}/{REPO}/releases?per_page=100"
 )
@@ -133,6 +166,7 @@ for repo_name, display_name in apps.items():
         apk = apks[0] if apks else None
 
     bugfix = is_bugfix_selected(repo_name, display_name)
+    color_icon, progress_label = app_color_status(repo_name, display_name)
 
     if release and apk:
         rows.append({
@@ -142,9 +176,10 @@ for repo_name, display_name in apps.items():
             "download": f"[⬇️ Télécharger l'APK]({apk.get('browser_download_url', '#')})",
             "details": f"[Voir la Release]({release.get('html_url', '#')})",
             "downloads": int(apk.get("download_count", 0) or 0),
-            "status": "🛠️ Correction de bugs · Test public · En développement" if bugfix else "🧪 Test public · En développement",
+            "status": f"{color_icon} {progress_label} · 🛠️ Correction de bugs · Test public" if bugfix else f"{color_icon} {progress_label} · 🧪 Test public",
             "ready": True,
             "bugfix": bugfix,
+            "progress": progress_label,
         })
     else:
         rows.append({
@@ -154,9 +189,10 @@ for repo_name, display_name in apps.items():
             "download": "⏳ APK pas encore publié",
             "details": "—",
             "downloads": 0,
-            "status": "🛠️ Correction de bugs · En développement" if bugfix else "🚧 En développement",
+            "status": f"{color_icon} {progress_label} · 🛠️ Correction de bugs" if bugfix else f"{color_icon} {progress_label}",
             "ready": False,
             "bugfix": bugfix,
+            "progress": progress_label,
         })
 
 rows.sort(key=lambda item: (not item["bugfix"], not item["ready"], item["name"].lower()))
@@ -190,6 +226,10 @@ catalog = [
     '',
     '> ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.',
     '>',
+    '> **Couleurs d’avancement :** 🟢 Terminé · 🟠 Partiellement terminé · 🔴 Pas fini · ⚪ Non classé.',
+    '>',
+    '> Les couleurs sont choisies manuellement dans **STATUTS_COULEURS.txt**.',
+    '>',
     '> 🧪 Les APK disponibles sont des **versions de test en développement** : elles sont installables et testables, mais ne sont pas encore considérées comme des versions finales.',
     '>',
     '> 🛠️ Les applications marquées **Correction de bugs** ont été sélectionnées manuellement comme nécessitant des corrections. Elles peuvent rester téléchargeables pendant que les bugs sont corrigés.',
@@ -201,6 +241,15 @@ catalog = [
     *([f"- **{row['name']}**" for row in rows if row["bugfix"]] or ["_Aucune application signalée actuellement._"]),
     '',
     'Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt** : une application par ligne. Tu peux écrire soit le nom du dépôt, soit le nom affiché dans le catalogue.',
+    '',
+    '## 🎨 Couleurs d’avancement',
+    '',
+    '- 🟢 **Vert** : application terminée',
+    '- 🟠 **Orange** : application partiellement terminée / encore en finition',
+    '- 🔴 **Rouge** : application pas encore finie',
+    '- ⚪ **Blanc** : aucun statut choisi',
+    '',
+    'Pour choisir une couleur, édite **STATUTS_COULEURS.txt** avec le format `couleur: nom de l’application`.',
     '',
     '## 📱 Catalogue complet',
     '',
