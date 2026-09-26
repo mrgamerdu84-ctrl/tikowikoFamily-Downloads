@@ -17,3 +17,6 @@
 # vert: Jackpot Sucré Casino
 # orange: Îlopolis
 # rouge: Tikowiko Intelligent
+
+# Choix actif
+orange: tikowikocitybulder
