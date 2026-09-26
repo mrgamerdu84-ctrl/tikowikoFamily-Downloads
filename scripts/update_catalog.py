@@ -3,7 +3,7 @@ import json
 import os
 import re
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timezone
 
 OWNER = "mrgamerdu84-ctrl"
 REPO = "tikowikoFamily-Downloads"
@@ -96,38 +96,48 @@ def is_bugfix_selected(repo_name, display_name):
         or display_name.casefold() in BUGFIX_APPS
     )
 
-STATUS_DEFS = {
-    "vert": ("🟢", "Terminé"),
-    "green": ("🟢", "Terminé"),
-    "orange": ("🟠", "Partiellement terminé"),
-    "rouge": ("🔴", "Pas fini"),
-    "red": ("🔴", "Pas fini"),
-}
+FIX_KEYWORDS = (
+    "corrig", "fix", "bug", "répar", "repar", "patch",
+    "crash", "erreur", "bloqu", "rame", "problème", "probleme"
+)
 
-def load_status_colors():
-    selected = {}
-    if not os.path.exists(STATUS_FILE):
-        return selected
-    with open(STATUS_FILE, "r", encoding="utf-8") as handle:
-        for raw_line in handle:
-            line = raw_line.strip()
-            if not line or line.startswith("#") or ":" not in line:
-                continue
-            color, app = line.split(":", 1)
-            color = color.strip().casefold()
-            app = app.strip()
-            if color in STATUS_DEFS and app:
-                selected[app.casefold()] = color
-    return selected
+def release_age_days(release):
+    value = release.get("published_at") or release.get("updated_at")
+    if not value:
+        return None
+    dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    return max(0, (datetime.now(timezone.utc) - dt).days)
 
-STATUS_COLORS = load_status_colors()
+def automatic_status(repo_name, display_name, release, apk, bugfix):
+    if not release or not apk:
+        return "🔴", "Pas disponible", "Aucune APK publique disponible dans Download.", "red"
 
-def app_color_status(repo_name, display_name):
-    color = STATUS_COLORS.get(repo_name.casefold()) or STATUS_COLORS.get(display_name.casefold())
-    if not color:
-        return "⚪", "Non classé", None
-    icon, label = STATUS_DEFS[color]
-    return icon, label, color
+    body = (release.get("body") or "").casefold()
+    age = release_age_days(release)
+
+    if bugfix or any(keyword in body for keyword in FIX_KEYWORDS):
+        reason = "Des corrections de bugs ou correctifs sont indiqués dans la dernière version."
+        if age is not None:
+            reason += f" APK mise à jour il y a {age} jour(s)."
+        return "🟠", "Correction active", reason, "orange"
+
+    if age is not None and age <= 14:
+        return (
+            "🔵",
+            "Développement actif",
+            f"APK mise à jour récemment ({age} jour(s)) sans correction de bug explicitement détectée.",
+            "blue",
+        )
+
+    if age is None:
+        return "⚪", "Stable pour le moment", "APK disponible, mais date de mise à jour non déterminée.", "gray"
+
+    return (
+        "⚪",
+        "Stable pour le moment",
+        f"APK disponible ; aucune correction récente détectée depuis {age} jour(s).",
+        "gray",
+    )
 
 releases = api_get(
     f"https://api.github.com/repos/{OWNER}/{REPO}/releases?per_page=100"
@@ -167,8 +177,10 @@ for repo_name, display_name in apps.items():
         apk = apks[0] if apks else None
 
     bugfix = is_bugfix_selected(repo_name, display_name)
-    color_icon, progress_label, color_key = app_color_status(repo_name, display_name)
-    download_blocked = color_key in ("rouge", "red")
+    color_icon, progress_label, reason, color_key = automatic_status(
+        repo_name, display_name, release, apk, bugfix
+    )
+    download_blocked = color_key == "red"
 
     if release and apk and not download_blocked:
         rows.append({
@@ -178,7 +190,8 @@ for repo_name, display_name in apps.items():
             "download": f"[⬇️ Télécharger l'APK]({apk.get('browser_download_url', '#')})",
             "details": f"[Voir la Release]({release.get('html_url', '#')})",
             "downloads": int(apk.get("download_count", 0) or 0),
-            "status": f"{color_icon} {progress_label} · 🛠️ Correction de bugs · Test public" if bugfix else f"{color_icon} {progress_label} · 🧪 Test public",
+            "status": f"{color_icon} {progress_label}",
+            "reason": reason,
             "ready": True,
             "bugfix": bugfix,
             "progress": progress_label,
@@ -192,7 +205,8 @@ for repo_name, display_name in apps.items():
             "download": "🚫 APK non disponible · développement en cours",
             "details": "—",
             "downloads": 0,
-            "status": f"{color_icon} {progress_label} · 🛠️ Correction de bugs" if bugfix else f"{color_icon} {progress_label}",
+            "status": f"{color_icon} {progress_label}",
+            "reason": reason,
             "ready": False,
             "bugfix": bugfix,
             "progress": progress_label,
@@ -206,7 +220,8 @@ for repo_name, display_name in apps.items():
             "download": "⏳ APK pas encore publié",
             "details": "—",
             "downloads": 0,
-            "status": f"{color_icon} {progress_label} · 🛠️ Correction de bugs" if bugfix else f"{color_icon} {progress_label}",
+            "status": f"{color_icon} {progress_label}",
+            "reason": reason,
             "ready": False,
             "bugfix": bugfix,
             "progress": progress_label,
@@ -244,9 +259,9 @@ catalog = [
     '',
     '> ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.',
     '>',
-    '> **Couleurs d’avancement :** 🟢 Terminé · 🟠 Partiellement terminé · 🔴 Pas fini (APK non disponible) · ⚪ Non classé.',
+    '> **Couleurs automatiques :** 🟠 Correction active · 🔵 Développement actif · ⚪ Stable pour le moment · 🔴 APK non disponible.',
     '>',
-    '> Les couleurs sont choisies manuellement dans **STATUTS_COULEURS.txt**.',
+    '> La couleur est recalculée automatiquement à chaque mise à jour du catalogue selon la dernière APK et les changements indiqués dans la Release.',
     '>',
     '> 🧪 Les APK disponibles sont des **versions de test en développement** : elles sont installables et testables, mais ne sont pas encore considérées comme des versions finales.',
     '>',
@@ -260,25 +275,23 @@ catalog = [
     '',
     'Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt** : une application par ligne. Tu peux écrire soit le nom du dépôt, soit le nom affiché dans le catalogue.',
     '',
-    '## 🎨 Couleurs d’avancement',
+    '## 🎨 Couleurs automatiques',
     '',
-    '- 🟢 **Vert** : application terminée',
-    '- 🟠 **Orange** : application partiellement terminée / encore en finition',
-    '- 🔴 **Rouge** : application pas encore finie — **APK non disponible dans le catalogue Download**',
-    '- ⚪ **Blanc** : aucun statut choisi',
+    '- 🟠 **Orange — Correction active** : la dernière Release parle de correction, bug, patch, réparation, erreur ou problème.',
+    '- 🔵 **Bleu — Développement actif** : une APK a été publiée ou mise à jour dans les 14 derniers jours, sans correctif explicitement détecté.',
+    '- ⚪ **Gris — Stable pour le moment** : une APK existe mais aucune correction récente n’est détectée.',
+    '- 🔴 **Rouge — Pas disponible** : aucune APK publique n’est disponible dans Download.',
     '',
-    'Pour choisir une couleur, édite **STATUTS_COULEURS.txt** avec le format `couleur: nom de l’application`.',
-    '',
-    '⚠️ Une application en **rouge** reste visible dans la liste, mais son bouton APK et son lien Release sont masqués du catalogue tant qu’elle reste rouge.',
+    'Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été choisie.',
     '',
     '## 📱 Catalogue complet',
     '',
-    '| Application | Statut | Mise à jour | Taille | Téléchargements | Télécharger | Détails |',
-    '|---|---|---:|---:|---:|---|---|',
+    '| Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |',
+    '|---|---|---|---:|---:|---:|---|---|',
 ]
 for item in rows:
     catalog.append(
-        f"| 🎮 **{item['name']}** | {item['status']} | {item['date']} | {item['size']} | "
+        f"| 🎮 **{item['name']}** | {item['status']} | {item['reason']} | {item['date']} | {item['size']} | "
         f"{item['downloads']} | {item['download']} | {item['details']} |"
     )
 
