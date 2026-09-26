@@ -17,11 +17,21 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**34 projets référencés · 3 tests publics disponibles · 31 sans APK · 0 téléchargements APK**
+**33 projets référencés · 6 tests publics disponibles · 0 en correction de bugs · 27 sans APK · 0 téléchargements APK**
 
+> ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
+>
 > 🧪 Les APK disponibles sont des **versions de test en développement** : elles sont installables et testables, mais ne sont pas encore considérées comme des versions finales.
 >
+> 🛠️ Les applications marquées **Correction de bugs** ont été sélectionnées manuellement comme nécessitant des corrections. Elles peuvent rester téléchargeables pendant que les bugs sont corrigés.
+>
 > 🚧 Les applications sans APK sont encore en cours de développement.
+
+## 🛠️ Applications en correction de bugs
+
+_Aucune application signalée actuellement._
+
+Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt** : une application par ligne. Tu peux écrire soit le nom du dépôt, soit le nom affiché dans le catalogue.
 
 ## 📱 Catalogue complet
 
@@ -29,6 +39,9 @@
 |---|---|---:|---:|---:|---|---|
 | 🎮 **Ecosylune** | 🧪 Test public · En développement | 21/09/2026 | 16.8 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
 | 🎮 **Jackpot Sucré Casino** | 🧪 Test public · En développement | 22/09/2026 | 4.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
+| 🎮 **tiko-express** | 🧪 Test public · En développement | 26/09/2026 | 20.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tiko-express-latest/tiko-express-v75-20260926-1600.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tiko-express-latest) |
+| 🎮 **tikoWiko-taxi-** | 🧪 Test public · En développement | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
+| 🎮 **tikowikocitybulder** | 🧪 Test public · En développement | 26/09/2026 | 17.1 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocitybulder-latest/tikowikocitybulder-v79-20260926-1914.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocitybulder-latest) |
 | 🎮 **tikoWikoTaxi** | 🧪 Test public · En développement | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
 | 🎮 **Batterie Super Intelligente** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Chicken Coop Charm** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
@@ -48,7 +61,6 @@
 | 🎮 **Snack Attack** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Super Winner de la Fortune** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tapas Fiesta** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **tiko-express v75** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tikowiko Agenda Budgétaire** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **TikoWiko Anti-virus** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **TikoWiko Aviator** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
@@ -57,9 +69,6 @@
 | 🎮 **Tikowiko Music** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tikowiko Music V2** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tikowiko Security** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **tikowikocitybulder v73** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **tikowikocitybulder v76** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **tikowikocitybulder v77** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Îlopolis** | 🚧 En développement | — | — | 0 | ⏳ APK pas encore publié | — |
 
 ## 📊 Statistiques
