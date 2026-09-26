@@ -1,22 +1,12 @@
-# Couleurs d'avancement des applications
+# Statuts de couleurs automatiques
 #
-# Format :
-# vert: Nom de l'application
-# orange: Nom de l'application
-# rouge: Nom de l'application
+# Ce fichier n'est plus utilisé pour choisir les couleurs manuellement.
+# Le catalogue calcule maintenant la couleur automatiquement :
 #
-# Signification :
-# vert   = 🟢 Terminé
-# orange = 🟠 Partiellement terminé / en finition
-# rouge  = 🔴 Pas fini
+# 🟠 Orange = correction de bugs / correctifs détectés
+# 🔵 Bleu   = développement actif avec APK récente
+# ⚪ Gris   = APK disponible, pas de correction récente détectée
+# 🔴 Rouge  = aucune APK publique disponible
 #
-# Tu peux utiliser le nom affiché dans le catalogue
-# ou le nom du dépôt GitHub.
-#
-# Exemples (désactivés car commentés) :
-# vert: Jackpot Sucré Casino
-# orange: Îlopolis
-# rouge: Tikowiko Intelligent
-
-# Choix actif
-orange: tikowikocitybulder
+# La raison exacte est affichée dans la colonne "Pourquoi cette couleur ?"
+# du catalogue README.
