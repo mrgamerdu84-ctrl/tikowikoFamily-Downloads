@@ -21,7 +21,7 @@
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
-> **Couleurs d’avancement :** 🟢 Terminé · 🟠 Partiellement terminé · 🔴 Pas fini · ⚪ Non classé.
+> **Couleurs d’avancement :** 🟢 Terminé · 🟠 Partiellement terminé · 🔴 Pas fini (APK non disponible) · ⚪ Non classé.
 >
 > Les couleurs sont choisies manuellement dans **STATUTS_COULEURS.txt**.
 >
@@ -41,10 +41,12 @@ Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt**
 
 - 🟢 **Vert** : application terminée
 - 🟠 **Orange** : application partiellement terminée / encore en finition
-- 🔴 **Rouge** : application pas encore finie
+- 🔴 **Rouge** : application pas encore finie — **APK non disponible dans le catalogue Download**
 - ⚪ **Blanc** : aucun statut choisi
 
 Pour choisir une couleur, édite **STATUTS_COULEURS.txt** avec le format `couleur: nom de l’application`.
+
+⚠️ Une application en **rouge** reste visible dans la liste, mais son bouton APK et son lien Release sont masqués du catalogue tant qu’elle reste rouge.
 
 ## 📱 Catalogue complet
 
@@ -54,7 +56,7 @@ Pour choisir une couleur, édite **STATUTS_COULEURS.txt** avec le format `couleu
 | 🎮 **Jackpot Sucré Casino** | ⚪ Non classé · 🧪 Test public | 22/09/2026 | 4.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
 | 🎮 **tiko-express** | ⚪ Non classé · 🧪 Test public | 26/09/2026 | 20.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tiko-express-latest/tiko-express-v75-20260926-1600.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tiko-express-latest) |
 | 🎮 **tikoWiko-taxi-** | ⚪ Non classé · 🧪 Test public | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
-| 🎮 **tikowikocitybulder** |🟠 **Orange** classé · 🧪 Test public | 26/09/2026 | 17.1 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocitybulder-latest/tikowikocitybulder-v79-20260926-1914.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocitybulder-latest) |
+| 🎮 **tikowikocitybulder** | 🟠 Partiellement terminé · 🧪 Test public | 26/09/2026 | 17.1 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocitybulder-latest/tikowikocitybulder-v79-20260926-1914.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocitybulder-latest) |
 | 🎮 **tikoWikoTaxi** | ⚪ Non classé · 🧪 Test public | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
 | 🎮 **Batterie Super Intelligente** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Chicken Coop Charm** | ⚪ Non classé | — | — | 0 | ⏳ APK pas encore publié | — |
