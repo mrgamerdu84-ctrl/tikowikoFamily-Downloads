@@ -1,12 +1,19 @@
 # Statuts de couleurs automatiques
 #
-# Ce fichier n'est plus utilisé pour choisir les couleurs manuellement.
 # Le catalogue calcule maintenant la couleur automatiquement :
 #
-# 🟠 Orange = correction de bugs / correctifs détectés
-# 🔵 Bleu   = développement actif avec APK récente
-# ⚪ Gris   = APK disponible, pas de correction récente détectée
+# 🟠 Orange = correction de bugs active
+#              -> l'application reste visible mais ses Releases APK sont
+#                 temporairement masquées du public.
+# 🔵 Bleu   = développement actif récent
+#              -> APK mise à jour dans les 14 derniers jours.
+# 🟢 Vert   = disponible sur Google Play en version de test
+#              -> bouton direct vers la fiche Google Play.
+# ⚪ Gris   = APK disponible, pas d'activité récente détectée
 # 🔴 Rouge  = aucune APK publique disponible
+#
+# Les applications orange et bleues les plus récemment mises à jour
+# sont mises en avant en haut du catalogue.
 #
 # La raison exacte est affichée dans la colonne "Pourquoi cette couleur ?"
 # du catalogue README.
