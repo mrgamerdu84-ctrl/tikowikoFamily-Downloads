@@ -180,7 +180,7 @@ for repo_name, display_name in apps.items():
     color_icon, progress_label, reason, color_key = automatic_status(
         repo_name, display_name, release, apk, bugfix
     )
-    download_blocked = color_key == "red"
+    download_blocked = color_key in ("red", "orange")
 
     if release and apk and not download_blocked:
         rows.append({
@@ -198,12 +198,17 @@ for repo_name, display_name in apps.items():
             "download_blocked": False,
         })
     elif release and apk and download_blocked:
+        blocked_text = (
+            "🟠 APK temporairement indisponible · correction de bugs en cours"
+            if color_key == "orange"
+            else "🚫 APK non disponible · développement en cours"
+        )
         rows.append({
             "name": display_name,
             "date": formatted_date(release.get("published_at") or release.get("updated_at")),
             "size": "—",
-            "download": "🚫 APK non disponible · développement en cours",
-            "details": "—",
+            "download": blocked_text,
+            "details": f"[Voir la Release]({release.get('html_url', '#')})" if color_key == "orange" else "—",
             "downloads": 0,
             "status": f"{color_icon} {progress_label}",
             "reason": reason,
@@ -265,7 +270,7 @@ catalog = [
     '>',
     '> 🧪 Les APK disponibles sont des **versions de test en développement** : elles sont installables et testables, mais ne sont pas encore considérées comme des versions finales.',
     '>',
-    '> 🛠️ Les applications marquées **Correction de bugs** ont été sélectionnées manuellement comme nécessitant des corrections. Elles peuvent rester téléchargeables pendant que les bugs sont corrigés.',
+    '> 🛠️ Les applications en **🟠 Correction active** restent visibles dans le catalogue, mais leur APK est temporairement indisponible jusqu’à la fin de la correction.',
     '>',
     '> 🚧 Les applications sans APK sont encore en cours de développement.',
     '',
@@ -277,7 +282,7 @@ catalog = [
     '',
     '## 🎨 Couleurs automatiques',
     '',
-    '- 🟠 **Orange — Correction active** : la dernière Release parle de correction, bug, patch, réparation, erreur ou problème.',
+    '- 🟠 **Orange — Correction active** : la dernière Release parle de correction, bug, patch, réparation, erreur ou problème. L’APK reste visible mais son téléchargement est temporairement bloqué.',
     '- 🔵 **Bleu — Développement actif** : une APK a été publiée ou mise à jour dans les 14 derniers jours, sans correctif explicitement détecté.',
     '- ⚪ **Gris — Stable pour le moment** : une APK existe mais aucune correction récente n’est détectée.',
     '- 🔴 **Rouge — Pas disponible** : aucune APK publique n’est disponible dans Download.',
