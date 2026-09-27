@@ -11,6 +11,15 @@ README = "README.md"
 BUGFIX_FILE = "CORRECTIONS_BUGS.txt"
 STATUS_FILE = "STATUTS_COULEURS.txt"
 
+# Applications déjà disponibles sur Google Play en version de test.
+# Une application en correction de bugs reste prioritairement orange.
+STORE_APPS = {
+    "la-jungle-de-l-arcade": {
+        "label": "Google Play — version test",
+        "url": "https://play.google.com/store/apps/details?id=com.planete.sharky.game",
+    },
+}
+
 # Tous les dépôts privés existants au 21/09/2026.
 # Les futurs projets apparaissent automatiquement dès leur première Release APK publique.
 KNOWN_APPS = {
@@ -62,6 +71,22 @@ def api_get(url):
     with urllib.request.urlopen(req) as response:
         return json.load(response)
 
+def api_patch(url, payload):
+    token = os.environ.get("GITHUB_TOKEN", "")
+    if not token:
+        return None
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "tikowikoFamily-catalog",
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json",
+    }
+    data = json.dumps(payload).encode("utf-8")
+    req = urllib.request.Request(url, data=data, headers=headers, method="PATCH")
+    with urllib.request.urlopen(req) as response:
+        return json.load(response)
+
 def human_size(size):
     value = float(size)
     for unit in ("o", "Ko", "Mo", "Go"):
@@ -108,24 +133,33 @@ def release_age_days(release):
     dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
     return max(0, (datetime.now(timezone.utc) - dt).days)
 
-def automatic_status(repo_name, display_name, release, apk, bugfix):
+def automatic_status(repo_name, display_name, release, apk, bugfix, store_info=None):
+    body = (release.get("body") or "").casefold() if release else ""
+    age = release_age_days(release) if release else None
+
+    # La correction de bugs est prioritaire sur tous les autres statuts.
+    if bugfix or any(keyword in body for keyword in FIX_KEYWORDS):
+        reason = "Des corrections de bugs ou correctifs sont en cours."
+        if age is not None:
+            reason += f" Dernière mise à jour il y a {age} jour(s)."
+        return "🟠", "Correction active", reason, "orange"
+
+    if store_info:
+        return (
+            "🟢",
+            "Google Play Test",
+            "Cette application est disponible sur Google Play en version de test.",
+            "green",
+        )
+
     if not release or not apk:
         return "🔴", "Pas disponible", "Aucune APK publique disponible dans Download.", "red"
-
-    body = (release.get("body") or "").casefold()
-    age = release_age_days(release)
-
-    if bugfix or any(keyword in body for keyword in FIX_KEYWORDS):
-        reason = "Des corrections de bugs ou correctifs sont indiqués dans la dernière version."
-        if age is not None:
-            reason += f" APK mise à jour il y a {age} jour(s)."
-        return "🟠", "Correction active", reason, "orange"
 
     if age is not None and age <= 14:
         return (
             "🔵",
             "Développement actif",
-            f"APK mise à jour récemment ({age} jour(s)) sans correction de bug explicitement détectée.",
+            f"APK mise à jour récemment ({age} jour(s)) : développement actuel détecté.",
             "blue",
         )
 
@@ -135,9 +169,48 @@ def automatic_status(repo_name, display_name, release, apk, bugfix):
     return (
         "⚪",
         "Stable pour le moment",
-        f"APK disponible ; aucune correction récente détectée depuis {age} jour(s).",
+        f"APK disponible ; aucune activité récente détectée depuis {age} jour(s).",
         "gray",
     )
+
+def release_timestamp(release):
+    if not release:
+        return 0
+    value = release.get("published_at") or release.get("updated_at") or release.get("created_at")
+    if not value:
+        return 0
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).timestamp()
+    except Exception:
+        return 0
+
+def release_belongs_to_app(repo_name, release):
+    prefix = safe_tag(repo_name)[:-7]
+    tag = release.get("tag_name") or ""
+    return tag == prefix + "-latest" or re.fullmatch(re.escape(prefix) + r"-v\d+", tag) is not None
+
+def sync_app_release_visibility(repo_name, should_hide):
+    """Orange = toutes les Releases APK de l'app passent en brouillon privé."""
+    changed = 0
+    for release in releases:
+        if not release_belongs_to_app(repo_name, release):
+            continue
+        has_apk = any(
+            asset.get("name", "").lower().endswith(".apk")
+            for asset in release.get("assets", [])
+        )
+        if not has_apk:
+            continue
+        if bool(release.get("draft")) == bool(should_hide):
+            continue
+        updated = api_patch(
+            f"https://api.github.com/repos/{OWNER}/{REPO}/releases/{release['id']}",
+            {"draft": bool(should_hide)},
+        )
+        if updated:
+            release.update(updated)
+            changed += 1
+    return changed
 
 releases = api_get(
     f"https://api.github.com/repos/{OWNER}/{REPO}/releases?per_page=100"
@@ -146,7 +219,6 @@ releases = api_get(
 release_by_tag = {
     release.get("tag_name"): release
     for release in releases
-    if not release.get("draft")
 }
 
 apps = dict(KNOWN_APPS)
@@ -154,8 +226,6 @@ apps = dict(KNOWN_APPS)
 # Si un nouveau dépôt est publié plus tard, sa Release "-latest" l'ajoute automatiquement.
 # Les Releases versionnées (v76, v77, etc.) ne créent pas de doublons dans le catalogue.
 for release in releases:
-    if release.get("draft"):
-        continue
     tag = release.get("tag_name") or ""
     if not tag.endswith("-latest"):
         continue
@@ -177,67 +247,85 @@ for repo_name, display_name in apps.items():
         apk = apks[0] if apks else None
 
     bugfix = is_bugfix_selected(repo_name, display_name)
+    store_info = STORE_APPS.get(repo_name)
     color_icon, progress_label, reason, color_key = automatic_status(
-        repo_name, display_name, release, apk, bugfix
+        repo_name, display_name, release, apk, bugfix, store_info
     )
-    download_blocked = color_key in ("red", "orange")
 
-    if release and apk and not download_blocked:
+    # Orange : aucune APK de cette application ne reste publiquement téléchargeable.
+    # Dès que le statut orange disparaît, les Releases sont republiées.
+    sync_app_release_visibility(repo_name, color_key == "orange")
+
+    ts = release_timestamp(release)
+    base = {
+        "name": display_name,
+        "status": f"{color_icon} {progress_label}",
+        "reason": reason,
+        "bugfix": color_key == "orange",
+        "progress": progress_label,
+        "color_key": color_key,
+        "updated_ts": ts,
+        "store": bool(store_info),
+    }
+
+    if color_key == "green":
         rows.append({
-            "name": display_name,
+            **base,
+            "date": formatted_date(release.get("published_at") or release.get("updated_at")) if release else "—",
+            "size": human_size(apk.get("size", 0)) if apk else "Google Play",
+            "download": f"[▶️ Ouvrir sur Google Play]({store_info['url']})",
+            "details": f"[Voir la Release GitHub]({release.get('html_url', '#')})" if release and not release.get("draft") else "Version test sur le Store",
+            "downloads": int(apk.get("download_count", 0) or 0) if apk else 0,
+            "ready": True,
+            "download_blocked": False,
+        })
+    elif color_key == "orange":
+        rows.append({
+            **base,
+            "date": formatted_date(release.get("published_at") or release.get("updated_at")) if release else "—",
+            "size": "—",
+            "download": "🟠 Indisponible · correction de bugs en cours",
+            "details": "🛠️ Correction en cours",
+            "downloads": 0,
+            "ready": False,
+            "download_blocked": True,
+        })
+    elif release and apk:
+        rows.append({
+            **base,
             "date": formatted_date(release.get("published_at") or release.get("updated_at")),
             "size": human_size(apk.get("size", 0)),
             "download": f"[⬇️ Télécharger l'APK]({apk.get('browser_download_url', '#')})",
             "details": f"[Voir la Release]({release.get('html_url', '#')})",
             "downloads": int(apk.get("download_count", 0) or 0),
-            "status": f"{color_icon} {progress_label}",
-            "reason": reason,
             "ready": True,
-            "bugfix": bugfix,
-            "progress": progress_label,
             "download_blocked": False,
-        })
-    elif release and apk and download_blocked:
-        blocked_text = (
-            "🟠 APK temporairement indisponible · correction de bugs en cours"
-            if color_key == "orange"
-            else "🚫 APK non disponible · développement en cours"
-        )
-        rows.append({
-            "name": display_name,
-            "date": formatted_date(release.get("published_at") or release.get("updated_at")),
-            "size": "—",
-            "download": blocked_text,
-            "details": f"[Voir la Release]({release.get('html_url', '#')})" if color_key == "orange" else "—",
-            "downloads": 0,
-            "status": f"{color_icon} {progress_label}",
-            "reason": reason,
-            "ready": False,
-            "bugfix": bugfix,
-            "progress": progress_label,
-            "download_blocked": True,
         })
     else:
         rows.append({
-            "name": display_name,
+            **base,
             "date": "—",
             "size": "—",
             "download": "⏳ APK pas encore publié",
             "details": "—",
             "downloads": 0,
-            "status": f"{color_icon} {progress_label}",
-            "reason": reason,
             "ready": False,
-            "bugfix": bugfix,
-            "progress": progress_label,
-            "download_blocked": download_blocked,
+            "download_blocked": True,
         })
 
-rows.sort(key=lambda item: (not item["bugfix"], not item["ready"], item["name"].lower()))
+# Mettre en avant : corrections, développement récent, Store, puis stable et indisponible.
+priority = {"orange": 0, "blue": 1, "green": 2, "gray": 3, "red": 4}
+rows.sort(key=lambda item: (
+    priority.get(item["color_key"], 9),
+    -item["updated_ts"],
+    item["name"].lower(),
+))
 
 ready_count = sum(1 for row in rows if row["ready"])
-bugfix_count = sum(1 for row in rows if row["bugfix"])
-dev_count = len(rows) - ready_count
+bugfix_count = sum(1 for row in rows if row["color_key"] == "orange")
+active_count = sum(1 for row in rows if row["color_key"] in ("orange", "blue"))
+store_count = sum(1 for row in rows if row["color_key"] == "green")
+unavailable_count = sum(1 for row in rows if row["color_key"] == "red")
 download_total = sum(row["downloads"] for row in rows)
 
 catalog = [
@@ -260,31 +348,42 @@ catalog = [
     '',
     '> 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.',
     '',
-    f'**{len(rows)} projets référencés · {ready_count} tests publics disponibles · {bugfix_count} en correction de bugs · {dev_count} sans APK · {download_total} téléchargements APK**',
+    f'**{len(rows)} projets référencés · {active_count} en développement actuel · {bugfix_count} en correction · {store_count} sur Google Play Test · {unavailable_count} sans APK · {download_total} téléchargements APK**',
     '',
     '> ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.',
     '>',
-    '> **Couleurs automatiques :** 🟠 Correction active · 🔵 Développement actif · ⚪ Stable pour le moment · 🔴 APK non disponible.',
+    '> **Couleurs automatiques :** 🟠 Correction active · 🔵 Développement actif · 🟢 Google Play Test · ⚪ Stable pour le moment · 🔴 APK non disponible.',
     '>',
     '> La couleur est recalculée automatiquement à chaque mise à jour du catalogue selon la dernière APK et les changements indiqués dans la Release.',
     '>',
     '> 🧪 Les APK disponibles sont des **versions de test en développement** : elles sont installables et testables, mais ne sont pas encore considérées comme des versions finales.',
     '>',
-    '> 🛠️ Les applications en **🟠 Correction active** restent visibles dans le catalogue, mais leur APK est temporairement indisponible jusqu’à la fin de la correction.',
+    '> 🛠️ Les applications en **🟠 Correction active** restent visibles dans le catalogue, mais toutes leurs Releases APK sont temporairement masquées du public jusqu’à la fin de la correction.',
     '>',
     '> 🚧 Les applications sans APK sont encore en cours de développement.',
     '',
+    '## 🔥 Développement actuel',
+    '',
+    *([f"- {row['status']} **{row['name']}** · mise à jour {row['date']}" for row in rows if row["color_key"] in ("orange", "blue")] or ["_Aucun développement récent détecté._"]),
+    '',
+    'Les applications les plus récemment mises à jour apparaissent en premier dans le catalogue.',
+    '',
+    '## 🟢 Applications sur Google Play',
+    '',
+    *([f"- **{row['name']}** — [▶️ Ouvrir la version test sur Google Play]({STORE_APPS[next(k for k,v in KNOWN_APPS.items() if v == row['name'])]['url']})" for row in rows if row["color_key"] == "green" and row["name"] in KNOWN_APPS.values()] or ["_Aucune application Store signalée actuellement._"]),
+    '',
     '## 🛠️ Applications en correction de bugs',
     '',
-    *([f"- **{row['name']}**" for row in rows if row["bugfix"]] or ["_Aucune application signalée actuellement._"]),
+    *([f"- **{row['name']}**" for row in rows if row["color_key"] == "orange"] or ["_Aucune application signalée actuellement._"]),
     '',
     'Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt** : une application par ligne. Tu peux écrire soit le nom du dépôt, soit le nom affiché dans le catalogue.',
     '',
     '## 🎨 Couleurs automatiques',
     '',
-    '- 🟠 **Orange — Correction active** : la dernière Release parle de correction, bug, patch, réparation, erreur ou problème. L’APK reste visible mais son téléchargement est temporairement bloqué.',
-    '- 🔵 **Bleu — Développement actif** : une APK a été publiée ou mise à jour dans les 14 derniers jours, sans correctif explicitement détecté.',
-    '- ⚪ **Gris — Stable pour le moment** : une APK existe mais aucune correction récente n’est détectée.',
+    '- 🟠 **Orange — Correction active** : une correction est déclarée ou détectée. Toutes les Releases APK de l’application sont temporairement masquées du public.',
+    '- 🔵 **Bleu — Développement actif** : une APK a été publiée ou mise à jour dans les 14 derniers jours, sans correction active. Les plus récentes sont affichées en premier.',
+    '- 🟢 **Vert — Google Play Test** : l’application est déjà disponible sur Google Play en version de test.',
+    '- ⚪ **Gris — Stable pour le moment** : une APK existe mais aucune activité récente n’est détectée.',
     '- 🔴 **Rouge — Pas disponible** : aucune APK publique n’est disponible dans Download.',
     '',
     'Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été choisie.',
