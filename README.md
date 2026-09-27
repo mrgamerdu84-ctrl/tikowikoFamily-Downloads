@@ -17,7 +17,7 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**33 projets référencés · 6 tests publics disponibles · 0 en correction de bugs · 27 sans APK · 0 téléchargements APK**
+**33 projets référencés · 5 tests publics disponibles · 0 en correction de bugs · 28 sans APK · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -27,7 +27,7 @@
 >
 > 🧪 Les APK disponibles sont des **versions de test en développement** : elles sont installables et testables, mais ne sont pas encore considérées comme des versions finales.
 >
-> 🛠️ Les applications marquées **Correction de bugs** ont été sélectionnées manuellement comme nécessitant des corrections. Elles peuvent rester téléchargeables pendant que les bugs sont corrigés.
+> 🛠️ Les applications en **🟠 Correction active** restent visibles dans le catalogue, mais leur APK est temporairement indisponible jusqu’à la fin de la correction.
 >
 > 🚧 Les applications sans APK sont encore en cours de développement.
 
@@ -39,7 +39,7 @@ Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt**
 
 ## 🎨 Couleurs automatiques
 
-- 🟠 **Orange — Correction active** : la dernière Release parle de correction, bug, patch, réparation, erreur ou problème.
+- 🟠 **Orange — Correction active** : la dernière Release parle de correction, bug, patch, réparation, erreur ou problème. L’APK reste visible mais son téléchargement est temporairement bloqué.
 - 🔵 **Bleu — Développement actif** : une APK a été publiée ou mise à jour dans les 14 derniers jours, sans correctif explicitement détecté.
 - ⚪ **Gris — Stable pour le moment** : une APK existe mais aucune correction récente n’est détectée.
 - 🔴 **Rouge — Pas disponible** : aucune APK publique n’est disponible dans Download.
@@ -52,9 +52,8 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 |---|---|---|---:|---:|---:|---|---|
 | 🎮 **Ecosylune** | 🔵 Développement actif | APK mise à jour récemment (0 jour(s)) sans correction de bug explicitement détectée. | 26/09/2026 | 16.8 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme-v80-20260926-2142.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
 | 🎮 **Jackpot Sucré Casino** | 🔵 Développement actif | APK mise à jour récemment (5 jour(s)) sans correction de bug explicitement détectée. | 22/09/2026 | 4.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
-| 🎮 **tiko-express** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. APK mise à jour il y a 0 jour(s). | 27/09/2026 | 21.0 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tiko-express-latest/tiko-express-v93-20260927-1045.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tiko-express-latest) |
+| 🎮 **tiko-express** | 🔵 Développement actif | APK mise à jour récemment (0 jour(s)) sans correction de bug explicitement détectée. | 27/09/2026 | 21.0 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tiko-express-latest/tiko-express-v98-20260927-1239.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tiko-express-latest) |
 | 🎮 **tikoWiko-taxi-** | 🔵 Développement actif | APK mise à jour récemment (5 jour(s)) sans correction de bug explicitement détectée. | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
-| 🎮 **tikowikocitybulder** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. APK mise à jour il y a 0 jour(s). | 27/09/2026 | 17.1 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocitybulder-latest/tikowikocitybulder-v96-20260927-1153.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocitybulder-latest) |
 | 🎮 **tikoWikoTaxi** | 🔵 Développement actif | APK mise à jour récemment (5 jour(s)) sans correction de bug explicitement détectée. | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
 | 🎮 **Batterie Super Intelligente** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Chicken Coop Charm** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
@@ -82,6 +81,7 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **Tikowiko Music** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tikowiko Security** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **tikowikocitybulder** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. APK mise à jour il y a 0 jour(s). | 27/09/2026 | — | 0 | 🟠 APK temporairement indisponible · correction de bugs en cours | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocitybulder-latest) |
 | 🎮 **Îlopolis** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 
 ## 📊 Statistiques
