@@ -17,7 +17,7 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**33 projets référencés · 5 tests publics disponibles · 0 en correction de bugs · 28 sans APK · 0 téléchargements APK**
+**33 projets référencés · 4 tests publics disponibles · 1 en correction de bugs · 29 sans APK · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -33,7 +33,7 @@
 
 ## 🛠️ Applications en correction de bugs
 
-_Aucune application signalée actuellement._
+- **tiko-express**
 
 Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt** : une application par ligne. Tu peux écrire soit le nom du dépôt, soit le nom affiché dans le catalogue.
 
@@ -50,9 +50,9 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
+| 🎮 **tiko-express** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. APK mise à jour il y a 0 jour(s). | 27/09/2026 | — | 0 | 🟠 APK temporairement indisponible · correction de bugs en cours | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tiko-express-latest) |
 | 🎮 **Ecosylune** | 🔵 Développement actif | APK mise à jour récemment (0 jour(s)) sans correction de bug explicitement détectée. | 26/09/2026 | 16.8 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme-v80-20260926-2142.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
 | 🎮 **Jackpot Sucré Casino** | 🔵 Développement actif | APK mise à jour récemment (5 jour(s)) sans correction de bug explicitement détectée. | 22/09/2026 | 4.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
-| 🎮 **tiko-express** | 🔵 Développement actif | APK mise à jour récemment (0 jour(s)) sans correction de bug explicitement détectée. | 27/09/2026 | 21.0 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tiko-express-latest/tiko-express-v98-20260927-1239.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tiko-express-latest) |
 | 🎮 **tikoWiko-taxi-** | 🔵 Développement actif | APK mise à jour récemment (5 jour(s)) sans correction de bug explicitement détectée. | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
 | 🎮 **tikoWikoTaxi** | 🔵 Développement actif | APK mise à jour récemment (5 jour(s)) sans correction de bug explicitement détectée. | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
 | 🎮 **Batterie Super Intelligente** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
