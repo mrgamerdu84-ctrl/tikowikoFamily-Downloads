@@ -5,6 +5,11 @@
 # 🟠 Orange = correction de bugs active
 #              -> l'application reste visible mais ses Releases APK sont
 #                 temporairement masquées du public.
+#              -> les Releases passent en brouillon GitHub : les joueurs
+#                 ne peuvent pas les télécharger.
+#              -> le Créateur connecté à GitHub garde l'accès aux brouillons
+#                 et peut télécharger/tester la dernière APK depuis le résumé
+#                 du Build APK central.
 # 🔵 Bleu   = développement actif récent
 #              -> APK mise à jour dans les 14 derniers jours.
 # 🟢 Vert   = disponible sur Google Play en version de test
