@@ -17,7 +17,7 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**33 projets référencés · 7 en développement actuel · 3 en correction · 1 sur Google Play Test · 25 sans APK · 0 téléchargements APK**
+**34 projets référencés · 8 en développement actuel · 4 en correction · 1 sur Google Play Test · 25 sans APK · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -33,9 +33,10 @@
 
 ## 🔥 Développement actuel
 
+- 🟠 Correction active **Tikowiko Music V2** · mise à jour 28/09/2026
+- 🟠 Correction active **TikowikoMusicV2** · mise à jour 28/09/2026
 - 🟠 Correction active **tiko-express** · mise à jour 27/09/2026
 - 🟠 Correction active **tikowikocitybulder** · mise à jour 27/09/2026
-- 🟠 Correction active **Tikowiko Music V2** · mise à jour —
 - 🔵 Développement actif **Ecosylune** · mise à jour 26/09/2026
 - 🔵 Développement actif **Jackpot Sucré Casino** · mise à jour 22/09/2026
 - 🔵 Développement actif **tikoWiko-taxi-** · mise à jour 22/09/2026
@@ -49,9 +50,10 @@ Les applications les plus récemment mises à jour apparaissent en premier dans 
 
 ## 🛠️ Applications en correction de bugs
 
+- **Tikowiko Music V2**
+- **TikowikoMusicV2**
 - **tiko-express**
 - **tikowikocitybulder**
-- **Tikowiko Music V2**
 
 Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt** : une application par ligne. Tu peux écrire soit le nom du dépôt, soit le nom affiché dans le catalogue.
 
@@ -69,9 +71,10 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
-| 🎮 **tiko-express** | 🟠 Correction active | Des corrections de bugs ou correctifs sont en cours. Dernière mise à jour il y a 0 jour(s). | 27/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
+| 🎮 **Tikowiko Music V2** | 🟠 Correction active | Des corrections de bugs ou correctifs sont en cours. Dernière mise à jour il y a 0 jour(s). | 28/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
+| 🎮 **TikowikoMusicV2** | 🟠 Correction active | Des corrections de bugs ou correctifs sont en cours. Dernière mise à jour il y a 0 jour(s). | 28/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
+| 🎮 **tiko-express** | 🟠 Correction active | Des corrections de bugs ou correctifs sont en cours. Dernière mise à jour il y a 1 jour(s). | 27/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
 | 🎮 **tikowikocitybulder** | 🟠 Correction active | Des corrections de bugs ou correctifs sont en cours. Dernière mise à jour il y a 1 jour(s). | 27/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
-| 🎮 **Tikowiko Music V2** | 🟠 Correction active | Des corrections de bugs ou correctifs sont en cours. | — | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
 | 🎮 **Ecosylune** | 🔵 Développement actif | APK mise à jour récemment (1 jour(s)) : développement actuel détecté. | 26/09/2026 | 16.8 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme-v80-20260926-2142.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
 | 🎮 **Jackpot Sucré Casino** | 🔵 Développement actif | APK mise à jour récemment (6 jour(s)) : développement actuel détecté. | 22/09/2026 | 4.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
 | 🎮 **tikoWiko-taxi-** | 🔵 Développement actif | APK mise à jour récemment (6 jour(s)) : développement actuel détecté. | 22/09/2026 | 4.3 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowiko-taxi--latest/tikoWiko-taxi-.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowiko-taxi--latest) |
