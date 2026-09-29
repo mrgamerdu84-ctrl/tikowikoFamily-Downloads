@@ -8,6 +8,7 @@ on:
     paths:
       - "CORRECTIONS_BUGS.txt"
       - "APPLICATIONS_SUPPRIMEES.txt"
+      - "APPLICATIONS_STABLES.txt"
       - "STATUTS_COULEURS.txt"
       - "scripts/update_catalog.py"
       - ".github/workflows/update-catalog.yml"
