@@ -1,0 +1,8 @@
+# Applications considérées stables pour le moment
+#
+# Une application par ligne.
+# Ce statut neutralise les anciens mots "fix/bug" présents dans les notes
+# de Release. Si l'application est aussi dans CORRECTIONS_BUGS.txt,
+# la correction active 🟠 reste prioritaire.
+#
+TikowikoMusicV2
