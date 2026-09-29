@@ -10,6 +10,7 @@ REPO = "tikowikoFamily-Downloads"
 README = "README.md"
 BUGFIX_FILE = "CORRECTIONS_BUGS.txt"
 STATUS_FILE = "STATUTS_COULEURS.txt"
+DELETED_FILE = "APPLICATIONS_SUPPRIMEES.txt"
 
 # Applications déjà disponibles sur Google Play en version de test.
 # Une application en correction de bugs reste prioritairement orange.
@@ -87,6 +88,23 @@ def api_patch(url, payload):
     with urllib.request.urlopen(req) as response:
         return json.load(response)
 
+def api_delete(url):
+    token = os.environ.get("GITHUB_TOKEN", "")
+    if not token:
+        return False
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "tikowikoFamily-catalog",
+        "Authorization": f"Bearer {token}",
+    }
+    req = urllib.request.Request(url, headers=headers, method="DELETE")
+    try:
+        with urllib.request.urlopen(req) as response:
+            return response.status in (200, 202, 204)
+    except Exception:
+        return False
+
 def human_size(size):
     value = float(size)
     for unit in ("o", "Ko", "Mo", "Go"):
@@ -114,6 +132,26 @@ def load_bugfix_apps():
     return selected
 
 BUGFIX_APPS = load_bugfix_apps()
+
+def load_deleted_apps():
+    selected = set()
+    if not os.path.exists(DELETED_FILE):
+        return selected
+    with open(DELETED_FILE, "r", encoding="utf-8") as handle:
+        for raw_line in handle:
+            line = raw_line.strip()
+            if not line or line.startswith("#"):
+                continue
+            selected.add(line.casefold())
+    return selected
+
+DELETED_APPS = load_deleted_apps()
+
+def is_deleted_app(repo_name, display_name=""):
+    return (
+        repo_name.casefold() in DELETED_APPS
+        or (display_name and display_name.casefold() in DELETED_APPS)
+    )
 
 def is_bugfix_selected(repo_name, display_name):
     return (
@@ -221,10 +259,39 @@ release_by_tag = {
     for release in releases
 }
 
-apps = dict(KNOWN_APPS)
+# Départs connus, en ignorant définitivement les applications supprimées.
+apps = {
+    repo_name: display_name
+    for repo_name, display_name in KNOWN_APPS.items()
+    if not is_deleted_app(repo_name, display_name)
+}
 
-# Si un nouveau dépôt est publié plus tard, sa Release "-latest" l'ajoute automatiquement.
-# Les Releases versionnées (v76, v77, etc.) ne créent pas de doublons dans le catalogue.
+# Index insensible à la casse : TikowikoMusicV2 et tikowikomusicv2
+# représentent la même application et ne doivent jamais créer deux lignes.
+app_keys_folded = {repo_name.casefold(): repo_name for repo_name in apps}
+
+def release_repo_guess(release):
+    tag = release.get("tag_name") or ""
+    if tag.endswith("-latest"):
+        return tag[:-7]
+    match = re.fullmatch(r"(.+)-v\d+", tag)
+    return match.group(1) if match else ""
+
+# Supprimer du dépôt Download les anciennes Releases des applications placées
+# dans APPLICATIONS_SUPPRIMEES.txt pour qu'elles ne puissent plus réapparaître.
+for release in list(releases):
+    repo_guess = release_repo_guess(release)
+    if not repo_guess:
+        continue
+    known_key = next((k for k in KNOWN_APPS if k.casefold() == repo_guess.casefold()), repo_guess)
+    known_display = KNOWN_APPS.get(known_key, "")
+    title = (release.get("name") or "").replace(" — Android", "").strip()
+    title = re.sub(r"\s+v\d+\s*\(dernière\)$", "", title, flags=re.IGNORECASE)
+    if is_deleted_app(repo_guess, known_display or title):
+        api_delete(f"https://api.github.com/repos/{OWNER}/{REPO}/releases/{release['id']}")
+
+# Une nouvelle Release "-latest" peut ajouter un futur projet, sauf s'il est
+# supprimé ou s'il correspond déjà à une application connue avec une casse différente.
 for release in releases:
     tag = release.get("tag_name") or ""
     if not tag.endswith("-latest"):
@@ -233,10 +300,19 @@ for release in releases:
     if not apks:
         continue
     repo_name = tag[:-7]
-    if repo_name not in apps:
-        title = (release.get("name") or "").replace(" — Android", "").strip()
-        title = re.sub(r"\s+v\d+\s*\(dernière\)$", "", title, flags=re.IGNORECASE)
-        apps[repo_name] = title or repo_name.replace("-", " ").replace("_", " ").title()
+    title = (release.get("name") or "").replace(" — Android", "").strip()
+    title = re.sub(r"\s+v\d+\s*\(dernière\)$", "", title, flags=re.IGNORECASE)
+    display_guess = title or repo_name.replace("-", " ").replace("_", " ").title()
+
+    if is_deleted_app(repo_name, display_guess):
+        continue
+
+    folded = repo_name.casefold()
+    if folded in app_keys_folded:
+        continue
+
+    apps[repo_name] = display_guess
+    app_keys_folded[folded] = repo_name
 
 rows = []
 for repo_name, display_name in apps.items():
