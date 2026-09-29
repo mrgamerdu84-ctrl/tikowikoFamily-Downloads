@@ -1,0 +1,16 @@
+# Applications supprimées définitivement du catalogue
+#
+# Ajoute UNE application par ligne.
+# Tu peux écrire :
+# - le nom du dépôt, par exemple : ancien-jeu
+# - ou le nom affiché dans le catalogue.
+#
+# Effet automatique :
+# - l'application disparaît du README ;
+# - elle n'est plus recréée par KNOWN_APPS ;
+# - ses anciennes Releases APK sont supprimées du dépôt Downloads ;
+# - elle ne revient pas même si une ancienne Release "-latest" existe encore.
+#
+# Pour restaurer une application, supprime sa ligne de ce fichier
+# puis republie une nouvelle APK.
+#
