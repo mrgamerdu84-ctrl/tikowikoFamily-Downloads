@@ -17,7 +17,7 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**22 projets référencés · 5 en développement actuel · 3 en correction · 1 sur Google Play Test · 16 sans APK · 0 téléchargements APK**
+**21 projets référencés · 5 en développement actuel · 3 en correction · 1 sur Google Play Test · 15 sans APK · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -81,7 +81,6 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **My Taxi World** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **N-on Jetons** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Planète Sharky** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **SmoothinCreams** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Snack Attack** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tapas Fiesta** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tikowiko Agenda Budgétaire** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
