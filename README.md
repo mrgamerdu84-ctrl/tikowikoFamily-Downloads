@@ -17,7 +17,7 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**25 projets référencés · 5 en développement actuel · 3 en correction · 1 sur Google Play Test · 19 sans APK · 0 téléchargements APK**
+**22 projets référencés · 5 en développement actuel · 3 en correction · 1 sur Google Play Test · 16 sans APK · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -74,8 +74,6 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **Jackpot Sucré Casino** | 🔵 Développement actif | APK mise à jour récemment (7 jour(s)) : développement actuel détecté. | 22/09/2026 | 4.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
 | 🎮 **La Jungle de l'Arcade** | 🟢 Google Play Test | Cette application est disponible sur Google Play en version de test. | — | Google Play | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | Version test sur le Store |
 | 🎮 **Clandestin Arcade Manager** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Divertissement Zen +** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Game Booster 4K** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Gleam Mine Adventure** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Grimoix Petit Dragon** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Histoire pour Enfants** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
@@ -89,7 +87,6 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **Tikowiko Agenda Budgétaire** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **TikoWiko Aviator** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tikowiko City** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Tikowiko Intelligent** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tikowiko Music** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tikowiko Security** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 
