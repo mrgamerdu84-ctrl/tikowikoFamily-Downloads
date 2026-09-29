@@ -11,6 +11,7 @@ README = "README.md"
 BUGFIX_FILE = "CORRECTIONS_BUGS.txt"
 STATUS_FILE = "STATUTS_COULEURS.txt"
 DELETED_FILE = "APPLICATIONS_SUPPRIMEES.txt"
+STABLE_FILE = "APPLICATIONS_STABLES.txt"
 
 # Applications déjà disponibles sur Google Play en version de test.
 # Une application en correction de bugs reste prioritairement orange.
@@ -147,6 +148,26 @@ def load_deleted_apps():
 
 DELETED_APPS = load_deleted_apps()
 
+def load_stable_apps():
+    selected = set()
+    if not os.path.exists(STABLE_FILE):
+        return selected
+    with open(STABLE_FILE, "r", encoding="utf-8") as handle:
+        for raw_line in handle:
+            line = raw_line.strip()
+            if not line or line.startswith("#"):
+                continue
+            selected.add(line.casefold())
+    return selected
+
+STABLE_APPS = load_stable_apps()
+
+def is_stable_selected(repo_name, display_name):
+    return (
+        repo_name.casefold() in STABLE_APPS
+        or display_name.casefold() in STABLE_APPS
+    )
+
 def is_deleted_app(repo_name, display_name=""):
     return (
         repo_name.casefold() in DELETED_APPS
@@ -171,13 +192,26 @@ def release_age_days(release):
     dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
     return max(0, (datetime.now(timezone.utc) - dt).days)
 
-def automatic_status(repo_name, display_name, release, apk, bugfix, store_info=None):
+def automatic_status(repo_name, display_name, release, apk, bugfix, stable, store_info=None):
     body = (release.get("body") or "").casefold() if release else ""
     age = release_age_days(release) if release else None
 
-    # La correction de bugs est prioritaire sur tous les autres statuts.
-    if bugfix or any(keyword in body for keyword in FIX_KEYWORDS):
+    # Une correction déclarée manuellement reste prioritaire.
+    if bugfix:
         reason = "Des corrections de bugs ou correctifs sont en cours."
+        if age is not None:
+            reason += f" Dernière mise à jour il y a {age} jour(s)."
+        return "🟠", "Correction active", reason, "orange"
+
+    # Le statut stable explicite neutralise les anciens mots fix/bug des notes de Release.
+    if stable:
+        reason = "Application déclarée stable pour le moment."
+        if age is not None:
+            reason += f" Dernière mise à jour il y a {age} jour(s)."
+        return "⚪", "Stable pour le moment", reason, "gray"
+
+    if any(keyword in body for keyword in FIX_KEYWORDS):
+        reason = "Des corrections de bugs ou correctifs sont indiqués dans la dernière version."
         if age is not None:
             reason += f" Dernière mise à jour il y a {age} jour(s)."
         return "🟠", "Correction active", reason, "orange"
@@ -323,9 +357,10 @@ for repo_name, display_name in apps.items():
         apk = apks[0] if apks else None
 
     bugfix = is_bugfix_selected(repo_name, display_name)
+    stable = is_stable_selected(repo_name, display_name)
     store_info = STORE_APPS.get(repo_name)
     color_icon, progress_label, reason, color_key = automatic_status(
-        repo_name, display_name, release, apk, bugfix, store_info
+        repo_name, display_name, release, apk, bugfix, stable, store_info
     )
 
     # Orange : aucune APK de cette application ne reste publiquement téléchargeable.
