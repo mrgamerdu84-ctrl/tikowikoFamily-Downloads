@@ -14,3 +14,10 @@
 # Pour restaurer une application, supprime sa ligne de ce fichier
 # puis republie une nouvelle APK.
 #
+batterie-super-intelligente
+chicken-coop-charm
+gang-de-serpent
+ilopolis
+super-winner-de-la-fortune
+tikoWiko-Anti-virus-
+tikoWiko-taxi-
