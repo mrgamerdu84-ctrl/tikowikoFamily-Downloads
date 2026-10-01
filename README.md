@@ -17,7 +17,7 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**22 projets référencés · 5 en développement actuel · 2 en correction · 1 sur Google Play Test · 15 sans APK · 1 téléchargements APK**
+**22 projets référencés · 5 en développement actuel · 3 en correction · 1 sur Google Play Test · 15 sans APK · 1 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -33,9 +33,9 @@
 
 ## 🔥 Développement actuel
 
+- 🟠 Correction active **Tikowikodelivery** · mise à jour 01/10/2026
 - 🟠 Correction active **tiko-express** · mise à jour 30/09/2026
 - 🟠 Correction active **tikowikocitybulder** · mise à jour 27/09/2026
-- 🔵 Développement actif **Tikowikodelivery** · mise à jour 01/10/2026
 - 🔵 Développement actif **Ecosylune** · mise à jour 29/09/2026
 - 🔵 Développement actif **Jackpot Sucré Casino** · mise à jour 22/09/2026
 
@@ -47,6 +47,7 @@ Les applications les plus récemment mises à jour apparaissent en premier dans 
 
 ## 🛠️ Applications en correction de bugs
 
+- **Tikowikodelivery**
 - **tiko-express**
 - **tikowikocitybulder**
 
@@ -66,9 +67,9 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
+| 🎮 **Tikowikodelivery** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 0 jour(s). | 01/10/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
 | 🎮 **tiko-express** | 🟠 Correction active | Des corrections de bugs ou correctifs sont en cours. Dernière mise à jour il y a 1 jour(s). | 30/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
 | 🎮 **tikowikocitybulder** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 4 jour(s). | 27/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
-| 🎮 **Tikowikodelivery** | 🔵 Développement actif | APK mise à jour récemment (0 jour(s)) : développement actuel détecté. | 01/10/2026 | 22.2 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikodelivery-latest/Tikowikodelivery-v152-20261001-2030.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikodelivery-latest) |
 | 🎮 **Ecosylune** | 🔵 Développement actif | APK mise à jour récemment (2 jour(s)) : développement actuel détecté. | 29/09/2026 | 16.8 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme-v114-20260929-1325.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
 | 🎮 **Jackpot Sucré Casino** | 🔵 Développement actif | APK mise à jour récemment (9 jour(s)) : développement actuel détecté. | 22/09/2026 | 4.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
 | 🎮 **La Jungle de l'Arcade** | 🟢 Google Play Test | Cette application est disponible sur Google Play en version de test. | — | Google Play | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | Version test sur le Store |
