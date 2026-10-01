@@ -33,7 +33,7 @@
 
 ## 🔥 Développement actuel
 
-- 🟠 Correction active **Tikowikodelivery** · mise à jour 30/09/2026
+- 🟠 Correction active **Tikowikodelivery** · mise à jour 01/10/2026
 - 🟠 Correction active **tiko-express** · mise à jour 30/09/2026
 - 🟠 Correction active **tikowikocitybulder** · mise à jour 27/09/2026
 - 🔵 Développement actif **Ecosylune** · mise à jour 29/09/2026
@@ -67,13 +67,13 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
-| 🎮 **Tikowikodelivery** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 0 jour(s). | 30/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
+| 🎮 **Tikowikodelivery** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 0 jour(s). | 01/10/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
 | 🎮 **tiko-express** | 🟠 Correction active | Des corrections de bugs ou correctifs sont en cours. Dernière mise à jour il y a 0 jour(s). | 30/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
 | 🎮 **tikowikocitybulder** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 3 jour(s). | 27/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
 | 🎮 **Ecosylune** | 🔵 Développement actif | APK mise à jour récemment (1 jour(s)) : développement actuel détecté. | 29/09/2026 | 16.8 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikocosystme-latest/tikowikocosystme-v114-20260929-1325.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikocosystme-latest) |
 | 🎮 **Jackpot Sucré Casino** | 🔵 Développement actif | APK mise à jour récemment (8 jour(s)) : développement actuel détecté. | 22/09/2026 | 4.9 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/jackpot-sucr-casino-latest/jackpot-sucr-casino.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/jackpot-sucr-casino-latest) |
 | 🎮 **La Jungle de l'Arcade** | 🟢 Google Play Test | Cette application est disponible sur Google Play en version de test. | — | Google Play | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | Version test sur le Store |
-| 🎮 **Tikowiko Music V2** | ⚪ Stable pour le moment | Application déclarée stable pour le moment. Dernière mise à jour il y a 0 jour(s). | 29/09/2026 | 1.1 Mo | 1 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikomusicv2-latest/TikowikoMusicV2-v112-20260928-1921.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikomusicv2-latest) |
+| 🎮 **Tikowiko Music V2** | ⚪ Stable pour le moment | Application déclarée stable pour le moment. Dernière mise à jour il y a 1 jour(s). | 29/09/2026 | 1.1 Mo | 1 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikomusicv2-latest/TikowikoMusicV2-v112-20260928-1921.apk) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikomusicv2-latest) |
 | 🎮 **Clandestin Arcade Manager** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Gleam Mine Adventure** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Grimoix Petit Dragon** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | ⏳ APK pas encore publié | — |
