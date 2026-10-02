@@ -106,6 +106,14 @@ def api_delete(url):
     except Exception:
         return False
 
+def forced_download_url(asset):
+    """Force le navigateur mobile à traiter l'asset GitHub comme un téléchargement."""
+    url = (asset or {}).get("browser_download_url", "#")
+    if not url or url == "#":
+        return "#"
+    separator = "&" if "?" in url else "?"
+    return f"{url}{separator}download=1"
+
 def human_size(size):
     value = float(size)
     for unit in ("o", "Ko", "Mo", "Go"):
@@ -406,7 +414,7 @@ for repo_name, display_name in apps.items():
             **base,
             "date": formatted_date(release.get("published_at") or release.get("updated_at")),
             "size": human_size(apk.get("size", 0)),
-            "download": f"[⬇️ Télécharger l'APK]({apk.get('browser_download_url', '#')})",
+            "download": f"[⬇️ Télécharger l'APK]({forced_download_url(apk)})",
             "details": f"[Voir la Release]({release.get('html_url', '#')})",
             "downloads": int(apk.get("download_count", 0) or 0),
             "ready": True,
@@ -527,7 +535,7 @@ catalog += [
     '',
     '## ℹ️ Installation',
     '',
-    'Pour une application disponible, appuie sur **Télécharger l’APK**, puis ouvre le fichier sur Android.',
+    'Pour une application disponible, appuie sur **Télécharger l’APK** : le lien force maintenant le téléchargement du fichier .apk sur Android.',
     'Android peut demander l’autorisation d’installer une application provenant de ton navigateur ou de ton gestionnaire de fichiers.',
     '',
     '## 🔄 Mises à jour automatiques',
