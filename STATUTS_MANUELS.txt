@@ -4,11 +4,16 @@
 # Pour revenir au calcul automatique, supprime la ligne via le workflow.
 #
 TikowikoMusicV2|red
-Grimoix-petit-dragon|purple
-jackpot-sucr-casino|purple
 
 la-jungle-de-l-arcade|cyan
 tikowikocity|cyan
 tikowikocosystme|cyan
-planete-sharky-game|cyan
-tikowikodelivery|red
+planete-sharky-game|yellow
+snack-attack-|yellow
+tiko-express|yellow
+tikowikodelivery|yellow
+l-attaque-des-dieux|yellow
+histoire-pour-enfants|yellow
+jackpot-sucr-casino|yellow
+tapas-fiesta|yellow
+Grimoix-petit-dragon|yellow

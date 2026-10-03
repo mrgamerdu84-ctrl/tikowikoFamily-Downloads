@@ -17,7 +17,7 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**15 projets référencés · 5 passés par Lovable à vérifier · 2 en réflexion · 0 en test développeur · 1 en développement actuel · 1 en correction · 0 sur Google Play Test · 7 indisponibles · 0 téléchargements APK**
+**15 projets référencés · 4 passés par Lovable à vérifier · 0 en réflexion · 9 en test développeur · 0 en développement actuel · 0 en correction · 0 sur Google Play Test · 2 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -36,21 +36,27 @@
 - **Ecosylune** — traces Lovable détectées ; autonomie à vérifier.
 - **tikowikocitybulder** — traces Lovable détectées ; autonomie à vérifier.
 - **La Jungle de l'Arcade** — traces Lovable détectées ; autonomie à vérifier.
-- **Planète Sharky** — traces Lovable détectées ; autonomie à vérifier.
 - **Tikowiko City** — traces Lovable détectées ; autonomie à vérifier.
 
 ## 🟣 Projets en réflexion
 
-- **Jackpot Sucré Casino** — projet en suspens, décision en cours sur la suite du développement.
-- **Grimoix Petit Dragon** — projet en suspens, décision en cours sur la suite du développement.
+_Aucun projet en réflexion actuellement._
 
 ## 🟡 Tests développeur
 
-_Aucune application en test développeur actuellement._
+- **Tikowikodelivery** — test en cours par le développeur ; téléchargement public temporairement bloqué.
+- **tiko-express** — test en cours par le développeur ; téléchargement public temporairement bloqué.
+- **Jackpot Sucré Casino** — test en cours par le développeur ; téléchargement public temporairement bloqué.
+- **Grimoix Petit Dragon** — test en cours par le développeur ; téléchargement public temporairement bloqué.
+- **Histoire pour Enfants** — test en cours par le développeur ; téléchargement public temporairement bloqué.
+- **L'Attaque des Dieux** — test en cours par le développeur ; téléchargement public temporairement bloqué.
+- **Planète Sharky** — test en cours par le développeur ; téléchargement public temporairement bloqué.
+- **Snack Attack** — test en cours par le développeur ; téléchargement public temporairement bloqué.
+- **Tapas Fiesta** — test en cours par le développeur ; téléchargement public temporairement bloqué.
 
 ## 🔥 Développement actuel
 
-- 🟠 Correction active **tiko-express** · mise à jour 30/09/2026
+_Aucun développement récent détecté._
 
 Les applications les plus récemment mises à jour apparaissent en premier dans le catalogue.
 
@@ -60,7 +66,7 @@ _Aucune application Store signalée actuellement._
 
 ## 🛠️ Applications en correction de bugs
 
-- **tiko-express**
+_Aucune application signalée actuellement._
 
 Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt** : une application par ligne. Tu peux écrire soit le nom du dépôt, soit le nom affiché dans le catalogue.
 
@@ -84,17 +90,17 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **Ecosylune** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 02/10/2026 | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **tikowikocitybulder** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 27/09/2026 | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **La Jungle de l'Arcade** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **Planète Sharky** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **Tikowiko City** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **Jackpot Sucré Casino** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 22/09/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
-| 🎮 **Grimoix Petit Dragon** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
-| 🎮 **tiko-express** | 🟠 Correction active | Des corrections de bugs ou correctifs sont en cours. Dernière mise à jour il y a 3 jour(s). | 30/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
-| 🎮 **Tikowikodelivery** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 03/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tikowikodelivery** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 03/10/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
+| 🎮 **tiko-express** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 30/09/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
+| 🎮 **Jackpot Sucré Casino** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 22/09/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
+| 🎮 **Grimoix Petit Dragon** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
+| 🎮 **Histoire pour Enfants** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
+| 🎮 **L'Attaque des Dieux** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
+| 🎮 **Planète Sharky** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
+| 🎮 **Snack Attack** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
+| 🎮 **Tapas Fiesta** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Histoire pour Enfants** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **L'Attaque des Dieux** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Snack Attack** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Tapas Fiesta** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko Music** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 
 ## 📊 Statistiques
