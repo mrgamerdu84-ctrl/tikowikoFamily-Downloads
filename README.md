@@ -21,7 +21,7 @@
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
-> **Couleurs :** 🩵 Importé depuis Lovable / à vérifier · 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🟢 Disponible / test · ⚪ Stable · 🔴 Indisponible.
+> **Couleurs :** 💙 Importé depuis Lovable / à vérifier · 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🟢 Disponible / test · ⚪ Stable · 🔴 Indisponible.
 >
 > La couleur est recalculée automatiquement à chaque mise à jour du catalogue selon la dernière APK et les changements indiqués dans la Release.
 >
@@ -31,7 +31,7 @@
 >
 > 🚧 Les applications sans APK sont encore en cours de développement.
 
-## 🩵 Projets importés depuis Lovable / à vérifier
+## 💙 Projets importés depuis Lovable / à vérifier
 
 - **Ecosylune** — traces Lovable détectées ; autonomie à vérifier.
 - **tikowikocitybulder** — traces Lovable détectées ; autonomie à vérifier.
@@ -71,7 +71,7 @@ Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt**
 
 ## 🎨 Couleurs automatiques
 
-- 🩵 **Bleu clair — Importé depuis Lovable / à vérifier** : des traces Lovable sont présentes ; il faut vérifier l’autonomie du projet. Les APK sont masquées du public pendant la vérification.
+- 💙 **Bleu clair — Importé depuis Lovable / à vérifier** : des traces Lovable sont présentes ; il faut vérifier l’autonomie du projet. Les APK sont masquées du public pendant la vérification.
 - 🟣 **Violet — En réflexion** : projet en suspens ; on décide s’il sera poursuivi, revu ou arrêté. Les APK sont masquées du public.
 - 🟡 **Jaune — Test développeur** : l’APK est testée par le développeur avant publication. Les joueurs ne peuvent pas encore la télécharger.
 - 🟠 **Orange — Correction active** : une correction est déclarée ou détectée. Toutes les Releases APK de l’application sont temporairement masquées du public.
@@ -86,13 +86,13 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
-| 🎮 **Ecosylune** | 🩵 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 02/10/2026 | — | 0 | 🩵 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **tikowikocitybulder** | 🩵 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 27/09/2026 | — | 0 | 🩵 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **Clandestin Arcade Manager** | 🩵 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 🩵 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **Gleam Mine Adventure** | 🩵 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 🩵 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **La Jungle de l'Arcade** | 🩵 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 🩵 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **My Taxi World** | 🩵 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 🩵 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **Tikowiko City** | 🩵 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 🩵 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
+| 🎮 **Ecosylune** | 💙 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 02/10/2026 | — | 0 | 💙 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
+| 🎮 **tikowikocitybulder** | 💙 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 27/09/2026 | — | 0 | 💙 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
+| 🎮 **Clandestin Arcade Manager** | 💙 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
+| 🎮 **Gleam Mine Adventure** | 💙 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
+| 🎮 **La Jungle de l'Arcade** | 💙 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
+| 🎮 **My Taxi World** | 💙 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
+| 🎮 **Tikowiko City** | 💙 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **tikowikoFamilyGames** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 02/10/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **Jackpot Sucré Casino** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 22/09/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **Grimoix Petit Dragon** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
