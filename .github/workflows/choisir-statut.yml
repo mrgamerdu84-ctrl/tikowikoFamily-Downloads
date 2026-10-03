@@ -462,19 +462,26 @@ jobs:
           print("Applications modifiées : " + ", ".join(apps))
           PY
 
+      - name: Mettre à jour immédiatement le catalogue
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          python3 scripts/update_catalog.py
+
       - name: Enregistrer le changement
         env:
           STATUT: ${{ inputs.statut }}
         run: |
           set -e
-          if git diff --quiet STATUTS_MANUELS.txt; then
+          if git diff --quiet STATUTS_MANUELS.txt README.md; then
             echo "Aucun changement à enregistrer."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add STATUTS_MANUELS.txt
+          git add STATUTS_MANUELS.txt README.md
           git commit -m "Change le statut de plusieurs applications : $STATUT"
           git push origin HEAD:main
 
