@@ -367,7 +367,7 @@ on:
         default: "🟣 Violet — En réflexion"
         type: choice
         options:
-          - "🩵 Bleu clair — Importé depuis Lovable / à vérifier"
+          - "💙 Bleu clair — Importé depuis Lovable / à vérifier"
           - "🟣 Violet — En réflexion"
           - "🟡 Jaune — Test développeur"
           - "🟠 Orange — Correction active"
@@ -417,7 +417,7 @@ jobs:
           apps = [a.strip() for a in sys.argv[3:] if a.strip() and a.strip() != "— Aucune —"]
 
           mapping = {
-              "🩵 Bleu clair — Importé depuis Lovable / à vérifier": "cyan",
+              "💙 Bleu clair — Importé depuis Lovable / à vérifier": "cyan",
               "🟣 Violet — En réflexion": "purple",
               "🟡 Jaune — Test développeur": "yellow",
               "🟠 Orange — Correction active": "orange",
