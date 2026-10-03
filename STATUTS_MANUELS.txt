@@ -5,4 +5,11 @@
 #
 # Projet actuellement mis en réflexion :
 tikowikoFamilyGames|purple
-TikowikoMusicV2|yellow
+tikowikocity|red
+TikowikoMusicV2|red
+jackpot-sucr-casino|red
+SmoothinCreams|red
+ilopolis|red
+tikoWiko-Anti-virus-|red
+tikowikointelligent-|red
+tikowiko-agenda-budg-taire|red
