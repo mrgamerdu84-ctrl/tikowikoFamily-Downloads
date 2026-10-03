@@ -1,0 +1,103 @@
+name: Changer le statut d'une application
+
+on:
+  workflow_dispatch:
+    inputs:
+      application:
+        description: "Nom du dépôt ou nom affiché de l'application"
+        required: true
+        type: string
+      couleur:
+        description: "Couleur / statut"
+        required: true
+        default: purple
+        type: choice
+        options:
+          - purple
+          - orange
+          - blue
+          - green
+          - gray
+          - red
+          - auto
+
+permissions:
+  contents: write
+
+jobs:
+  statut:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Appliquer le statut choisi
+        env:
+          APP: ${{ inputs.application }}
+          COLOR: ${{ inputs.couleur }}
+        shell: bash
+        run: |
+          set -e
+          FILE="STATUTS_MANUELS.txt"
+          touch "$FILE"
+
+          python3 - "$FILE" "$APP" "$COLOR" <<'PY'
+          from pathlib import Path
+          import sys
+
+          path = Path(sys.argv[1])
+          app = sys.argv[2].strip()
+          color = sys.argv[3].strip().lower()
+
+          allowed = {"purple", "orange", "blue", "green", "gray", "red", "auto"}
+          if color not in allowed:
+              raise SystemExit(f"Couleur inconnue: {color}")
+          if not app:
+              raise SystemExit("Nom d'application vide")
+
+          lines = path.read_text(encoding="utf-8").splitlines()
+          kept = []
+          for line in lines:
+              raw = line.strip()
+              if not raw or raw.startswith("#") or "|" not in raw:
+                  kept.append(line)
+                  continue
+              current, _ = raw.split("|", 1)
+              if current.strip().casefold() != app.casefold():
+                  kept.append(line)
+
+          if color != "auto":
+              kept.append(f"{app}|{color}")
+
+          path.write_text("\n".join(kept).rstrip() + "\n", encoding="utf-8")
+          PY
+
+      - name: Enregistrer le changement
+        env:
+          APP: ${{ inputs.application }}
+          COLOR: ${{ inputs.couleur }}
+        run: |
+          set -e
+          if git diff --quiet STATUTS_MANUELS.txt; then
+            echo "Aucun changement à enregistrer."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add STATUTS_MANUELS.txt
+          git commit -m "Statut $COLOR pour $APP"
+          git push origin HEAD:main
+
+      - name: Résumé
+        env:
+          APP: ${{ inputs.application }}
+          COLOR: ${{ inputs.couleur }}
+        run: |
+          echo "### Statut mis à jour" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "**Application :** $APP" >> "$GITHUB_STEP_SUMMARY"
+          echo "**Couleur :** $COLOR" >> "$GITHUB_STEP_SUMMARY"
