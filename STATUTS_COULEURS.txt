@@ -5,7 +5,7 @@
 #
 # Il choisit d'abord l'application, puis le statut :
 #
-# 🩵 Bleu clair = Importé depuis Lovable / à vérifier
+# 💙 Cœur bleu = Importé depuis Lovable / à vérifier
 #                  -> des traces Lovable sont présentes dans le dépôt.
 #                  -> autonomie à vérifier avant publication publique.
 #                  -> APK publiques masquées pendant la vérification.
@@ -36,5 +36,5 @@
 #
 # ⚙️ Auto   = Retire le choix manuel et rend la main au calcul automatique.
 #
-# Les statuts 🩵 🟣 🟡 🟠 🔴 bloquent le téléchargement public.
+# Les statuts 💙 🟣 🟡 🟠 🔴 bloquent le téléchargement public.
 # Les statuts 🔵 🟢 ⚪ permettent une APK publique si une Release existe.
