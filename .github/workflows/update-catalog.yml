@@ -10,6 +10,7 @@ on:
       - "APPLICATIONS_SUPPRIMEES.txt"
       - "APPLICATIONS_STABLES.txt"
       - "STATUTS_COULEURS.txt"
+      - "STATUTS_MANUELS.txt"
       - "scripts/update_catalog.py"
       - ".github/workflows/update-catalog.yml"
   schedule:
