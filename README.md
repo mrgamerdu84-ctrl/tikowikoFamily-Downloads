@@ -17,7 +17,7 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**23 projets référencés · 8 passés par Lovable à vérifier · 4 en réflexion · 0 en test développeur · 2 en développement actuel · 1 en correction · 0 sur Google Play Test · 9 indisponibles · 0 téléchargements APK**
+**23 projets référencés · 8 passés par Lovable à vérifier · 4 en réflexion · 0 en test développeur · 2 en développement actuel · 2 en correction · 0 sur Google Play Test · 9 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -55,8 +55,8 @@ _Aucune application en test développeur actuellement._
 
 ## 🔥 Développement actuel
 
+- 🟠 Correction active **Tikowikodelivery** · mise à jour 03/10/2026
 - 🟠 Correction active **tiko-express** · mise à jour 30/09/2026
-- 🔵 Développement actif **Tikowikodelivery** · mise à jour 03/10/2026
 
 Les applications les plus récemment mises à jour apparaissent en premier dans le catalogue.
 
@@ -66,6 +66,7 @@ _Aucune application Store signalée actuellement._
 
 ## 🛠️ Applications en correction de bugs
 
+- **Tikowikodelivery**
 - **tiko-express**
 
 Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt** : une application par ligne. Tu peux écrire soit le nom du dépôt, soit le nom affiché dans le catalogue.
@@ -99,8 +100,8 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **Jackpot Sucré Casino** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 22/09/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **Grimoix Petit Dragon** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **N-on Jetons** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
+| 🎮 **Tikowikodelivery** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 0 jour(s). | 03/10/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
 | 🎮 **tiko-express** | 🟠 Correction active | Des corrections de bugs ou correctifs sont en cours. Dernière mise à jour il y a 3 jour(s). | 30/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
-| 🎮 **Tikowikodelivery** | 🔵 Développement actif | APK mise à jour récemment (0 jour(s)) : développement actuel détecté. | 03/10/2026 | 22.2 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikodelivery-latest/Tikowikodelivery-v169-20261003-1016.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikodelivery-latest) |
 | 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Histoire pour Enfants** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **L'Attaque des Dieux** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
