@@ -41,20 +41,20 @@ on:
           - Grimoix-petit-dragon
           - my-taxi-world-les-rue-sont-nous-bc60a008
           - N-on-Jetons-
-      couleur:
-        description: "Choisis le statut / la couleur"
+      statut:
+        description: "Choisis la couleur / le statut"
         required: true
-        default: purple
+        default: "🟣 Violet — En réflexion"
         type: choice
         options:
-          - purple
-          - yellow
-          - orange
-          - blue
-          - green
-          - gray
-          - red
-          - auto
+          - "🟣 Violet — En réflexion"
+          - "🟡 Jaune — Test développeur"
+          - "🟠 Orange — Correction active"
+          - "🔵 Bleu — Développement actif"
+          - "🟢 Vert — Disponible / test"
+          - "⚪ Gris — Stable pour le moment"
+          - "🔴 Rouge — Indisponible"
+          - "⚙️ Automatique — Choix automatique"
 
 permissions:
   contents: write
@@ -72,24 +72,35 @@ jobs:
       - name: Appliquer le statut choisi
         env:
           APP: ${{ inputs.application }}
-          COLOR: ${{ inputs.couleur }}
+          STATUT: ${{ inputs.statut }}
         shell: bash
         run: |
           set -e
           FILE="STATUTS_MANUELS.txt"
           touch "$FILE"
 
-          python3 - "$FILE" "$APP" "$COLOR" <<'PY'
+          python3 - "$FILE" "$APP" "$STATUT" <<'PY'
           from pathlib import Path
           import sys
 
           path = Path(sys.argv[1])
           app = sys.argv[2].strip()
-          color = sys.argv[3].strip().lower()
+          statut = sys.argv[3].strip()
 
-          allowed = {"purple", "yellow", "orange", "blue", "green", "gray", "red", "auto"}
-          if color not in allowed:
-              raise SystemExit(f"Couleur inconnue: {color}")
+          mapping = {
+              "🟣 Violet — En réflexion": "purple",
+              "🟡 Jaune — Test développeur": "yellow",
+              "🟠 Orange — Correction active": "orange",
+              "🔵 Bleu — Développement actif": "blue",
+              "🟢 Vert — Disponible / test": "green",
+              "⚪ Gris — Stable pour le moment": "gray",
+              "🔴 Rouge — Indisponible": "red",
+              "⚙️ Automatique — Choix automatique": "auto",
+          }
+
+          color = mapping.get(statut)
+          if not color:
+              raise SystemExit(f"Statut inconnu: {statut}")
           if not app:
               raise SystemExit("Nom d'application vide")
 
@@ -113,7 +124,7 @@ jobs:
       - name: Enregistrer le changement
         env:
           APP: ${{ inputs.application }}
-          COLOR: ${{ inputs.couleur }}
+          STATUT: ${{ inputs.statut }}
         run: |
           set -e
           if git diff --quiet STATUTS_MANUELS.txt; then
@@ -124,25 +135,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add STATUTS_MANUELS.txt
-          git commit -m "Statut $COLOR pour $APP"
+          git commit -m "Change le statut de $APP : $STATUT"
           git push origin HEAD:main
 
       - name: Résumé
         env:
           APP: ${{ inputs.application }}
-          COLOR: ${{ inputs.couleur }}
+          STATUT: ${{ inputs.statut }}
         run: |
-          case "$COLOR" in
-            purple) LABEL="🟣 En réflexion" ;;
-            yellow) LABEL="🟡 Test développeur" ;;
-            orange) LABEL="🟠 Correction active" ;;
-            blue) LABEL="🔵 Développement actif" ;;
-            green) LABEL="🟢 Disponible / test" ;;
-            gray) LABEL="⚪ Stable pour le moment" ;;
-            red) LABEL="🔴 Indisponible" ;;
-            auto) LABEL="⚙️ Automatique" ;;
-          esac
           echo "### Statut mis à jour" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "**Application :** $APP" >> "$GITHUB_STEP_SUMMARY"
-          echo "**Statut :** $LABEL" >> "$GITHUB_STEP_SUMMARY"
+          echo "**Statut :** $STATUT" >> "$GITHUB_STEP_SUMMARY"
