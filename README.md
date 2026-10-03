@@ -17,11 +17,11 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**23 projets référencés · 1 en réflexion · 5 en développement actuel · 3 en correction · 1 sur Google Play Test · 15 indisponibles · 1 téléchargements APK**
+**23 projets référencés · 1 en réflexion · 0 en test développeur · 5 en développement actuel · 3 en correction · 1 sur Google Play Test · 15 indisponibles · 1 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
-> **Couleurs :** 🟣 En réflexion · 🟠 Correction active · 🔵 Développement actif · 🟢 Disponible / test · ⚪ Stable · 🔴 Indisponible.
+> **Couleurs :** 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🟢 Disponible / test · ⚪ Stable · 🔴 Indisponible.
 >
 > La couleur est recalculée automatiquement à chaque mise à jour du catalogue selon la dernière APK et les changements indiqués dans la Release.
 >
@@ -34,6 +34,10 @@
 ## 🟣 Projets en réflexion
 
 - **tikowikoFamilyGames** — projet en suspens, décision en cours sur la suite du développement.
+
+## 🟡 Tests développeur
+
+_Aucune application en test développeur actuellement._
 
 ## 🔥 Développement actuel
 
@@ -60,6 +64,7 @@ Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt**
 ## 🎨 Couleurs automatiques
 
 - 🟣 **Violet — En réflexion** : projet en suspens ; on décide s’il sera poursuivi, revu ou arrêté. Les APK sont masquées du public.
+- 🟡 **Jaune — Test développeur** : l’APK est testée par le développeur avant publication. Les joueurs ne peuvent pas encore la télécharger.
 - 🟠 **Orange — Correction active** : une correction est déclarée ou détectée. Toutes les Releases APK de l’application sont temporairement masquées du public.
 - 🔵 **Bleu — Développement actif** : une APK a été publiée ou mise à jour dans les 14 derniers jours, sans correction active. Les plus récentes sont affichées en premier.
 - 🟢 **Vert — Disponible / test** : l’application est disponible en version de test ; si elle est sur Google Play, le bouton Store est affiché.
