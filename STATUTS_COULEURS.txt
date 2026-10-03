@@ -5,8 +5,8 @@
 #
 # Il choisit d'abord l'application, puis le statut :
 #
-# 💙 Cœur bleu = Importé depuis Lovable / à vérifier
-#                  -> des traces Lovable sont présentes dans le dépôt.
+# 💙 Cœur bleu = Passé par Lovable / à vérifier
+#                  -> le projet est passé par Lovable ou contient des traces Lovable.
 #                  -> autonomie à vérifier avant publication publique.
 #                  -> APK publiques masquées pendant la vérification.
 #
