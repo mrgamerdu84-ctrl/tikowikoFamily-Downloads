@@ -183,7 +183,7 @@ def load_manual_statuses():
             app, color = line.split("|", 1)
             app = app.strip().casefold()
             color = color.strip().lower()
-            if app and color in {"purple", "yellow", "orange", "blue", "green", "gray", "red"}:
+            if app and color in {"purple", "cyan", "yellow", "orange", "blue", "green", "gray", "red"}:
                 selected[app] = color
     return selected
 
@@ -191,6 +191,7 @@ MANUAL_STATUSES = load_manual_statuses()
 
 MANUAL_STATUS_META = {
     "purple": ("🟣", "En réflexion", "Projet en suspens : décision en cours sur la poursuite ou non du développement.", "purple"),
+    "cyan": ("🩵", "Importé depuis Lovable / à vérifier", "Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome.", "cyan"),
     "yellow": ("🟡", "Test développeur", "Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique.", "yellow"),
     "orange": ("🟠", "Correction active", "Des corrections de bugs ou correctifs sont en cours.", "orange"),
     "blue": ("🔵", "Développement actif", "Développement maintenu actif manuellement par le créateur.", "blue"),
@@ -250,7 +251,7 @@ def automatic_status(repo_name, display_name, release, apk, bugfix, stable, stor
     # Un statut manuel choisi dans GitHub Actions est prioritaire.
     if manual in MANUAL_STATUS_META:
         icon, label, reason, key = MANUAL_STATUS_META[manual]
-        if age is not None and key not in ("purple", "yellow", "red"):
+        if age is not None and key not in ("purple", "cyan", "yellow", "red"):
             reason += f" Dernière mise à jour il y a {age} jour(s)."
         return icon, label, reason, key
 
@@ -423,7 +424,7 @@ for repo_name, display_name in apps.items():
     )
 
     # Orange, violet et rouge : aucune APK publique pendant ce statut.
-    sync_app_release_visibility(repo_name, color_key in ("orange", "purple", "yellow", "red"))
+    sync_app_release_visibility(repo_name, color_key in ("orange", "purple", "cyan", "yellow", "red"))
 
     ts = release_timestamp(release)
     base = {
@@ -467,6 +468,17 @@ for repo_name, display_name in apps.items():
             "size": "—",
             "download": "🟣 Indisponible · projet en réflexion",
             "details": "🤔 Projet en suspens",
+            "downloads": 0,
+            "ready": False,
+            "download_blocked": True,
+        })
+    elif color_key == "cyan":
+        rows.append({
+            **base,
+            "date": formatted_date(release.get("published_at") or release.get("updated_at")) if release else "—",
+            "size": "—",
+            "download": "🩵 Indisponible · projet Lovable à vérifier",
+            "details": "🔎 Vérification Lovable",
             "downloads": 0,
             "ready": False,
             "download_blocked": True,
@@ -517,7 +529,7 @@ for repo_name, display_name in apps.items():
         })
 
 # Mettre en avant : corrections, développement récent, Store, puis stable et indisponible.
-priority = {"purple": 0, "yellow": 1, "orange": 2, "blue": 3, "green": 4, "gray": 5, "red": 6}
+priority = {"cyan": 0, "purple": 1, "yellow": 2, "orange": 3, "blue": 4, "green": 5, "gray": 6, "red": 7}
 rows.sort(key=lambda item: (
     priority.get(item["color_key"], 9),
     -item["updated_ts"],
@@ -525,6 +537,7 @@ rows.sort(key=lambda item: (
 ))
 
 ready_count = sum(1 for row in rows if row["ready"])
+lovable_count = sum(1 for row in rows if row["color_key"] == "cyan")
 reflection_count = sum(1 for row in rows if row["color_key"] == "purple")
 developer_test_count = sum(1 for row in rows if row["color_key"] == "yellow")
 bugfix_count = sum(1 for row in rows if row["color_key"] == "orange")
@@ -553,11 +566,11 @@ catalog = [
     '',
     '> 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.',
     '',
-    f'**{len(rows)} projets référencés · {reflection_count} en réflexion · {developer_test_count} en test développeur · {active_count} en développement actuel · {bugfix_count} en correction · {store_count} sur Google Play Test · {unavailable_count} indisponibles · {download_total} téléchargements APK**',
+    f'**{len(rows)} projets référencés · {lovable_count} importés depuis Lovable à vérifier · {reflection_count} en réflexion · {developer_test_count} en test développeur · {active_count} en développement actuel · {bugfix_count} en correction · {store_count} sur Google Play Test · {unavailable_count} indisponibles · {download_total} téléchargements APK**',
     '',
     '> ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.',
     '>',
-    '> **Couleurs :** 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🟢 Disponible / test · ⚪ Stable · 🔴 Indisponible.',
+    '> **Couleurs :** 🩵 Importé depuis Lovable / à vérifier · 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🟢 Disponible / test · ⚪ Stable · 🔴 Indisponible.',
     '>',
     '> La couleur est recalculée automatiquement à chaque mise à jour du catalogue selon la dernière APK et les changements indiqués dans la Release.',
     '>',
@@ -566,6 +579,10 @@ catalog = [
     '> 🛠️ Les applications en **🟠 Correction active** restent visibles dans le catalogue, mais toutes leurs Releases APK sont temporairement masquées du public jusqu’à la fin de la correction.',
     '>',
     '> 🚧 Les applications sans APK sont encore en cours de développement.',
+    '',
+    '## 🩵 Projets importés depuis Lovable / à vérifier',
+    '',
+    *([f"- **{row['name']}** — traces Lovable détectées ; autonomie à vérifier." for row in rows if row["color_key"] == "cyan"] or ["_Aucun projet Lovable à vérifier actuellement._"]),
     '',
     '## 🟣 Projets en réflexion',
     '',
@@ -593,6 +610,7 @@ catalog = [
     '',
     '## 🎨 Couleurs automatiques',
     '',
+    '- 🩵 **Bleu clair — Importé depuis Lovable / à vérifier** : des traces Lovable sont présentes ; il faut vérifier l’autonomie du projet. Les APK sont masquées du public pendant la vérification.',
     '- 🟣 **Violet — En réflexion** : projet en suspens ; on décide s’il sera poursuivi, revu ou arrêté. Les APK sont masquées du public.',
     '- 🟡 **Jaune — Test développeur** : l’APK est testée par le développeur avant publication. Les joueurs ne peuvent pas encore la télécharger.',
     '- 🟠 **Orange — Correction active** : une correction est déclarée ou détectée. Toutes les Releases APK de l’application sont temporairement masquées du public.',
