@@ -17,7 +17,7 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**23 projets référencés · 7 importés depuis Lovable à vérifier · 4 en réflexion · 0 en test développeur · 2 en développement actuel · 1 en correction · 0 sur Google Play Test · 10 indisponibles · 0 téléchargements APK**
+**23 projets référencés · 8 importés depuis Lovable à vérifier · 4 en réflexion · 0 en test développeur · 2 en développement actuel · 1 en correction · 0 sur Google Play Test · 9 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -39,6 +39,7 @@
 - **Gleam Mine Adventure** — traces Lovable détectées ; autonomie à vérifier.
 - **La Jungle de l'Arcade** — traces Lovable détectées ; autonomie à vérifier.
 - **My Taxi World** — traces Lovable détectées ; autonomie à vérifier.
+- **Planète Sharky** — traces Lovable détectées ; autonomie à vérifier.
 - **Tikowiko City** — traces Lovable détectées ; autonomie à vérifier.
 
 ## 🟣 Projets en réflexion
@@ -92,6 +93,7 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **Gleam Mine Adventure** | 💙 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **La Jungle de l'Arcade** | 💙 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **My Taxi World** | 💙 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
+| 🎮 **Planète Sharky** | 💙 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **Tikowiko City** | 💙 Importé depuis Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **tikowikoFamilyGames** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 02/10/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **Jackpot Sucré Casino** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 22/09/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
@@ -102,7 +104,6 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Histoire pour Enfants** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **L'Attaque des Dieux** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Planète Sharky** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Snack Attack** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tapas Fiesta** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko Agenda Budgétaire** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
