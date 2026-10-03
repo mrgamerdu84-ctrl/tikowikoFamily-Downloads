@@ -4,16 +4,51 @@ on:
   workflow_dispatch:
     inputs:
       application:
-        description: "Nom du dépôt ou nom affiché de l'application"
+        description: "Choisis l'application"
         required: true
-        type: string
+        type: choice
+        options:
+          - tikowikoFamilyGames
+          - tikowikodelivery
+          - tiko-express
+          - tikowikocity
+          - tikowikocosystme
+          - TikowikoMusicV2
+          - TikowikoMusic
+          - jackpot-sucr-casino
+          - super-winner-de-la-fortune
+          - SmoothinCreams
+          - histoire-pour-enfants
+          - ilopolis
+          - tikoWiko-Anti-virus-
+          - tikowikointelligent-
+          - tikowiko-agenda-budg-taire
+          - tikoWiko-taxi-
+          - planete-sharky-game
+          - la-jungle-de-l-arcade
+          - l-attaque-des-dieux
+          - tapas-fiesta
+          - snack-attack-
+          - Game-Booster4K
+          - TikoWiko-Aviator
+          - tikowiko-security
+          - batterie-super-intelligente
+          - chicken-coop-charm
+          - clandestin-arcade-manager
+          - divertissement-zen-
+          - gang-de-serpent
+          - gleam-mine-adventure
+          - Grimoix-petit-dragon
+          - my-taxi-world-les-rue-sont-nous-bc60a008
+          - N-on-Jetons-
       couleur:
-        description: "Couleur / statut"
+        description: "Choisis le statut / la couleur"
         required: true
         default: purple
         type: choice
         options:
           - purple
+          - yellow
           - orange
           - blue
           - green
@@ -52,7 +87,7 @@ jobs:
           app = sys.argv[2].strip()
           color = sys.argv[3].strip().lower()
 
-          allowed = {"purple", "orange", "blue", "green", "gray", "red", "auto"}
+          allowed = {"purple", "yellow", "orange", "blue", "green", "gray", "red", "auto"}
           if color not in allowed:
               raise SystemExit(f"Couleur inconnue: {color}")
           if not app:
@@ -97,7 +132,17 @@ jobs:
           APP: ${{ inputs.application }}
           COLOR: ${{ inputs.couleur }}
         run: |
+          case "$COLOR" in
+            purple) LABEL="🟣 En réflexion" ;;
+            yellow) LABEL="🟡 Test développeur" ;;
+            orange) LABEL="🟠 Correction active" ;;
+            blue) LABEL="🔵 Développement actif" ;;
+            green) LABEL="🟢 Disponible / test" ;;
+            gray) LABEL="⚪ Stable pour le moment" ;;
+            red) LABEL="🔴 Indisponible" ;;
+            auto) LABEL="⚙️ Automatique" ;;
+          esac
           echo "### Statut mis à jour" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "**Application :** $APP" >> "$GITHUB_STEP_SUMMARY"
-          echo "**Couleur :** $COLOR" >> "$GITHUB_STEP_SUMMARY"
+          echo "**Statut :** $LABEL" >> "$GITHUB_STEP_SUMMARY"
