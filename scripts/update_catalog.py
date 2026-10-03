@@ -199,8 +199,19 @@ MANUAL_STATUS_META = {
     "red": ("🔴", "Pas disponible", "Application déclarée indisponible par le créateur.", "red"),
 }
 
+MANUAL_STATUS_ALIASES = {
+    "tikowikocitybulder": "tikowikocity",
+}
+
 def manual_status_for(repo_name, display_name):
-    return MANUAL_STATUSES.get(repo_name.casefold()) or MANUAL_STATUSES.get(display_name.casefold())
+    keys = [repo_name.casefold(), display_name.casefold()]
+    alias = MANUAL_STATUS_ALIASES.get(repo_name.casefold())
+    if alias:
+        keys.append(alias.casefold())
+    for key in keys:
+        if key in MANUAL_STATUSES:
+            return MANUAL_STATUSES[key]
+    return None
 
 def is_stable_selected(repo_name, display_name):
     return (
