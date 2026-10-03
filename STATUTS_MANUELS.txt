@@ -1,11 +1,10 @@
 # Statuts manuels choisis par le créateur
 # Format : application|couleur
-# Couleurs : purple, yellow, orange, blue, green, gray, red
+# Couleurs : cyan, purple, yellow, orange, blue, green, gray, red
 # Pour revenir au calcul automatique, supprime la ligne via le workflow.
 #
 # Projet actuellement mis en réflexion :
 tikowikoFamilyGames|purple
-tikowikocity|red
 TikowikoMusicV2|red
 ilopolis|red
 tikoWiko-Anti-virus-|red
@@ -14,9 +13,15 @@ tikowiko-agenda-budg-taire|red
 N-on-Jetons-|purple
 chicken-coop-charm|purple
 Grimoix-petit-dragon|purple
-gleam-mine-adventure|purple
 gang-de-serpent|purple
 divertissement-zen-|purple
 SmoothinCreams|purple
 super-winner-de-la-fortune|purple
 jackpot-sucr-casino|purple
+
+clandestin-arcade-manager|cyan
+gleam-mine-adventure|cyan
+la-jungle-de-l-arcade|cyan
+my-taxi-world-les-rue-sont-nous-bc60a008|cyan
+tikowikocity|cyan
+tikowikocosystme|cyan
