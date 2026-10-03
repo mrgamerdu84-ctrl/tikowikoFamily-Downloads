@@ -5,3 +5,4 @@
 #
 # Projet actuellement mis en réflexion :
 tikowikoFamilyGames|purple
+TikowikoMusicV2|yellow
