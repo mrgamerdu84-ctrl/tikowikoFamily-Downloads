@@ -17,11 +17,11 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**23 projets référencés · 5 en réflexion · 0 en test développeur · 3 en développement actuel · 2 en correction · 1 sur Google Play Test · 14 indisponibles · 0 téléchargements APK**
+**23 projets référencés · 0 importés depuis Lovable à vérifier · 5 en réflexion · 0 en test développeur · 3 en développement actuel · 2 en correction · 1 sur Google Play Test · 14 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
-> **Couleurs :** 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🟢 Disponible / test · ⚪ Stable · 🔴 Indisponible.
+> **Couleurs :** 🩵 Importé depuis Lovable / à vérifier · 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🟢 Disponible / test · ⚪ Stable · 🔴 Indisponible.
 >
 > La couleur est recalculée automatiquement à chaque mise à jour du catalogue selon la dernière APK et les changements indiqués dans la Release.
 >
@@ -30,6 +30,10 @@
 > 🛠️ Les applications en **🟠 Correction active** restent visibles dans le catalogue, mais toutes leurs Releases APK sont temporairement masquées du public jusqu’à la fin de la correction.
 >
 > 🚧 Les applications sans APK sont encore en cours de développement.
+
+## 🩵 Projets importés depuis Lovable / à vérifier
+
+_Aucun projet Lovable à vérifier actuellement._
 
 ## 🟣 Projets en réflexion
 
@@ -64,6 +68,7 @@ Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt**
 
 ## 🎨 Couleurs automatiques
 
+- 🩵 **Bleu clair — Importé depuis Lovable / à vérifier** : des traces Lovable sont présentes ; il faut vérifier l’autonomie du projet. Les APK sont masquées du public pendant la vérification.
 - 🟣 **Violet — En réflexion** : projet en suspens ; on décide s’il sera poursuivi, revu ou arrêté. Les APK sont masquées du public.
 - 🟡 **Jaune — Test développeur** : l’APK est testée par le développeur avant publication. Les joueurs ne peuvent pas encore la télécharger.
 - 🟠 **Orange — Correction active** : une correction est déclarée ou détectée. Toutes les Releases APK de l’application sont temporairement masquées du public.
