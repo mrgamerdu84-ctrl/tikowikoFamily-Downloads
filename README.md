@@ -17,7 +17,7 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 
-**23 projets référencés · 8 passés par Lovable à vérifier · 4 en réflexion · 0 en test développeur · 1 en développement actuel · 1 en correction · 0 sur Google Play Test · 10 indisponibles · 0 téléchargements APK**
+**15 projets référencés · 5 passés par Lovable à vérifier · 2 en réflexion · 0 en test développeur · 1 en développement actuel · 1 en correction · 0 sur Google Play Test · 7 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -35,19 +35,14 @@
 
 - **Ecosylune** — traces Lovable détectées ; autonomie à vérifier.
 - **tikowikocitybulder** — traces Lovable détectées ; autonomie à vérifier.
-- **Clandestin Arcade Manager** — traces Lovable détectées ; autonomie à vérifier.
-- **Gleam Mine Adventure** — traces Lovable détectées ; autonomie à vérifier.
 - **La Jungle de l'Arcade** — traces Lovable détectées ; autonomie à vérifier.
-- **My Taxi World** — traces Lovable détectées ; autonomie à vérifier.
 - **Planète Sharky** — traces Lovable détectées ; autonomie à vérifier.
 - **Tikowiko City** — traces Lovable détectées ; autonomie à vérifier.
 
 ## 🟣 Projets en réflexion
 
-- **tikowikoFamilyGames** — projet en suspens, décision en cours sur la suite du développement.
 - **Jackpot Sucré Casino** — projet en suspens, décision en cours sur la suite du développement.
 - **Grimoix Petit Dragon** — projet en suspens, décision en cours sur la suite du développement.
-- **N-on Jetons** — projet en suspens, décision en cours sur la suite du développement.
 
 ## 🟡 Tests développeur
 
@@ -88,16 +83,11 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 |---|---|---|---:|---:|---:|---|---|
 | 🎮 **Ecosylune** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 02/10/2026 | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **tikowikocitybulder** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 27/09/2026 | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **Clandestin Arcade Manager** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **Gleam Mine Adventure** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **La Jungle de l'Arcade** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **My Taxi World** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **Planète Sharky** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **Tikowiko City** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **tikowikoFamilyGames** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 02/10/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **Jackpot Sucré Casino** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 22/09/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **Grimoix Petit Dragon** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
-| 🎮 **N-on Jetons** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **tiko-express** | 🟠 Correction active | Des corrections de bugs ou correctifs sont en cours. Dernière mise à jour il y a 3 jour(s). | 30/09/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
 | 🎮 **Tikowikodelivery** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 03/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
@@ -105,10 +95,7 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **L'Attaque des Dieux** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Snack Attack** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tapas Fiesta** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Tikowiko Agenda Budgétaire** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **TikoWiko Aviator** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko Music** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Tikowiko Security** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 
 ## 📊 Statistiques
 
