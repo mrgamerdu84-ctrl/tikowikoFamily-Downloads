@@ -1,0 +1,7 @@
+# Statuts manuels choisis par le créateur
+# Format : application|couleur
+# Couleurs : purple, orange, blue, green, gray, red
+# Pour revenir au calcul automatique, supprime la ligne via le workflow.
+#
+# Projet actuellement mis en réflexion :
+tikowikoFamilyGames|purple
