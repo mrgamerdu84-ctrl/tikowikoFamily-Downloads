@@ -1,24 +1,35 @@
-# Statuts de couleurs automatiques
+# Statuts / couleurs du catalogue tikowikoFamily
 #
-# Le catalogue calcule maintenant la couleur automatiquement :
+# Le créateur peut choisir manuellement la couleur depuis :
+# GitHub > Actions > "Changer le statut d'une application" > Run workflow
 #
-# 🟠 Orange = correction de bugs active
-#              -> l'application reste visible mais ses Releases APK sont
-#                 temporairement masquées du public.
-#              -> les Releases passent en brouillon GitHub : les joueurs
-#                 ne peuvent pas les télécharger.
-#              -> le Créateur connecté à GitHub garde l'accès aux brouillons
-#                 et peut télécharger/tester la dernière APK depuis le résumé
-#                 du Build APK central.
-# 🔵 Bleu   = développement actif récent
-#              -> APK mise à jour dans les 14 derniers jours.
-# 🟢 Vert   = disponible sur Google Play en version de test
-#              -> bouton direct vers la fiche Google Play.
-# ⚪ Gris   = APK disponible, pas d'activité récente détectée
-# 🔴 Rouge  = aucune APK publique disponible
+# Il choisit d'abord l'application, puis le statut :
 #
-# Les applications orange et bleues les plus récemment mises à jour
-# sont mises en avant en haut du catalogue.
+# 🟣 Violet = En réflexion / projet en suspens
+#             -> on réfléchit à la suite : continuer, revoir ou arrêter le projet.
+#             -> APK publiques masquées.
 #
-# La raison exacte est affichée dans la colonne "Pourquoi cette couleur ?"
-# du catalogue README.
+# 🟡 Jaune  = Test développeur
+#             -> le développeur teste actuellement l'APK.
+#             -> APK publiques masquées, brouillons accessibles au créateur.
+#
+# 🟠 Orange = Correction active
+#             -> bugs ou correctifs en cours.
+#             -> APK publiques masquées.
+#
+# 🔵 Bleu   = Développement actif
+#             -> projet actuellement développé.
+#
+# 🟢 Vert   = Disponible / test
+#             -> APK de test disponible au public ou application sur Google Play Test.
+#
+# ⚪ Gris   = Stable pour le moment
+#             -> APK disponible, développement calme/stable.
+#
+# 🔴 Rouge  = Indisponible
+#             -> l'APK ne doit pas être proposée au public.
+#
+# ⚙️ Auto   = Retire le choix manuel et rend la main au calcul automatique.
+#
+# Les statuts 🟣 🟡 🟠 🔴 bloquent le téléchargement public.
+# Les statuts 🔵 🟢 ⚪ permettent une APK publique si une Release existe.
