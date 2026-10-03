@@ -1,10 +1,10 @@
-name: Changer le statut d'une application
+name: Changer le statut de plusieurs applications
 
 on:
   workflow_dispatch:
     inputs:
-      application:
-        description: "Choisis l'application"
+      application_1:
+        description: "Application 1 (obligatoire)"
         required: true
         type: choice
         options:
@@ -41,8 +41,328 @@ on:
           - Grimoix-petit-dragon
           - my-taxi-world-les-rue-sont-nous-bc60a008
           - N-on-Jetons-
+      application_2:
+        description: "Application 2 (facultatif)"
+        required: false
+        default: "— Aucune —"
+        type: choice
+        options:
+          - "— Aucune —"
+          - tikowikoFamilyGames
+          - tikowikodelivery
+          - tiko-express
+          - tikowikocity
+          - tikowikocosystme
+          - TikowikoMusicV2
+          - TikowikoMusic
+          - jackpot-sucr-casino
+          - super-winner-de-la-fortune
+          - SmoothinCreams
+          - histoire-pour-enfants
+          - ilopolis
+          - tikoWiko-Anti-virus-
+          - tikowikointelligent-
+          - tikowiko-agenda-budg-taire
+          - tikoWiko-taxi-
+          - planete-sharky-game
+          - la-jungle-de-l-arcade
+          - l-attaque-des-dieux
+          - tapas-fiesta
+          - snack-attack-
+          - Game-Booster4K
+          - TikoWiko-Aviator
+          - tikowiko-security
+          - batterie-super-intelligente
+          - chicken-coop-charm
+          - clandestin-arcade-manager
+          - divertissement-zen-
+          - gang-de-serpent
+          - gleam-mine-adventure
+          - Grimoix-petit-dragon
+          - my-taxi-world-les-rue-sont-nous-bc60a008
+          - N-on-Jetons-
+      application_3:
+        description: "Application 3 (facultatif)"
+        required: false
+        default: "— Aucune —"
+        type: choice
+        options:
+          - "— Aucune —"
+          - tikowikoFamilyGames
+          - tikowikodelivery
+          - tiko-express
+          - tikowikocity
+          - tikowikocosystme
+          - TikowikoMusicV2
+          - TikowikoMusic
+          - jackpot-sucr-casino
+          - super-winner-de-la-fortune
+          - SmoothinCreams
+          - histoire-pour-enfants
+          - ilopolis
+          - tikoWiko-Anti-virus-
+          - tikowikointelligent-
+          - tikowiko-agenda-budg-taire
+          - tikoWiko-taxi-
+          - planete-sharky-game
+          - la-jungle-de-l-arcade
+          - l-attaque-des-dieux
+          - tapas-fiesta
+          - snack-attack-
+          - Game-Booster4K
+          - TikoWiko-Aviator
+          - tikowiko-security
+          - batterie-super-intelligente
+          - chicken-coop-charm
+          - clandestin-arcade-manager
+          - divertissement-zen-
+          - gang-de-serpent
+          - gleam-mine-adventure
+          - Grimoix-petit-dragon
+          - my-taxi-world-les-rue-sont-nous-bc60a008
+          - N-on-Jetons-
+      application_4:
+        description: "Application 4 (facultatif)"
+        required: false
+        default: "— Aucune —"
+        type: choice
+        options:
+          - "— Aucune —"
+          - tikowikoFamilyGames
+          - tikowikodelivery
+          - tiko-express
+          - tikowikocity
+          - tikowikocosystme
+          - TikowikoMusicV2
+          - TikowikoMusic
+          - jackpot-sucr-casino
+          - super-winner-de-la-fortune
+          - SmoothinCreams
+          - histoire-pour-enfants
+          - ilopolis
+          - tikoWiko-Anti-virus-
+          - tikowikointelligent-
+          - tikowiko-agenda-budg-taire
+          - tikoWiko-taxi-
+          - planete-sharky-game
+          - la-jungle-de-l-arcade
+          - l-attaque-des-dieux
+          - tapas-fiesta
+          - snack-attack-
+          - Game-Booster4K
+          - TikoWiko-Aviator
+          - tikowiko-security
+          - batterie-super-intelligente
+          - chicken-coop-charm
+          - clandestin-arcade-manager
+          - divertissement-zen-
+          - gang-de-serpent
+          - gleam-mine-adventure
+          - Grimoix-petit-dragon
+          - my-taxi-world-les-rue-sont-nous-bc60a008
+          - N-on-Jetons-
+      application_5:
+        description: "Application 5 (facultatif)"
+        required: false
+        default: "— Aucune —"
+        type: choice
+        options:
+          - "— Aucune —"
+          - tikowikoFamilyGames
+          - tikowikodelivery
+          - tiko-express
+          - tikowikocity
+          - tikowikocosystme
+          - TikowikoMusicV2
+          - TikowikoMusic
+          - jackpot-sucr-casino
+          - super-winner-de-la-fortune
+          - SmoothinCreams
+          - histoire-pour-enfants
+          - ilopolis
+          - tikoWiko-Anti-virus-
+          - tikowikointelligent-
+          - tikowiko-agenda-budg-taire
+          - tikoWiko-taxi-
+          - planete-sharky-game
+          - la-jungle-de-l-arcade
+          - l-attaque-des-dieux
+          - tapas-fiesta
+          - snack-attack-
+          - Game-Booster4K
+          - TikoWiko-Aviator
+          - tikowiko-security
+          - batterie-super-intelligente
+          - chicken-coop-charm
+          - clandestin-arcade-manager
+          - divertissement-zen-
+          - gang-de-serpent
+          - gleam-mine-adventure
+          - Grimoix-petit-dragon
+          - my-taxi-world-les-rue-sont-nous-bc60a008
+          - N-on-Jetons-
+      application_6:
+        description: "Application 6 (facultatif)"
+        required: false
+        default: "— Aucune —"
+        type: choice
+        options:
+          - "— Aucune —"
+          - tikowikoFamilyGames
+          - tikowikodelivery
+          - tiko-express
+          - tikowikocity
+          - tikowikocosystme
+          - TikowikoMusicV2
+          - TikowikoMusic
+          - jackpot-sucr-casino
+          - super-winner-de-la-fortune
+          - SmoothinCreams
+          - histoire-pour-enfants
+          - ilopolis
+          - tikoWiko-Anti-virus-
+          - tikowikointelligent-
+          - tikowiko-agenda-budg-taire
+          - tikoWiko-taxi-
+          - planete-sharky-game
+          - la-jungle-de-l-arcade
+          - l-attaque-des-dieux
+          - tapas-fiesta
+          - snack-attack-
+          - Game-Booster4K
+          - TikoWiko-Aviator
+          - tikowiko-security
+          - batterie-super-intelligente
+          - chicken-coop-charm
+          - clandestin-arcade-manager
+          - divertissement-zen-
+          - gang-de-serpent
+          - gleam-mine-adventure
+          - Grimoix-petit-dragon
+          - my-taxi-world-les-rue-sont-nous-bc60a008
+          - N-on-Jetons-
+      application_7:
+        description: "Application 7 (facultatif)"
+        required: false
+        default: "— Aucune —"
+        type: choice
+        options:
+          - "— Aucune —"
+          - tikowikoFamilyGames
+          - tikowikodelivery
+          - tiko-express
+          - tikowikocity
+          - tikowikocosystme
+          - TikowikoMusicV2
+          - TikowikoMusic
+          - jackpot-sucr-casino
+          - super-winner-de-la-fortune
+          - SmoothinCreams
+          - histoire-pour-enfants
+          - ilopolis
+          - tikoWiko-Anti-virus-
+          - tikowikointelligent-
+          - tikowiko-agenda-budg-taire
+          - tikoWiko-taxi-
+          - planete-sharky-game
+          - la-jungle-de-l-arcade
+          - l-attaque-des-dieux
+          - tapas-fiesta
+          - snack-attack-
+          - Game-Booster4K
+          - TikoWiko-Aviator
+          - tikowiko-security
+          - batterie-super-intelligente
+          - chicken-coop-charm
+          - clandestin-arcade-manager
+          - divertissement-zen-
+          - gang-de-serpent
+          - gleam-mine-adventure
+          - Grimoix-petit-dragon
+          - my-taxi-world-les-rue-sont-nous-bc60a008
+          - N-on-Jetons-
+      application_8:
+        description: "Application 8 (facultatif)"
+        required: false
+        default: "— Aucune —"
+        type: choice
+        options:
+          - "— Aucune —"
+          - tikowikoFamilyGames
+          - tikowikodelivery
+          - tiko-express
+          - tikowikocity
+          - tikowikocosystme
+          - TikowikoMusicV2
+          - TikowikoMusic
+          - jackpot-sucr-casino
+          - super-winner-de-la-fortune
+          - SmoothinCreams
+          - histoire-pour-enfants
+          - ilopolis
+          - tikoWiko-Anti-virus-
+          - tikowikointelligent-
+          - tikowiko-agenda-budg-taire
+          - tikoWiko-taxi-
+          - planete-sharky-game
+          - la-jungle-de-l-arcade
+          - l-attaque-des-dieux
+          - tapas-fiesta
+          - snack-attack-
+          - Game-Booster4K
+          - TikoWiko-Aviator
+          - tikowiko-security
+          - batterie-super-intelligente
+          - chicken-coop-charm
+          - clandestin-arcade-manager
+          - divertissement-zen-
+          - gang-de-serpent
+          - gleam-mine-adventure
+          - Grimoix-petit-dragon
+          - my-taxi-world-les-rue-sont-nous-bc60a008
+          - N-on-Jetons-
+      application_9:
+        description: "Application 9 (facultatif)"
+        required: false
+        default: "— Aucune —"
+        type: choice
+        options:
+          - "— Aucune —"
+          - tikowikoFamilyGames
+          - tikowikodelivery
+          - tiko-express
+          - tikowikocity
+          - tikowikocosystme
+          - TikowikoMusicV2
+          - TikowikoMusic
+          - jackpot-sucr-casino
+          - super-winner-de-la-fortune
+          - SmoothinCreams
+          - histoire-pour-enfants
+          - ilopolis
+          - tikoWiko-Anti-virus-
+          - tikowikointelligent-
+          - tikowiko-agenda-budg-taire
+          - tikoWiko-taxi-
+          - planete-sharky-game
+          - la-jungle-de-l-arcade
+          - l-attaque-des-dieux
+          - tapas-fiesta
+          - snack-attack-
+          - Game-Booster4K
+          - TikoWiko-Aviator
+          - tikowiko-security
+          - batterie-super-intelligente
+          - chicken-coop-charm
+          - clandestin-arcade-manager
+          - divertissement-zen-
+          - gang-de-serpent
+          - gleam-mine-adventure
+          - Grimoix-petit-dragon
+          - my-taxi-world-les-rue-sont-nous-bc60a008
+          - N-on-Jetons-
       statut:
-        description: "Choisis la couleur / le statut"
+        description: "Choisis la couleur / le statut à appliquer à toutes"
         required: true
         default: "🟣 Violet — En réflexion"
         type: choice
@@ -69,9 +389,17 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Appliquer le statut choisi
+      - name: Appliquer le statut aux applications sélectionnées
         env:
-          APP: ${{ inputs.application }}
+          APP1: ${{ inputs.application_1 }}
+          APP2: ${{ inputs.application_2 }}
+          APP3: ${{ inputs.application_3 }}
+          APP4: ${{ inputs.application_4 }}
+          APP5: ${{ inputs.application_5 }}
+          APP6: ${{ inputs.application_6 }}
+          APP7: ${{ inputs.application_7 }}
+          APP8: ${{ inputs.application_8 }}
+          APP9: ${{ inputs.application_9 }}
           STATUT: ${{ inputs.statut }}
         shell: bash
         run: |
@@ -79,13 +407,13 @@ jobs:
           FILE="STATUTS_MANUELS.txt"
           touch "$FILE"
 
-          python3 - "$FILE" "$APP" "$STATUT" <<'PY'
+          python3 - "$FILE" "$STATUT" "$APP1" "$APP2" "$APP3" "$APP4" "$APP5" "$APP6" "$APP7" "$APP8" "$APP9" <<'PY'
           from pathlib import Path
           import sys
 
           path = Path(sys.argv[1])
-          app = sys.argv[2].strip()
-          statut = sys.argv[3].strip()
+          statut = sys.argv[2].strip()
+          apps = [a.strip() for a in sys.argv[3:] if a.strip() and a.strip() != "— Aucune —"]
 
           mapping = {
               "🟣 Violet — En réflexion": "purple",
@@ -101,10 +429,21 @@ jobs:
           color = mapping.get(statut)
           if not color:
               raise SystemExit(f"Statut inconnu: {statut}")
-          if not app:
-              raise SystemExit("Nom d'application vide")
+          if not apps:
+              raise SystemExit("Aucune application sélectionnée")
+
+          # Évite de traiter deux fois la même application.
+          unique = []
+          seen = set()
+          for app in apps:
+              key = app.casefold()
+              if key not in seen:
+                  seen.add(key)
+                  unique.append(app)
+          apps = unique
 
           lines = path.read_text(encoding="utf-8").splitlines()
+          selected = {a.casefold() for a in apps}
           kept = []
           for line in lines:
               raw = line.strip()
@@ -112,18 +451,19 @@ jobs:
                   kept.append(line)
                   continue
               current, _ = raw.split("|", 1)
-              if current.strip().casefold() != app.casefold():
+              if current.strip().casefold() not in selected:
                   kept.append(line)
 
           if color != "auto":
-              kept.append(f"{app}|{color}")
+              for app in apps:
+                  kept.append(f"{app}|{color}")
 
           path.write_text("\n".join(kept).rstrip() + "\n", encoding="utf-8")
+          print("Applications modifiées : " + ", ".join(apps))
           PY
 
       - name: Enregistrer le changement
         env:
-          APP: ${{ inputs.application }}
           STATUT: ${{ inputs.statut }}
         run: |
           set -e
@@ -135,15 +475,29 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add STATUTS_MANUELS.txt
-          git commit -m "Change le statut de $APP : $STATUT"
+          git commit -m "Change le statut de plusieurs applications : $STATUT"
           git push origin HEAD:main
 
       - name: Résumé
         env:
-          APP: ${{ inputs.application }}
+          APP1: ${{ inputs.application_1 }}
+          APP2: ${{ inputs.application_2 }}
+          APP3: ${{ inputs.application_3 }}
+          APP4: ${{ inputs.application_4 }}
+          APP5: ${{ inputs.application_5 }}
+          APP6: ${{ inputs.application_6 }}
+          APP7: ${{ inputs.application_7 }}
+          APP8: ${{ inputs.application_8 }}
+          APP9: ${{ inputs.application_9 }}
           STATUT: ${{ inputs.statut }}
         run: |
-          echo "### Statut mis à jour" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Statut groupé mis à jour" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "**Application :** $APP" >> "$GITHUB_STEP_SUMMARY"
           echo "**Statut :** $STATUT" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "**Applications sélectionnées :**" >> "$GITHUB_STEP_SUMMARY"
+          for APP in "$APP1" "$APP2" "$APP3" "$APP4" "$APP5" "$APP6" "$APP7" "$APP8" "$APP9"; do
+            [ -z "$APP" ] && continue
+            [ "$APP" = "— Aucune —" ] && continue
+            echo "- $APP" >> "$GITHUB_STEP_SUMMARY"
+          done
