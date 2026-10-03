@@ -26,3 +26,4 @@ my-taxi-world-les-rue-sont-nous-bc60a008|cyan
 tikowikocity|cyan
 tikowikocosystme|cyan
 planete-sharky-game|cyan
+tikowikodelivery|red
