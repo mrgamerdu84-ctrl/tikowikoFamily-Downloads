@@ -8,7 +8,6 @@ on:
         required: true
         type: choice
         options:
-          - tikowikoFamilyGames
           - tikowikodelivery
           - tiko-express
           - tikowikocity
@@ -16,31 +15,13 @@ on:
           - TikowikoMusicV2
           - TikowikoMusic
           - jackpot-sucr-casino
-          - super-winner-de-la-fortune
-          - SmoothinCreams
           - histoire-pour-enfants
-          - ilopolis
-          - tikoWiko-Anti-virus-
-          - tikowikointelligent-
-          - tikowiko-agenda-budg-taire
-          - tikoWiko-taxi-
           - planete-sharky-game
           - la-jungle-de-l-arcade
           - l-attaque-des-dieux
           - tapas-fiesta
           - snack-attack-
-          - Game-Booster4K
-          - TikoWiko-Aviator
-          - tikowiko-security
-          - batterie-super-intelligente
-          - chicken-coop-charm
-          - clandestin-arcade-manager
-          - divertissement-zen-
-          - gang-de-serpent
-          - gleam-mine-adventure
           - Grimoix-petit-dragon
-          - my-taxi-world-les-rue-sont-nous-bc60a008
-          - N-on-Jetons-
       application_2:
         description: "Application 2 (facultatif)"
         required: false
@@ -48,7 +29,6 @@ on:
         type: choice
         options:
           - "— Aucune —"
-          - tikowikoFamilyGames
           - tikowikodelivery
           - tiko-express
           - tikowikocity
@@ -56,31 +36,13 @@ on:
           - TikowikoMusicV2
           - TikowikoMusic
           - jackpot-sucr-casino
-          - super-winner-de-la-fortune
-          - SmoothinCreams
           - histoire-pour-enfants
-          - ilopolis
-          - tikoWiko-Anti-virus-
-          - tikowikointelligent-
-          - tikowiko-agenda-budg-taire
-          - tikoWiko-taxi-
           - planete-sharky-game
           - la-jungle-de-l-arcade
           - l-attaque-des-dieux
           - tapas-fiesta
           - snack-attack-
-          - Game-Booster4K
-          - TikoWiko-Aviator
-          - tikowiko-security
-          - batterie-super-intelligente
-          - chicken-coop-charm
-          - clandestin-arcade-manager
-          - divertissement-zen-
-          - gang-de-serpent
-          - gleam-mine-adventure
           - Grimoix-petit-dragon
-          - my-taxi-world-les-rue-sont-nous-bc60a008
-          - N-on-Jetons-
       application_3:
         description: "Application 3 (facultatif)"
         required: false
@@ -88,7 +50,6 @@ on:
         type: choice
         options:
           - "— Aucune —"
-          - tikowikoFamilyGames
           - tikowikodelivery
           - tiko-express
           - tikowikocity
@@ -96,31 +57,13 @@ on:
           - TikowikoMusicV2
           - TikowikoMusic
           - jackpot-sucr-casino
-          - super-winner-de-la-fortune
-          - SmoothinCreams
           - histoire-pour-enfants
-          - ilopolis
-          - tikoWiko-Anti-virus-
-          - tikowikointelligent-
-          - tikowiko-agenda-budg-taire
-          - tikoWiko-taxi-
           - planete-sharky-game
           - la-jungle-de-l-arcade
           - l-attaque-des-dieux
           - tapas-fiesta
           - snack-attack-
-          - Game-Booster4K
-          - TikoWiko-Aviator
-          - tikowiko-security
-          - batterie-super-intelligente
-          - chicken-coop-charm
-          - clandestin-arcade-manager
-          - divertissement-zen-
-          - gang-de-serpent
-          - gleam-mine-adventure
           - Grimoix-petit-dragon
-          - my-taxi-world-les-rue-sont-nous-bc60a008
-          - N-on-Jetons-
       application_4:
         description: "Application 4 (facultatif)"
         required: false
@@ -128,7 +71,6 @@ on:
         type: choice
         options:
           - "— Aucune —"
-          - tikowikoFamilyGames
           - tikowikodelivery
           - tiko-express
           - tikowikocity
@@ -136,31 +78,13 @@ on:
           - TikowikoMusicV2
           - TikowikoMusic
           - jackpot-sucr-casino
-          - super-winner-de-la-fortune
-          - SmoothinCreams
           - histoire-pour-enfants
-          - ilopolis
-          - tikoWiko-Anti-virus-
-          - tikowikointelligent-
-          - tikowiko-agenda-budg-taire
-          - tikoWiko-taxi-
           - planete-sharky-game
           - la-jungle-de-l-arcade
           - l-attaque-des-dieux
           - tapas-fiesta
           - snack-attack-
-          - Game-Booster4K
-          - TikoWiko-Aviator
-          - tikowiko-security
-          - batterie-super-intelligente
-          - chicken-coop-charm
-          - clandestin-arcade-manager
-          - divertissement-zen-
-          - gang-de-serpent
-          - gleam-mine-adventure
           - Grimoix-petit-dragon
-          - my-taxi-world-les-rue-sont-nous-bc60a008
-          - N-on-Jetons-
       application_5:
         description: "Application 5 (facultatif)"
         required: false
@@ -168,7 +92,6 @@ on:
         type: choice
         options:
           - "— Aucune —"
-          - tikowikoFamilyGames
           - tikowikodelivery
           - tiko-express
           - tikowikocity
@@ -176,31 +99,13 @@ on:
           - TikowikoMusicV2
           - TikowikoMusic
           - jackpot-sucr-casino
-          - super-winner-de-la-fortune
-          - SmoothinCreams
           - histoire-pour-enfants
-          - ilopolis
-          - tikoWiko-Anti-virus-
-          - tikowikointelligent-
-          - tikowiko-agenda-budg-taire
-          - tikoWiko-taxi-
           - planete-sharky-game
           - la-jungle-de-l-arcade
           - l-attaque-des-dieux
           - tapas-fiesta
           - snack-attack-
-          - Game-Booster4K
-          - TikoWiko-Aviator
-          - tikowiko-security
-          - batterie-super-intelligente
-          - chicken-coop-charm
-          - clandestin-arcade-manager
-          - divertissement-zen-
-          - gang-de-serpent
-          - gleam-mine-adventure
           - Grimoix-petit-dragon
-          - my-taxi-world-les-rue-sont-nous-bc60a008
-          - N-on-Jetons-
       application_6:
         description: "Application 6 (facultatif)"
         required: false
@@ -208,7 +113,6 @@ on:
         type: choice
         options:
           - "— Aucune —"
-          - tikowikoFamilyGames
           - tikowikodelivery
           - tiko-express
           - tikowikocity
@@ -216,31 +120,13 @@ on:
           - TikowikoMusicV2
           - TikowikoMusic
           - jackpot-sucr-casino
-          - super-winner-de-la-fortune
-          - SmoothinCreams
           - histoire-pour-enfants
-          - ilopolis
-          - tikoWiko-Anti-virus-
-          - tikowikointelligent-
-          - tikowiko-agenda-budg-taire
-          - tikoWiko-taxi-
           - planete-sharky-game
           - la-jungle-de-l-arcade
           - l-attaque-des-dieux
           - tapas-fiesta
           - snack-attack-
-          - Game-Booster4K
-          - TikoWiko-Aviator
-          - tikowiko-security
-          - batterie-super-intelligente
-          - chicken-coop-charm
-          - clandestin-arcade-manager
-          - divertissement-zen-
-          - gang-de-serpent
-          - gleam-mine-adventure
           - Grimoix-petit-dragon
-          - my-taxi-world-les-rue-sont-nous-bc60a008
-          - N-on-Jetons-
       application_7:
         description: "Application 7 (facultatif)"
         required: false
@@ -248,7 +134,6 @@ on:
         type: choice
         options:
           - "— Aucune —"
-          - tikowikoFamilyGames
           - tikowikodelivery
           - tiko-express
           - tikowikocity
@@ -256,31 +141,13 @@ on:
           - TikowikoMusicV2
           - TikowikoMusic
           - jackpot-sucr-casino
-          - super-winner-de-la-fortune
-          - SmoothinCreams
           - histoire-pour-enfants
-          - ilopolis
-          - tikoWiko-Anti-virus-
-          - tikowikointelligent-
-          - tikowiko-agenda-budg-taire
-          - tikoWiko-taxi-
           - planete-sharky-game
           - la-jungle-de-l-arcade
           - l-attaque-des-dieux
           - tapas-fiesta
           - snack-attack-
-          - Game-Booster4K
-          - TikoWiko-Aviator
-          - tikowiko-security
-          - batterie-super-intelligente
-          - chicken-coop-charm
-          - clandestin-arcade-manager
-          - divertissement-zen-
-          - gang-de-serpent
-          - gleam-mine-adventure
           - Grimoix-petit-dragon
-          - my-taxi-world-les-rue-sont-nous-bc60a008
-          - N-on-Jetons-
       application_8:
         description: "Application 8 (facultatif)"
         required: false
@@ -288,7 +155,6 @@ on:
         type: choice
         options:
           - "— Aucune —"
-          - tikowikoFamilyGames
           - tikowikodelivery
           - tiko-express
           - tikowikocity
@@ -296,31 +162,13 @@ on:
           - TikowikoMusicV2
           - TikowikoMusic
           - jackpot-sucr-casino
-          - super-winner-de-la-fortune
-          - SmoothinCreams
           - histoire-pour-enfants
-          - ilopolis
-          - tikoWiko-Anti-virus-
-          - tikowikointelligent-
-          - tikowiko-agenda-budg-taire
-          - tikoWiko-taxi-
           - planete-sharky-game
           - la-jungle-de-l-arcade
           - l-attaque-des-dieux
           - tapas-fiesta
           - snack-attack-
-          - Game-Booster4K
-          - TikoWiko-Aviator
-          - tikowiko-security
-          - batterie-super-intelligente
-          - chicken-coop-charm
-          - clandestin-arcade-manager
-          - divertissement-zen-
-          - gang-de-serpent
-          - gleam-mine-adventure
           - Grimoix-petit-dragon
-          - my-taxi-world-les-rue-sont-nous-bc60a008
-          - N-on-Jetons-
       application_9:
         description: "Application 9 (facultatif)"
         required: false
@@ -328,7 +176,6 @@ on:
         type: choice
         options:
           - "— Aucune —"
-          - tikowikoFamilyGames
           - tikowikodelivery
           - tiko-express
           - tikowikocity
@@ -336,31 +183,13 @@ on:
           - TikowikoMusicV2
           - TikowikoMusic
           - jackpot-sucr-casino
-          - super-winner-de-la-fortune
-          - SmoothinCreams
           - histoire-pour-enfants
-          - ilopolis
-          - tikoWiko-Anti-virus-
-          - tikowikointelligent-
-          - tikowiko-agenda-budg-taire
-          - tikoWiko-taxi-
           - planete-sharky-game
           - la-jungle-de-l-arcade
           - l-attaque-des-dieux
           - tapas-fiesta
           - snack-attack-
-          - Game-Booster4K
-          - TikoWiko-Aviator
-          - tikowiko-security
-          - batterie-super-intelligente
-          - chicken-coop-charm
-          - clandestin-arcade-manager
-          - divertissement-zen-
-          - gang-de-serpent
-          - gleam-mine-adventure
           - Grimoix-petit-dragon
-          - my-taxi-world-les-rue-sont-nous-bc60a008
-          - N-on-Jetons-
       statut:
         description: "Choisis la couleur / le statut à appliquer à toutes"
         required: true
@@ -434,7 +263,6 @@ jobs:
           if not apps:
               raise SystemExit("Aucune application sélectionnée")
 
-          # Évite de traiter deux fois la même application.
           unique = []
           seen = set()
           for app in apps:
