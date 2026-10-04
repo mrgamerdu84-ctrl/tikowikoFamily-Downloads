@@ -33,9 +33,9 @@
 
 ## 💙 Projets passés par Lovable / à vérifier
 
+- **La Jungle de l'Arcade** — traces Lovable détectées ; autonomie à vérifier.
 - **Ecosylune** — traces Lovable détectées ; autonomie à vérifier.
 - **tikowikocitybulder** — traces Lovable détectées ; autonomie à vérifier.
-- **La Jungle de l'Arcade** — traces Lovable détectées ; autonomie à vérifier.
 - **Tikowiko City** — traces Lovable détectées ; autonomie à vérifier.
 
 ## 🟣 Projets en réflexion
@@ -87,9 +87,9 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
+| 🎮 **La Jungle de l'Arcade** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 04/10/2026 | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **Ecosylune** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 02/10/2026 | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **tikowikocitybulder** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 27/09/2026 | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
-| 🎮 **La Jungle de l'Arcade** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **Tikowiko City** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | — | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **Tikowikodelivery** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 04/10/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **tiko-express** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 30/09/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
