@@ -566,7 +566,7 @@ catalog = [
     '',
     '> 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.',
     '>',
-    '> 🆓 **Tous les jeux et applications proposés ici sont totalement gratuits : sans publicité et sans achat intégré.** Aucun paiement n’est nécessaire pour jouer ou utiliser les applications.',
+    '> 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.',
     '',
     f'**{len(rows)} projets référencés · {lovable_count} passés par Lovable à vérifier · {reflection_count} en réflexion · {developer_test_count} en test développeur · {active_count} en développement actuel · {bugfix_count} en correction · {store_count} sur Google Play Test · {unavailable_count} indisponibles · {download_total} téléchargements APK**',
     '',
