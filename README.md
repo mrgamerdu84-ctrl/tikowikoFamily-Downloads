@@ -17,7 +17,7 @@
 
 > 🔒 **Le code source n’est pas public.** Les projets restent dans des dépôts privés. Ce dépôt public sert de vitrine et de page officielle de téléchargement des APK de test.
 >
-> 🆓 **Tous les jeux et applications proposés ici sont totalement gratuits : sans publicité et sans achat intégré.** Aucun paiement n’est nécessaire pour jouer ou utiliser les applications.
+> 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.
 
 **15 projets référencés · 4 passés par Lovable à vérifier · 0 en réflexion · 9 en test développeur · 0 en développement actuel · 0 en correction · 0 sur Google Play Test · 2 indisponibles · 0 téléchargements APK**
 
