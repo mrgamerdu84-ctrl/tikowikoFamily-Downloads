@@ -5,15 +5,16 @@
 #
 
 la-jungle-de-l-arcade|cyan
-tikowikocity|cyan
-tikowikocosystme|cyan
 planete-sharky-game|yellow
 snack-attack-|yellow
-l-attaque-des-dieux|yellow
 histoire-pour-enfants|yellow
 jackpot-sucr-casino|yellow
 tapas-fiesta|yellow
-Grimoix-petit-dragon|yellow
 TikowikoMusicV2|red
 tikowikodelivery|red
-tiko-express|red
+tiko-express|purple
+tikowikocity|purple
+tikowikocosystme|purple
+TikowikoMusic|purple
+l-attaque-des-dieux|purple
+Grimoix-petit-dragon|purple
