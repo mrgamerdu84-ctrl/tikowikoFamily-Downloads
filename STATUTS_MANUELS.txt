@@ -5,17 +5,17 @@
 #
 
 histoire-pour-enfants|yellow
-jackpot-sucr-casino|yellow
-pousseville|blue
-tikowikodelivery|blue
 la-jungle-de-l-arcade|blue
-snack-attack-|blue
 TikowikoMusicV2|red
 TikowikoMusic|red
 planete-sharky-game|red
-Grimoix-petit-dragon|red
-tiko-express|red
-l-attaque-des-dieux|red
 tikowikocity|red
-tikowikocosystme|red
-tapas-fiesta|red
+tiko-express|yellow
+tikowikodelivery|yellow
+pousseville|yellow
+tikowikocosystme|yellow
+jackpot-sucr-casino|yellow
+l-attaque-des-dieux|yellow
+tapas-fiesta|yellow
+snack-attack-|yellow
+Grimoix-petit-dragon|yellow
