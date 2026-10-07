@@ -39,13 +39,13 @@
 
 ## 🟣 Projets en réflexion
 
+- **Tikowiko Music** — projet en suspens, décision en cours sur la suite du développement.
 - **Ecosylune** — projet en suspens, décision en cours sur la suite du développement.
 - **tiko-express** — projet en suspens, décision en cours sur la suite du développement.
 - **tikowikocitybulder** — projet en suspens, décision en cours sur la suite du développement.
 - **Grimoix Petit Dragon** — projet en suspens, décision en cours sur la suite du développement.
 - **L'Attaque des Dieux** — projet en suspens, décision en cours sur la suite du développement.
 - **Tikowiko City** — projet en suspens, décision en cours sur la suite du développement.
-- **Tikowiko Music** — projet en suspens, décision en cours sur la suite du développement.
 
 ## 🟡 Tests développeur
 
@@ -90,13 +90,13 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
 | 🎮 **La Jungle de l'Arcade** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 04/10/2026 | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
+| 🎮 **Tikowiko Music** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 07/10/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **Ecosylune** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 02/10/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **tiko-express** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 30/09/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **tikowikocitybulder** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 27/09/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **Grimoix Petit Dragon** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **L'Attaque des Dieux** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **Tikowiko City** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
-| 🎮 **Tikowiko Music** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **pousseville** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 07/10/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Jackpot Sucré Casino** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 22/09/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Histoire pour Enfants** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
