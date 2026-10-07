@@ -19,7 +19,7 @@
 >
 > 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.
 
-**18 projets référencés · 1 passés par Lovable à vérifier · 7 en réflexion · 6 en test développeur · 0 en développement actuel · 0 en correction · 0 sur Google Play Test · 4 indisponibles · 0 téléchargements APK**
+**18 projets référencés · 0 passés par Lovable à vérifier · 7 en réflexion · 3 en test développeur · 5 en développement actuel · 0 en correction · 0 sur Google Play Test · 3 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -35,7 +35,7 @@
 
 ## 💙 Projets passés par Lovable / à vérifier
 
-- **La Jungle de l'Arcade** — traces Lovable détectées ; autonomie à vérifier.
+_Aucun projet passé par Lovable à vérifier actuellement._
 
 ## 🟣 Projets en réflexion
 
@@ -49,16 +49,17 @@
 
 ## 🟡 Tests développeur
 
-- **pousseville** — test en cours par le développeur ; téléchargement public temporairement bloqué.
 - **Jackpot Sucré Casino** — test en cours par le développeur ; téléchargement public temporairement bloqué.
 - **Histoire pour Enfants** — test en cours par le développeur ; téléchargement public temporairement bloqué.
 - **Planète Sharky** — test en cours par le développeur ; téléchargement public temporairement bloqué.
-- **Snack Attack** — test en cours par le développeur ; téléchargement public temporairement bloqué.
-- **Tapas Fiesta** — test en cours par le développeur ; téléchargement public temporairement bloqué.
 
 ## 🔥 Développement actuel
 
-_Aucun développement récent détecté._
+- 🔵 Développement actif **pousseville** · mise à jour 07/10/2026
+- 🔵 Développement actif **Tikowikodelivery** · mise à jour 07/10/2026
+- 🔵 Développement actif **La Jungle de l'Arcade** · mise à jour 07/10/2026
+- 🔵 Développement actif **Snack Attack** · mise à jour —
+- 🔵 Développement actif **Tapas Fiesta** · mise à jour —
 
 Les applications les plus récemment mises à jour apparaissent en premier dans le catalogue.
 
@@ -89,7 +90,6 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
-| 🎮 **La Jungle de l'Arcade** | 💙 Passé par Lovable / à vérifier | Ce projet contient des traces Lovable confirmées. Il doit être vérifié avant d’être considéré comme totalement autonome. | 04/10/2026 | — | 0 | 💙 Indisponible · projet passé par Lovable à vérifier | 🔎 Vérification Lovable |
 | 🎮 **Tikowiko Music** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 07/10/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **Ecosylune** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 02/10/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **tiko-express** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 30/09/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
@@ -97,13 +97,14 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **Grimoix Petit Dragon** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **L'Attaque des Dieux** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **Tikowiko City** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
-| 🎮 **pousseville** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 07/10/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Jackpot Sucré Casino** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 22/09/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Histoire pour Enfants** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Planète Sharky** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
-| 🎮 **Snack Attack** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
-| 🎮 **Tapas Fiesta** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
-| 🎮 **Tikowikodelivery** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 07/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **pousseville** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. Dernière mise à jour il y a 0 jour(s). | 07/10/2026 | 13.0 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/untagged-30fae7ad2c6c7ea4c54b/pousseville-v242-20261007-1528.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/pousseville-latest) |
+| 🎮 **Tikowikodelivery** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. Dernière mise à jour il y a 0 jour(s). | 07/10/2026 | 25.2 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/untagged-7c8c49dfbb0ace22bad0/Tikowikodelivery-v240-20261007-1451.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikodelivery-latest) |
+| 🎮 **La Jungle de l'Arcade** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. Dernière mise à jour il y a 2 jour(s). | 07/10/2026 | 89.5 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/untagged-82bd4f2e5a767459ebfa/la-jungle-de-l-arcade-v188-20261004-2101.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
+| 🎮 **Snack Attack** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. | — | — | 0 | ⏳ APK pas encore publié | — |
+| 🎮 **Tapas Fiesta** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **SmoothinCreams** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Super Winner de la Fortune** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
