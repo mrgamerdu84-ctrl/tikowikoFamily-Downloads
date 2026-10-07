@@ -19,7 +19,7 @@
 >
 > 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.
 
-**18 projets référencés · 0 passés par Lovable à vérifier · 2 en réflexion · 2 en test développeur · 5 en développement actuel · 0 en correction · 0 sur Google Play Test · 9 indisponibles · 0 téléchargements APK**
+**18 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 2 en test développeur · 4 en développement actuel · 0 en correction · 0 sur Google Play Test · 12 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -39,8 +39,7 @@ _Aucun projet passé par Lovable à vérifier actuellement._
 
 ## 🟣 Projets en réflexion
 
-- **tikowikocitybulder** — projet en suspens, décision en cours sur la suite du développement.
-- **Tikowiko City** — projet en suspens, décision en cours sur la suite du développement.
+_Aucun projet en réflexion actuellement._
 
 ## 🟡 Tests développeur
 
@@ -53,7 +52,6 @@ _Aucun projet passé par Lovable à vérifier actuellement._
 - 🔵 Développement actif **Tikowikodelivery** · mise à jour 07/10/2026
 - 🔵 Développement actif **La Jungle de l'Arcade** · mise à jour 07/10/2026
 - 🔵 Développement actif **Snack Attack** · mise à jour —
-- 🔵 Développement actif **Tapas Fiesta** · mise à jour —
 
 Les applications les plus récemment mises à jour apparaissent en premier dans le catalogue.
 
@@ -84,24 +82,24 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
-| 🎮 **tikowikocitybulder** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | 27/09/2026 | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
-| 🎮 **Tikowiko City** | 🟣 En réflexion | Projet en suspens : décision en cours sur la poursuite ou non du développement. | — | — | 0 | 🟣 Indisponible · projet en réflexion | 🤔 Projet en suspens |
 | 🎮 **Jackpot Sucré Casino** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 22/09/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Histoire pour Enfants** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **pousseville** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. Dernière mise à jour il y a 0 jour(s). | 07/10/2026 | 13.0 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/pousseville-latest/pousseville-v242-20261007-1528.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/pousseville-latest) |
 | 🎮 **Tikowikodelivery** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. Dernière mise à jour il y a 0 jour(s). | 07/10/2026 | 25.2 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikodelivery-latest/Tikowikodelivery-v240-20261007-1451.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikodelivery-latest) |
 | 🎮 **La Jungle de l'Arcade** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. Dernière mise à jour il y a 0 jour(s). | 07/10/2026 | 89.5 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/la-jungle-de-l-arcade-latest/la-jungle-de-l-arcade-v188-20261004-2101.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
 | 🎮 **Snack Attack** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. | — | — | 0 | ⏳ APK pas encore publié | — |
-| 🎮 **Tapas Fiesta** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. | — | — | 0 | ⏳ APK pas encore publié | — |
 | 🎮 **Tikowiko Music** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 07/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Ecosylune** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 02/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **tiko-express** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 30/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **tikowikocitybulder** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 27/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Grimoix Petit Dragon** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **L'Attaque des Dieux** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Planète Sharky** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **SmoothinCreams** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Super Winner de la Fortune** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tapas Fiesta** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tikowiko City** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 
 ## 📊 Statistiques
 

@@ -6,16 +6,16 @@
 
 histoire-pour-enfants|yellow
 jackpot-sucr-casino|yellow
-tikowikocity|purple
 pousseville|blue
 tikowikodelivery|blue
 la-jungle-de-l-arcade|blue
 snack-attack-|blue
-tapas-fiesta|blue
 TikowikoMusicV2|red
 TikowikoMusic|red
-tikowikocosystme|red
 planete-sharky-game|red
 Grimoix-petit-dragon|red
 tiko-express|red
 l-attaque-des-dieux|red
+tikowikocity|red
+tikowikocosystme|red
+tapas-fiesta|red
