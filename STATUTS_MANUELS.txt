@@ -4,18 +4,18 @@
 # Pour revenir au calcul automatique, supprime la ligne via le workflow.
 #
 
-planete-sharky-game|yellow
 histoire-pour-enfants|yellow
 jackpot-sucr-casino|yellow
-TikowikoMusicV2|red
-tiko-express|purple
 tikowikocity|purple
-tikowikocosystme|purple
-TikowikoMusic|purple
-l-attaque-des-dieux|purple
-Grimoix-petit-dragon|purple
 pousseville|blue
 tikowikodelivery|blue
 la-jungle-de-l-arcade|blue
 snack-attack-|blue
 tapas-fiesta|blue
+TikowikoMusicV2|red
+TikowikoMusic|red
+tikowikocosystme|red
+planete-sharky-game|red
+Grimoix-petit-dragon|red
+tiko-express|red
+l-attaque-des-dieux|red
