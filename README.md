@@ -56,7 +56,7 @@ _Aucun projet en réflexion actuellement._
 
 ## 🔥 Développement actuel
 
-- 🟠 Correction active **la-petite-boulangerie** · mise à jour 11/10/2026
+- 🟠 Correction active **la-petite-boulangerie** · mise à jour 12/10/2026
 - 🔵 Développement actif **La Jungle de l'Arcade** · mise à jour 07/10/2026
 
 Les applications les plus récemment mises à jour apparaissent en premier dans le catalogue.
@@ -98,7 +98,7 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **L'Attaque des Dieux** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Snack Attack** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Tapas Fiesta** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
-| 🎮 **la-petite-boulangerie** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 0 jour(s). | 11/10/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
+| 🎮 **la-petite-boulangerie** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 0 jour(s). | 12/10/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
 | 🎮 **La Jungle de l'Arcade** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. Dernière mise à jour il y a 4 jour(s). | 07/10/2026 | 89.5 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/la-jungle-de-l-arcade-latest/la-jungle-de-l-arcade-v188-20261004-2101.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
 | 🎮 **Tikowiko Music** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 07/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
