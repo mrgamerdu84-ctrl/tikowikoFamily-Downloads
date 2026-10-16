@@ -19,7 +19,7 @@
 >
 > 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.
 
-**22 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 10 en test développeur · 4 en développement actuel · 0 en correction · 0 sur Google Play Test · 8 indisponibles · 0 téléchargements APK**
+**22 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 10 en test développeur · 5 en développement actuel · 0 en correction · 0 sur Google Play Test · 7 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -56,6 +56,7 @@ _Aucun projet en réflexion actuellement._
 
 ## 🔥 Développement actuel
 
+- 🔵 Développement actif **ProxyVpn** · mise à jour 16/10/2026
 - 🔵 Développement actif **TikowikoMusicV3** · mise à jour 16/10/2026
 - 🔵 Développement actif **la-petite-boulangerie** · mise à jour 13/10/2026
 - 🔵 Développement actif **la-petite-boulangerie** · mise à jour 12/10/2026
@@ -100,6 +101,7 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **L'Attaque des Dieux** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Snack Attack** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Tapas Fiesta** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
+| 🎮 **ProxyVpn** | 🔵 Développement actif | APK mise à jour récemment (0 jour(s)) : développement actuel détecté. | 16/10/2026 | 786.9 Ko | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/proxyvpn-latest/ProxYvpn-v1-20261016-1016.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/proxyvpn-latest) |
 | 🎮 **TikowikoMusicV3** | 🔵 Développement actif | APK mise à jour récemment (0 jour(s)) : développement actuel détecté. | 16/10/2026 | 4.0 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikomusicv3-latest/TikowikoMusicV3-v8-20261016-0959.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikomusicv3-latest) |
 | 🎮 **la-petite-boulangerie** | 🔵 Développement actif | APK mise à jour récemment (2 jour(s)) : développement actuel détecté. | 13/10/2026 | 7.8 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/la-petite-boulangerie-latest/la-petite-boulangerie-v262-20261013-1645.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-petite-boulangerie-latest) |
 | 🎮 **la-petite-boulangerie** | 🔵 Développement actif | APK mise à jour récemment (3 jour(s)) : développement actuel détecté. | 12/10/2026 | 10.0 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/la-petite-boulangerie-refonte-latest/la-petite-boulangerie-refonte-v258-20261012-1059.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-petite-boulangerie-refonte-latest) |
@@ -108,7 +110,6 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **tikowikocitybulder** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 27/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Planète Sharky** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **ProxyVpn** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **SmoothinCreams** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Super Winner de la Fortune** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko City** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
