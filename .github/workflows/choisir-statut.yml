@@ -23,6 +23,7 @@ on:
           - tapas-fiesta
           - snack-attack-
           - Grimoix-petit-dragon
+          - ProxYvpn
       application_2:
         description: "Application 2 (facultatif)"
         required: false
@@ -45,6 +46,7 @@ on:
           - tapas-fiesta
           - snack-attack-
           - Grimoix-petit-dragon
+          - ProxYvpn
       application_3:
         description: "Application 3 (facultatif)"
         required: false
@@ -67,6 +69,7 @@ on:
           - tapas-fiesta
           - snack-attack-
           - Grimoix-petit-dragon
+          - ProxYvpn
       application_4:
         description: "Application 4 (facultatif)"
         required: false
@@ -89,6 +92,7 @@ on:
           - tapas-fiesta
           - snack-attack-
           - Grimoix-petit-dragon
+          - ProxYvpn
       application_5:
         description: "Application 5 (facultatif)"
         required: false
@@ -111,6 +115,7 @@ on:
           - tapas-fiesta
           - snack-attack-
           - Grimoix-petit-dragon
+          - ProxYvpn
       application_6:
         description: "Application 6 (facultatif)"
         required: false
@@ -133,6 +138,7 @@ on:
           - tapas-fiesta
           - snack-attack-
           - Grimoix-petit-dragon
+          - ProxYvpn
       application_7:
         description: "Application 7 (facultatif)"
         required: false
@@ -155,6 +161,7 @@ on:
           - tapas-fiesta
           - snack-attack-
           - Grimoix-petit-dragon
+          - ProxYvpn
       application_8:
         description: "Application 8 (facultatif)"
         required: false
@@ -177,6 +184,7 @@ on:
           - tapas-fiesta
           - snack-attack-
           - Grimoix-petit-dragon
+          - ProxYvpn
       application_9:
         description: "Application 9 (facultatif)"
         required: false
@@ -199,6 +207,7 @@ on:
           - tapas-fiesta
           - snack-attack-
           - Grimoix-petit-dragon
+          - ProxYvpn
       statut:
         description: "Choisis la couleur / le statut à appliquer à toutes"
         required: true

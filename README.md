@@ -19,7 +19,7 @@
 >
 > 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.
 
-**21 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 10 en test développeur · 4 en développement actuel · 0 en correction · 0 sur Google Play Test · 7 indisponibles · 0 téléchargements APK**
+**22 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 10 en test développeur · 4 en développement actuel · 0 en correction · 0 sur Google Play Test · 8 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -110,6 +110,7 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **Planète Sharky** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **SmoothinCreams** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Super Winner de la Fortune** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **ProxyVpn** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko City** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 
 ## 📊 Statistiques

@@ -42,6 +42,7 @@ KNOWN_APPS = {
     "my-taxi-world-les-rue-sont-nous-bc60a008": "My Taxi World",
     "N-on-Jetons-": "N-on Jetons",
     "planete-sharky-game": "Planète Sharky",
+    "ProxYvpn": "ProxyVpn",
     "SmoothinCreams": "SmoothinCreams",
     "snack-attack-": "Snack Attack",
     "super-winner-de-la-fortune": "Super Winner de la Fortune",
