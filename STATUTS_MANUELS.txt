@@ -12,7 +12,7 @@ tikowikocity|red
 pousseville|red
 tikowikodelivery|red
 tiko-express|red
-TikowikoMusicV3|red
+TikowikoMusicV3|green
 super-winner-de-la-fortune|red
 histoire-pour-enfants|red
 planete-sharky-game|red
