@@ -243,6 +243,7 @@ on:
           - "🟡 Jaune — Test développeur"
           - "🟠 Orange — Correction active"
           - "🔵 Bleu — Développement actif"
+          - "🩷 Rose — Disponible uniquement sur GitHub"
           - "🟢 Vert — Disponible / test"
           - "⚪ Gris — Stable pour le moment"
           - "🔴 Rouge — Indisponible"
@@ -299,6 +300,7 @@ jobs:
               "🟡 Jaune — Test développeur": "yellow",
               "🟠 Orange — Correction active": "orange",
               "🔵 Bleu — Développement actif": "blue",
+              "🩷 Rose — Disponible uniquement sur GitHub": "pink",
               "🟢 Vert — Disponible / test": "green",
               "⚪ Gris — Stable pour le moment": "gray",
               "🔴 Rouge — Indisponible": "red",

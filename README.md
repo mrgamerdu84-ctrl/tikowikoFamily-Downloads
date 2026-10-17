@@ -19,11 +19,11 @@
 >
 > 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.
 
-**21 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 0 en test développeur · 1 en développement actuel · 0 en correction · 0 sur Google Play Test · 19 indisponibles · 0 téléchargements APK**
+**21 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 0 en test développeur · 1 en développement actuel · 0 en correction · 0 sur Google Play Test · 1 disponibles uniquement sur GitHub · 19 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
-> **Couleurs :** 💙 Passé par Lovable / à vérifier · 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🟢 Disponible / test · ⚪ Stable · 🔴 Indisponible.
+> **Couleurs :** 💙 Passé par Lovable / à vérifier · 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🩷 GitHub uniquement · 🟢 Google Play / test · ⚪ Stable · 🔴 Indisponible.
 >
 > Les nouveaux jeux sont 🔴 non disponibles tant que le créateur n’a pas autorisé leur publication ; les choix manuels restent prioritaires.
 >
@@ -55,6 +55,10 @@ Les applications les plus récemment mises à jour apparaissent en premier dans 
 
 _Aucune application Store signalée actuellement._
 
+## 🩷 Applications disponibles uniquement sur GitHub
+
+- **Tikowiko Music V3** — téléchargement APK via GitHub Releases.
+
 ## 🛠️ Applications en correction de bugs
 
 _Aucune application signalée actuellement._
@@ -68,7 +72,8 @@ Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt**
 - 🟡 **Jaune — Test développeur** : l’APK est testée par le développeur avant publication. Les joueurs ne peuvent pas encore la télécharger.
 - 🟠 **Orange — Correction active** : une correction est déclarée ou détectée. Toutes les Releases APK de l’application sont temporairement masquées du public.
 - 🔵 **Bleu — Développement actif** : statut choisi par le créateur ; ne dépend plus de l’âge de l’APK.
-- 🟢 **Vert — Disponible / test** : l’application est disponible en version de test ; si elle est sur Google Play, le bouton Store est affiché.
+- 🩷 **Rose — Disponible uniquement sur GitHub** : APK publique sur GitHub Releases ; aucune publication Google Play indiquée.
+- 🟢 **Vert — Google Play / test** : réservé à la version de test Google Play lorsque sa fiche Store est renseignée.
 - ⚪ **Gris — Stable pour le moment** : une APK existe mais aucune activité récente n’est détectée.
 - 🔴 **Rouge — Pas disponible** : aucune APK publique n’est disponible dans Download.
 
@@ -79,7 +84,7 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
 | 🎮 **La Jungle de l'Arcade** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. Dernière mise à jour il y a 10 jour(s). | 07/10/2026 | 89.5 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/la-jungle-de-l-arcade-latest/la-jungle-de-l-arcade-v188-20261004-2101.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
-| 🎮 **Tikowiko Music V3** | 🟢 Disponible / test | Application déclarée disponible en version de test par le créateur. Dernière mise à jour il y a 0 jour(s). | 17/10/2026 | 49.6 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikomusicv3-latest/TikowikoMusicV3-v12-20261017-2050.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikomusicv3-latest) |
+| 🎮 **Tikowiko Music V3** | 🩷 Disponible sur GitHub uniquement | APK de test disponible uniquement sur GitHub Releases, pas sur Google Play. Dernière mise à jour il y a 0 jour(s). | 17/10/2026 | 49.6 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikomusicv3-latest/TikowikoMusicV3-v12-20261017-2050.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikomusicv3-latest) |
 | 🎮 **ProxyVpn** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 17/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Ecosylune** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 15/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Jackpot Sucré Casino** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 15/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |

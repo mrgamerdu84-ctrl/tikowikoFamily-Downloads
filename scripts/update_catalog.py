@@ -196,7 +196,7 @@ def load_manual_statuses():
             app, color = line.split("|", 1)
             app = app.strip().casefold()
             color = color.strip().lower()
-            if app and color in {"purple", "cyan", "yellow", "orange", "blue", "green", "gray", "red"}:
+            if app and color in {"purple", "cyan", "yellow", "orange", "blue", "pink", "green", "gray", "red"}:
                 selected[app] = color
     return selected
 
@@ -208,6 +208,7 @@ MANUAL_STATUS_META = {
     "yellow": ("🟡", "Test développeur", "Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique.", "yellow"),
     "orange": ("🟠", "Correction active", "Des corrections de bugs ou correctifs sont en cours.", "orange"),
     "blue": ("🔵", "Développement actif", "Développement maintenu actif manuellement par le créateur.", "blue"),
+    "pink": ("🩷", "Disponible sur GitHub uniquement", "APK de test disponible uniquement sur GitHub Releases, pas sur Google Play.", "pink"),
     "green": ("🟢", "Disponible / test", "Application déclarée disponible en version de test par le créateur.", "green"),
     "gray": ("⚪", "Stable pour le moment", "Application déclarée stable pour le moment par le créateur.", "gray"),
     "red": ("🔴", "Pas disponible", "Application déclarée indisponible par le créateur.", "red"),
@@ -544,7 +545,7 @@ for repo_name, display_name in apps.items():
         })
 
 # Mettre en avant : corrections, développement récent, Store, puis stable et indisponible.
-priority = {"cyan": 0, "purple": 1, "yellow": 2, "orange": 3, "blue": 4, "green": 5, "gray": 6, "red": 7}
+priority = {"cyan": 0, "purple": 1, "yellow": 2, "orange": 3, "blue": 4, "pink": 5, "green": 6, "gray": 7, "red": 8}
 rows.sort(key=lambda item: (
     priority.get(item["color_key"], 9),
     -item["updated_ts"],
@@ -558,6 +559,7 @@ developer_test_count = sum(1 for row in rows if row["color_key"] == "yellow")
 bugfix_count = sum(1 for row in rows if row["color_key"] == "orange")
 active_count = sum(1 for row in rows if row["color_key"] in ("orange", "blue"))
 store_count = sum(1 for row in rows if row["color_key"] == "green" and row["store"])
+github_only_count = sum(1 for row in rows if row["color_key"] == "pink" and row["ready"])
 unavailable_count = sum(1 for row in rows if row["color_key"] == "red")
 download_total = sum(row["downloads"] for row in rows)
 
@@ -583,11 +585,11 @@ catalog = [
     '>',
     '> 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.',
     '',
-    f'**{len(rows)} projets référencés · {lovable_count} passés par Lovable à vérifier · {reflection_count} en réflexion · {developer_test_count} en test développeur · {active_count} en développement actuel · {bugfix_count} en correction · {store_count} sur Google Play Test · {unavailable_count} indisponibles · {download_total} téléchargements APK**',
+    f'**{len(rows)} projets référencés · {lovable_count} passés par Lovable à vérifier · {reflection_count} en réflexion · {developer_test_count} en test développeur · {active_count} en développement actuel · {bugfix_count} en correction · {store_count} sur Google Play Test · {github_only_count} disponibles uniquement sur GitHub · {unavailable_count} indisponibles · {download_total} téléchargements APK**',
     '',
     '> ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.',
     '>',
-    '> **Couleurs :** 💙 Passé par Lovable / à vérifier · 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🟢 Disponible / test · ⚪ Stable · 🔴 Indisponible.',
+    '> **Couleurs :** 💙 Passé par Lovable / à vérifier · 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🩷 GitHub uniquement · 🟢 Google Play / test · ⚪ Stable · 🔴 Indisponible.',
     '>',
     '> Les nouveaux jeux sont 🔴 non disponibles tant que le créateur n’a pas autorisé leur publication ; les choix manuels restent prioritaires.',
     '>',
@@ -619,6 +621,10 @@ catalog = [
     '',
     *([f"- **{row['name']}** — [▶️ Ouvrir la version test sur Google Play]({row['store_url']})" for row in rows if row["color_key"] == "green" and row["store_url"]] or ["_Aucune application Store signalée actuellement._"]),
     '',
+    '## 🩷 Applications disponibles uniquement sur GitHub',
+    '',
+    *([f"- **{row['name']}** — téléchargement APK via GitHub Releases." for row in rows if row["color_key"] == "pink" and row["ready"]] or ["_Aucune APK GitHub uniquement signalée actuellement._"]),
+    '',
     '## 🛠️ Applications en correction de bugs',
     '',
     *([f"- **{row['name']}**" for row in rows if row["color_key"] == "orange"] or ["_Aucune application signalée actuellement._"]),
@@ -632,7 +638,8 @@ catalog = [
     '- 🟡 **Jaune — Test développeur** : l’APK est testée par le développeur avant publication. Les joueurs ne peuvent pas encore la télécharger.',
     '- 🟠 **Orange — Correction active** : une correction est déclarée ou détectée. Toutes les Releases APK de l’application sont temporairement masquées du public.',
     '- 🔵 **Bleu — Développement actif** : statut choisi par le créateur ; ne dépend plus de l’âge de l’APK.',
-    '- 🟢 **Vert — Disponible / test** : l’application est disponible en version de test ; si elle est sur Google Play, le bouton Store est affiché.',
+    '- 🩷 **Rose — Disponible uniquement sur GitHub** : APK publique sur GitHub Releases ; aucune publication Google Play indiquée.',
+    '- 🟢 **Vert — Google Play / test** : réservé à la version de test Google Play lorsque sa fiche Store est renseignée.',
     '- ⚪ **Gris — Stable pour le moment** : une APK existe mais aucune activité récente n’est détectée.',
     '- 🔴 **Rouge — Pas disponible** : aucune APK publique n’est disponible dans Download.',
     '',

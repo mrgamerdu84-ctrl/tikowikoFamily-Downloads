@@ -25,8 +25,11 @@
 # 🔵 Bleu   = Développement actif
 #             -> projet actuellement développé.
 #
-# 🟢 Vert   = Disponible / test
-#             -> APK de test disponible au public ou application sur Google Play Test.
+# 🩷 Rose   = Disponible uniquement sur GitHub
+#             -> APK publique dans les Releases GitHub, pas sur Google Play.
+#
+# 🟢 Vert   = Google Play / test
+#             -> application disponible sur Google Play Test.
 #
 # ⚪ Gris   = Stable pour le moment
 #             -> APK disponible, développement calme/stable.
@@ -37,7 +40,7 @@
 # ⚙️ Auto   = Retire le choix manuel ; sans autorisation explicite, une nouvelle
 #             application reste rouge même si une APK vient d'être créée.
 #
-# Le créateur doit sélectionner bleu/vert/gris pour autoriser une APK publique.
+# Le créateur doit sélectionner bleu/rose/vert/gris pour autoriser une APK publique.
 #
 # Les statuts 💙 🟣 🟡 🟠 🔴 bloquent le téléchargement public.
-# Les statuts 🔵 🟢 ⚪ permettent une APK publique si une Release existe.
+# Les statuts 🔵 🩷 🟢 ⚪ permettent une APK publique si une Release existe.
