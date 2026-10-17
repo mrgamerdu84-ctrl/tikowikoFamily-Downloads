@@ -19,13 +19,13 @@
 >
 > 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.
 
-**22 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 6 en test développeur · 4 en développement actuel · 0 en correction · 0 sur Google Play Test · 12 indisponibles · 0 téléchargements APK**
+**21 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 6 en test développeur · 3 en développement actuel · 0 en correction · 0 sur Google Play Test · 12 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
 > **Couleurs :** 💙 Passé par Lovable / à vérifier · 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🟢 Disponible / test · ⚪ Stable · 🔴 Indisponible.
 >
-> La couleur est recalculée automatiquement à chaque mise à jour du catalogue selon la dernière APK et les changements indiqués dans la Release.
+> Les nouveaux jeux sont 🔴 non disponibles tant que le créateur n’a pas autorisé leur publication ; les choix manuels restent prioritaires.
 >
 > 🧪 Les APK disponibles sont des **versions de test en développement** : elles sont installables et testables, mais ne sont pas encore considérées comme des versions finales.
 >
@@ -52,9 +52,8 @@ _Aucun projet en réflexion actuellement._
 
 ## 🔥 Développement actuel
 
-- 🔵 Développement actif **TikowikoMusicV3** · mise à jour 17/10/2026
-- 🔵 Développement actif **la-petite-boulangerie** · mise à jour 13/10/2026
-- 🔵 Développement actif **la-petite-boulangerie** · mise à jour 12/10/2026
+- 🔵 Développement actif **Tikowiko Music V3** · mise à jour 17/10/2026
+- 🔵 Développement actif **La Petite Boulangerie** · mise à jour 13/10/2026
 - 🔵 Développement actif **La Jungle de l'Arcade** · mise à jour 07/10/2026
 
 Les applications les plus récemment mises à jour apparaissent en premier dans le catalogue.
@@ -75,7 +74,7 @@ Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt**
 - 🟣 **Violet — En réflexion** : projet en suspens ; on décide s’il sera poursuivi, revu ou arrêté. Les APK sont masquées du public.
 - 🟡 **Jaune — Test développeur** : l’APK est testée par le développeur avant publication. Les joueurs ne peuvent pas encore la télécharger.
 - 🟠 **Orange — Correction active** : une correction est déclarée ou détectée. Toutes les Releases APK de l’application sont temporairement masquées du public.
-- 🔵 **Bleu — Développement actif** : une APK a été publiée ou mise à jour dans les 14 derniers jours, sans correction active. Les plus récentes sont affichées en premier.
+- 🔵 **Bleu — Développement actif** : statut choisi par le créateur ; ne dépend plus de l’âge de l’APK.
 - 🟢 **Vert — Disponible / test** : l’application est disponible en version de test ; si elle est sur Google Play, le bouton Store est affiché.
 - ⚪ **Gris — Stable pour le moment** : une APK existe mais aucune activité récente n’est détectée.
 - 🔴 **Rouge — Pas disponible** : aucune APK publique n’est disponible dans Download.
@@ -92,18 +91,17 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **L'Attaque des Dieux** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Snack Attack** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Tapas Fiesta** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
-| 🎮 **TikowikoMusicV3** | 🔵 Développement actif | APK mise à jour récemment (0 jour(s)) : développement actuel détecté. | 17/10/2026 | 49.6 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikomusicv3-latest/TikowikoMusicV3-v12-20261017-2050.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikomusicv3-latest) |
-| 🎮 **la-petite-boulangerie** | 🔵 Développement actif | APK mise à jour récemment (3 jour(s)) : développement actuel détecté. | 13/10/2026 | 7.8 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/la-petite-boulangerie-latest/la-petite-boulangerie-v262-20261013-1645.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-petite-boulangerie-latest) |
-| 🎮 **la-petite-boulangerie** | 🔵 Développement actif | APK mise à jour récemment (5 jour(s)) : développement actuel détecté. | 12/10/2026 | 10.0 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/la-petite-boulangerie-refonte-latest/la-petite-boulangerie-refonte-v258-20261012-1059.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-petite-boulangerie-refonte-latest) |
+| 🎮 **Tikowiko Music V3** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. Dernière mise à jour il y a 0 jour(s). | 17/10/2026 | 49.6 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikomusicv3-latest/TikowikoMusicV3-v12-20261017-2050.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikomusicv3-latest) |
+| 🎮 **La Petite Boulangerie** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. Dernière mise à jour il y a 3 jour(s). | 13/10/2026 | 7.8 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/la-petite-boulangerie-latest/la-petite-boulangerie-v262-20261013-1645.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-petite-boulangerie-latest) |
 | 🎮 **La Jungle de l'Arcade** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. Dernière mise à jour il y a 10 jour(s). | 07/10/2026 | 89.5 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/la-jungle-de-l-arcade-latest/la-jungle-de-l-arcade-v188-20261004-2101.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
 | 🎮 **ProxyVpn** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 17/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Ecosylune** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 15/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **pousseville** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 08/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Tikowikodelivery** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 07/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Pousseville** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 08/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tikowiko Delivery** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 07/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko Music** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 07/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **tiko-express** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 30/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tiko Express** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 30/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **tikowikocitybulder** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 27/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tikowiko City Builder** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 27/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Planète Sharky** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **SmoothinCreams** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Super Winner de la Fortune** | 🔴 Pas disponible | Aucune APK publique disponible dans Download. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
@@ -130,7 +128,7 @@ Android peut demander l’autorisation d’installer une application provenant d
 ## 🔄 Mises à jour automatiques
 
 Quand le Builder publie un nouvel APK, sa Release publique met automatiquement ce catalogue à jour.
-Un futur projet non encore référencé sera ajouté automatiquement lors de sa première Release APK.
+Un futur projet non encore référencé sera ajouté à sa première Release APK (même privée), ou dès sa sélection dans les statuts manuels.
 
 ---
 
