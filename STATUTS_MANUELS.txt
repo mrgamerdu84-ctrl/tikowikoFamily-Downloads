@@ -6,16 +6,17 @@
 
 histoire-pour-enfants|yellow
 la-jungle-de-l-arcade|blue
-TikowikoMusicV2|red
-TikowikoMusic|red
-planete-sharky-game|red
-tikowikocity|red
-tiko-express|yellow
-tikowikodelivery|yellow
-pousseville|yellow
-tikowikocosystme|yellow
 jackpot-sucr-casino|yellow
 l-attaque-des-dieux|yellow
 tapas-fiesta|yellow
 snack-attack-|yellow
 Grimoix-petit-dragon|yellow
+planete-sharky-game|red
+ProxYvpn|red
+TikowikoMusic|red
+TikowikoMusicV2|red
+tikowikocosystme|red
+tikowikocity|red
+pousseville|red
+tikowikodelivery|red
+tiko-express|red
