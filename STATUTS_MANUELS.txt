@@ -5,10 +5,6 @@
 #
 
 la-jungle-de-l-arcade|blue
-jackpot-sucr-casino|yellow
-l-attaque-des-dieux|yellow
-tapas-fiesta|yellow
-snack-attack-|yellow
 Grimoix-petit-dragon|yellow
 TikowikoMusic|red
 TikowikoMusicV2|red
@@ -25,3 +21,7 @@ ProxYvpn|red
 la-petite-boulangerie|red
 tikowikocitybulder|red
 SmoothinCreams|red
+tapas-fiesta|red
+snack-attack-|red
+l-attaque-des-dieux|red
+jackpot-sucr-casino|red
