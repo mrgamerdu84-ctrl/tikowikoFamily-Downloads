@@ -557,7 +557,7 @@ reflection_count = sum(1 for row in rows if row["color_key"] == "purple")
 developer_test_count = sum(1 for row in rows if row["color_key"] == "yellow")
 bugfix_count = sum(1 for row in rows if row["color_key"] == "orange")
 active_count = sum(1 for row in rows if row["color_key"] in ("orange", "blue"))
-store_count = sum(1 for row in rows if row["color_key"] == "green")
+store_count = sum(1 for row in rows if row["color_key"] == "green" and row["store"])
 unavailable_count = sum(1 for row in rows if row["color_key"] == "red")
 download_total = sum(row["downloads"] for row in rows)
 
