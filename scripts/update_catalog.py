@@ -23,8 +23,7 @@ STORE_APPS = {
     },
 }
 
-# Tous les dépôts privés existants au 21/09/2026.
-# Les futurs projets apparaissent automatiquement dès leur première Release APK publique.
+# Référentiel initial ; les statuts manuels et les Releases ajoutent les nouveaux jeux.
 KNOWN_APPS = {
     "batterie-super-intelligente": "Batterie Super Intelligente",
     "chicken-coop-charm": "Chicken Coop Charm",
@@ -57,7 +56,20 @@ KNOWN_APPS = {
     "tikoWiko-taxi-": "tikoWikoTaxi",
     "TikowikoMusic": "Tikowiko Music",
     "TikowikoMusicV2": "Tikowiko Music V2",
+    "TikowikoMusicV3": "Tikowiko Music V3",
+    "la-petite-boulangerie": "La Petite Boulangerie",
+    "pousseville": "Pousseville",
+    "tikowikodelivery": "Tikowiko Delivery",
+    "tiko-express": "Tiko Express",
+    "tikowikocitybulder": "Tikowiko City Builder",
 }
+
+# Ancienne variante de Release -> jeu unique. Aucun fichier APK n'est supprimé.
+APP_ALIASES = {"la-petite-boulangerie-refonte": "la-petite-boulangerie"}
+
+def canonical_key(name):
+    key = name.strip().casefold()
+    return APP_ALIASES.get(key, key)
 
 def safe_tag(name):
     return re.sub(r"[^a-z0-9._-]", "-", name.lower()) + "-latest"
@@ -287,23 +299,8 @@ def automatic_status(repo_name, display_name, release, apk, bugfix, stable, stor
     if not release or not apk:
         return "🔴", "Pas disponible", "Aucune APK publique disponible dans Download.", "red"
 
-    if age is not None and age <= 14:
-        return (
-            "🔵",
-            "Développement actif",
-            f"APK mise à jour récemment ({age} jour(s)) : développement actuel détecté.",
-            "blue",
-        )
-
-    if age is None:
-        return "⚪", "Stable pour le moment", "APK disponible, mais date de mise à jour non déterminée.", "gray"
-
-    return (
-        "⚪",
-        "Stable pour le moment",
-        f"APK disponible ; aucune activité récente détectée depuis {age} jour(s).",
-        "gray",
-    )
+    # La présence d'une APK n'autorise jamais sa publication automatiquement.
+    return "🔴", "Pas disponible", "Nouvelle APK en attente de validation du créateur.", "red"
 
 def release_timestamp(release):
     if not release:
@@ -317,9 +314,8 @@ def release_timestamp(release):
         return 0
 
 def release_belongs_to_app(repo_name, release):
-    prefix = safe_tag(repo_name)[:-7]
-    tag = release.get("tag_name") or ""
-    return tag == prefix + "-latest" or re.fullmatch(re.escape(prefix) + r"-v\d+", tag) is not None
+    guessed = release_repo_guess(release)
+    return bool(guessed) and canonical_key(guessed) == canonical_key(repo_name)
 
 def sync_app_release_visibility(repo_name, should_hide):
     """Orange = toutes les Releases APK de l'app passent en brouillon privé."""
@@ -360,9 +356,16 @@ apps = {
     if not is_deleted_app(repo_name, display_name)
 }
 
-# Index insensible à la casse : TikowikoMusicV2 et tikowikomusicv2
-# représentent la même application et ne doivent jamais créer deux lignes.
-app_keys_folded = {repo_name.casefold(): repo_name for repo_name in apps}
+# Variantes, alias et différences de casse ne doivent jamais créer deux fiches.
+app_keys_folded = {canonical_key(repo_name): repo_name for repo_name in apps}
+
+# Un nouveau nom choisi dans GitHub Actions apparaît sans APK.
+for repo_name in MANUAL_STATUSES:
+    key = canonical_key(repo_name)
+    if key in app_keys_folded or is_deleted_app(repo_name):
+        continue
+    apps[repo_name] = repo_name.replace("-", " ").replace("_", " ").title()
+    app_keys_folded[key] = repo_name
 
 def release_repo_guess(release):
     tag = release.get("tag_name") or ""
@@ -384,8 +387,8 @@ for release in list(releases):
     if is_deleted_app(repo_guess, known_display or title):
         api_delete(f"https://api.github.com/repos/{OWNER}/{REPO}/releases/{release['id']}")
 
-# Une nouvelle Release "-latest" peut ajouter un futur projet, sauf s'il est
-# supprimé ou s'il correspond déjà à une application connue avec une casse différente.
+# Une Release "-latest", publique ou brouillon, peut ajouter un nouveau jeu.
+# Les variantes et les différences de casse restent fusionnées.
 for release in releases:
     tag = release.get("tag_name") or ""
     if not tag.endswith("-latest"):
@@ -401,16 +404,26 @@ for release in releases:
     if is_deleted_app(repo_name, display_guess):
         continue
 
-    folded = repo_name.casefold()
+    folded = canonical_key(repo_name)
     if folded in app_keys_folded:
         continue
 
     apps[repo_name] = display_guess
     app_keys_folded[folded] = repo_name
 
+# Conserver toutes les versions historiques, afficher seulement la -latest
+# la plus récente de chaque jeu canonique.
+def newest_release_for(repo_name):
+    candidates = [
+        item for item in releases
+        if (item.get("tag_name") or "").endswith("-latest")
+        and canonical_key(release_repo_guess(item)) == canonical_key(repo_name)
+    ]
+    return max(candidates, key=release_timestamp) if candidates else None
+
 rows = []
 for repo_name, display_name in apps.items():
-    release = release_by_tag.get(safe_tag(repo_name))
+    release = newest_release_for(repo_name)
     apk = None
     if release:
         apks = [a for a in release.get("assets", []) if a.get("name", "").lower().endswith(".apk")]
@@ -575,7 +588,7 @@ catalog = [
     '>',
     '> **Couleurs :** 💙 Passé par Lovable / à vérifier · 🟣 En réflexion · 🟡 Test développeur · 🟠 Correction active · 🔵 Développement actif · 🟢 Disponible / test · ⚪ Stable · 🔴 Indisponible.',
     '>',
-    '> La couleur est recalculée automatiquement à chaque mise à jour du catalogue selon la dernière APK et les changements indiqués dans la Release.',
+    '> Les nouveaux jeux sont 🔴 non disponibles tant que le créateur n’a pas autorisé leur publication ; les choix manuels restent prioritaires.',
     '>',
     '> 🧪 Les APK disponibles sont des **versions de test en développement** : elles sont installables et testables, mais ne sont pas encore considérées comme des versions finales.',
     '>',
@@ -617,7 +630,7 @@ catalog = [
     '- 🟣 **Violet — En réflexion** : projet en suspens ; on décide s’il sera poursuivi, revu ou arrêté. Les APK sont masquées du public.',
     '- 🟡 **Jaune — Test développeur** : l’APK est testée par le développeur avant publication. Les joueurs ne peuvent pas encore la télécharger.',
     '- 🟠 **Orange — Correction active** : une correction est déclarée ou détectée. Toutes les Releases APK de l’application sont temporairement masquées du public.',
-    '- 🔵 **Bleu — Développement actif** : une APK a été publiée ou mise à jour dans les 14 derniers jours, sans correction active. Les plus récentes sont affichées en premier.',
+    '- 🔵 **Bleu — Développement actif** : statut choisi par le créateur ; ne dépend plus de l’âge de l’APK.',
     '- 🟢 **Vert — Disponible / test** : l’application est disponible en version de test ; si elle est sur Google Play, le bouton Store est affiché.',
     '- ⚪ **Gris — Stable pour le moment** : une APK existe mais aucune activité récente n’est détectée.',
     '- 🔴 **Rouge — Pas disponible** : aucune APK publique n’est disponible dans Download.',
@@ -658,7 +671,7 @@ catalog += [
     '## 🔄 Mises à jour automatiques',
     '',
     'Quand le Builder publie un nouvel APK, sa Release publique met automatiquement ce catalogue à jour.',
-    'Un futur projet non encore référencé sera ajouté automatiquement lors de sa première Release APK.',
+    'Un futur projet non encore référencé sera ajouté à sa première Release APK (même privée), ou dès sa sélection dans les statuts manuels.',
     '',
     '---',
     '',

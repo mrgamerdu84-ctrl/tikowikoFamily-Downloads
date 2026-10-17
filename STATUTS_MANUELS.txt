@@ -20,3 +20,5 @@ tikowikocity|red
 pousseville|red
 tikowikodelivery|red
 tiko-express|red
+TikowikoMusicV3|blue
+la-petite-boulangerie|blue

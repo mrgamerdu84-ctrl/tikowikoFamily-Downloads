@@ -4,10 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       application_1:
-        description: "Application 1 (obligatoire)"
-        required: true
+        description: "Application 1 (facultatif si tu saisis un nouveau jeu)"
+        required: false
         type: choice
+        default: "— Aucune —"
         options:
+          - "— Aucune —"
           - tikowikodelivery
           - tiko-express
           - pousseville
@@ -24,6 +26,11 @@ on:
           - snack-attack-
           - Grimoix-petit-dragon
           - ProxYvpn
+          - TikowikoMusicV3
+          - la-petite-boulangerie
+          - tikowikocitybulder
+          - SmoothinCreams
+          - super-winner-de-la-fortune
       application_2:
         description: "Application 2 (facultatif)"
         required: false
@@ -47,6 +54,11 @@ on:
           - snack-attack-
           - Grimoix-petit-dragon
           - ProxYvpn
+          - TikowikoMusicV3
+          - la-petite-boulangerie
+          - tikowikocitybulder
+          - SmoothinCreams
+          - super-winner-de-la-fortune
       application_3:
         description: "Application 3 (facultatif)"
         required: false
@@ -70,6 +82,11 @@ on:
           - snack-attack-
           - Grimoix-petit-dragon
           - ProxYvpn
+          - TikowikoMusicV3
+          - la-petite-boulangerie
+          - tikowikocitybulder
+          - SmoothinCreams
+          - super-winner-de-la-fortune
       application_4:
         description: "Application 4 (facultatif)"
         required: false
@@ -93,6 +110,11 @@ on:
           - snack-attack-
           - Grimoix-petit-dragon
           - ProxYvpn
+          - TikowikoMusicV3
+          - la-petite-boulangerie
+          - tikowikocitybulder
+          - SmoothinCreams
+          - super-winner-de-la-fortune
       application_5:
         description: "Application 5 (facultatif)"
         required: false
@@ -116,6 +138,11 @@ on:
           - snack-attack-
           - Grimoix-petit-dragon
           - ProxYvpn
+          - TikowikoMusicV3
+          - la-petite-boulangerie
+          - tikowikocitybulder
+          - SmoothinCreams
+          - super-winner-de-la-fortune
       application_6:
         description: "Application 6 (facultatif)"
         required: false
@@ -139,6 +166,11 @@ on:
           - snack-attack-
           - Grimoix-petit-dragon
           - ProxYvpn
+          - TikowikoMusicV3
+          - la-petite-boulangerie
+          - tikowikocitybulder
+          - SmoothinCreams
+          - super-winner-de-la-fortune
       application_7:
         description: "Application 7 (facultatif)"
         required: false
@@ -162,6 +194,11 @@ on:
           - snack-attack-
           - Grimoix-petit-dragon
           - ProxYvpn
+          - TikowikoMusicV3
+          - la-petite-boulangerie
+          - tikowikocitybulder
+          - SmoothinCreams
+          - super-winner-de-la-fortune
       application_8:
         description: "Application 8 (facultatif)"
         required: false
@@ -185,29 +222,16 @@ on:
           - snack-attack-
           - Grimoix-petit-dragon
           - ProxYvpn
-      application_9:
-        description: "Application 9 (facultatif)"
+          - TikowikoMusicV3
+          - la-petite-boulangerie
+          - tikowikocitybulder
+          - SmoothinCreams
+          - super-winner-de-la-fortune
+      applications_libres:
+        description: "Nouveaux jeux absents de la liste (noms des dépôts séparés par des virgules)"
         required: false
-        default: "— Aucune —"
-        type: choice
-        options:
-          - "— Aucune —"
-          - tikowikodelivery
-          - tiko-express
-          - pousseville
-          - tikowikocity
-          - tikowikocosystme
-          - TikowikoMusicV2
-          - TikowikoMusic
-          - jackpot-sucr-casino
-          - histoire-pour-enfants
-          - planete-sharky-game
-          - la-jungle-de-l-arcade
-          - l-attaque-des-dieux
-          - tapas-fiesta
-          - snack-attack-
-          - Grimoix-petit-dragon
-          - ProxYvpn
+        type: string
+        default: ""
       statut:
         description: "Choisis la couleur / le statut à appliquer à toutes"
         required: true
@@ -247,7 +271,7 @@ jobs:
           APP6: ${{ inputs.application_6 }}
           APP7: ${{ inputs.application_7 }}
           APP8: ${{ inputs.application_8 }}
-          APP9: ${{ inputs.application_9 }}
+          APP_CUSTOM: ${{ inputs.applications_libres }}
           STATUT: ${{ inputs.statut }}
         shell: bash
         run: |
@@ -255,13 +279,19 @@ jobs:
           FILE="STATUTS_MANUELS.txt"
           touch "$FILE"
 
-          python3 - "$FILE" "$STATUT" "$APP1" "$APP2" "$APP3" "$APP4" "$APP5" "$APP6" "$APP7" "$APP8" "$APP9" <<'PY'
+          python3 - "$FILE" "$STATUT" "$APP1" "$APP2" "$APP3" "$APP4" "$APP5" "$APP6" "$APP7" "$APP8" "$APP_CUSTOM" <<'PY'
           from pathlib import Path
           import sys
+          import re
 
           path = Path(sys.argv[1])
           statut = sys.argv[2].strip()
-          apps = [a.strip() for a in sys.argv[3:] if a.strip() and a.strip() != "— Aucune —"]
+          apps = [a.strip() for a in sys.argv[3:-1] if a.strip() and a.strip() != "— Aucune —"]
+          apps += [a.strip() for a in re.split(r"[,;\n]+", sys.argv[-1]) if a.strip()]
+          aliases = {"la-petite-boulangerie-refonte": "la-petite-boulangerie"}
+          apps = [aliases.get(a.casefold(), a) for a in apps]
+          if any(not re.fullmatch(r"[A-Za-z0-9._-]+", a) for a in apps):
+              raise SystemExit("Utilise les noms exacts des dépôts (sans espace), séparés par des virgules.")
 
           mapping = {
               "💙 Bleu clair — Importé depuis Lovable / à vérifier": "cyan",
@@ -343,7 +373,7 @@ jobs:
           APP6: ${{ inputs.application_6 }}
           APP7: ${{ inputs.application_7 }}
           APP8: ${{ inputs.application_8 }}
-          APP9: ${{ inputs.application_9 }}
+          APP_CUSTOM: ${{ inputs.applications_libres }}
           STATUT: ${{ inputs.statut }}
         run: |
           echo "### Statut groupé mis à jour" >> "$GITHUB_STEP_SUMMARY"
@@ -351,8 +381,9 @@ jobs:
           echo "**Statut :** $STATUT" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "**Applications sélectionnées :**" >> "$GITHUB_STEP_SUMMARY"
-          for APP in "$APP1" "$APP2" "$APP3" "$APP4" "$APP5" "$APP6" "$APP7" "$APP8" "$APP9"; do
+          for APP in "$APP1" "$APP2" "$APP3" "$APP4" "$APP5" "$APP6" "$APP7" "$APP8"; do
             [ -z "$APP" ] && continue
             [ "$APP" = "— Aucune —" ] && continue
             echo "- $APP" >> "$GITHUB_STEP_SUMMARY"
           done
+          [ -z "$APP_CUSTOM" ] || echo "- Nouveaux jeux : $APP_CUSTOM" >> "$GITHUB_STEP_SUMMARY"

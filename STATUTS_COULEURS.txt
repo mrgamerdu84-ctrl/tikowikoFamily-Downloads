@@ -34,7 +34,10 @@
 # 🔴 Rouge  = Indisponible
 #             -> l'APK ne doit pas être proposée au public.
 #
-# ⚙️ Auto   = Retire le choix manuel et rend la main au calcul automatique.
+# ⚙️ Auto   = Retire le choix manuel ; sans autorisation explicite, une nouvelle
+#             application reste rouge même si une APK vient d'être créée.
+#
+# Le créateur doit sélectionner bleu/vert/gris pour autoriser une APK publique.
 #
 # Les statuts 💙 🟣 🟡 🟠 🔴 bloquent le téléchargement public.
 # Les statuts 🔵 🟢 ⚪ permettent une APK publique si une Release existe.
