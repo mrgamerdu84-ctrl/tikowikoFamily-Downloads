@@ -2,8 +2,6 @@
 
 <img src="https://raw.githubusercontent.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/main/branding/1000034393.png" width="1100" alt="Bannière officielle Tikowiko Family Downloads — jeux et applications Android">
 
-<img src="https://github.com/mrgamerdu84-ctrl.png" width="130" alt="tikowikoFamily">
-
 # 🎮 tikowikoFamily
 
 ### Jeux & applications Android
