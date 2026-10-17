@@ -451,6 +451,7 @@ for repo_name, display_name in apps.items():
         "color_key": color_key,
         "updated_ts": ts,
         "store": bool(store_info),
+        "store_url": store_info.get("url") if store_info else None,
     }
 
     if color_key == "green" and store_info:
@@ -616,7 +617,7 @@ catalog = [
     '',
     '## 🟢 Applications sur Google Play',
     '',
-    *([f"- **{row['name']}** — [▶️ Ouvrir la version test sur Google Play]({STORE_APPS[next(k for k,v in KNOWN_APPS.items() if v == row['name'])]['url']})" for row in rows if row["color_key"] == "green" and row["name"] in KNOWN_APPS.values()] or ["_Aucune application Store signalée actuellement._"]),
+    *([f"- **{row['name']}** — [▶️ Ouvrir la version test sur Google Play]({row['store_url']})" for row in rows if row["color_key"] == "green" and row["store_url"]] or ["_Aucune application Store signalée actuellement._"]),
     '',
     '## 🛠️ Applications en correction de bugs',
     '',
