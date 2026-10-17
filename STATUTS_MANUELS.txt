@@ -4,7 +4,6 @@
 # Pour revenir au calcul automatique, supprime la ligne via le workflow.
 #
 
-la-jungle-de-l-arcade|blue
 TikowikoMusic|red
 TikowikoMusicV2|red
 tikowikocosystme|red
@@ -25,3 +24,4 @@ l-attaque-des-dieux|red
 jackpot-sucr-casino|red
 Grimoix-petit-dragon|red
 TikowikoMusicV3|pink
+la-jungle-de-l-arcade|green
