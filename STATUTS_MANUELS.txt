@@ -25,3 +25,4 @@ jackpot-sucr-casino|red
 Grimoix-petit-dragon|red
 TikowikoMusicV3|pink
 la-jungle-de-l-arcade|green
+cantilune|yellow
