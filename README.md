@@ -19,7 +19,7 @@
 >
 > 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.
 
-**21 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 1 en test développeur · 1 en développement actuel · 0 en correction · 0 sur Google Play Test · 19 indisponibles · 0 téléchargements APK**
+**21 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 0 en test développeur · 1 en développement actuel · 0 en correction · 0 sur Google Play Test · 20 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -43,7 +43,7 @@ _Aucun projet en réflexion actuellement._
 
 ## 🟡 Tests développeur
 
-- **Grimoix Petit Dragon** — test en cours par le développeur ; téléchargement public temporairement bloqué.
+_Aucune application en test développeur actuellement._
 
 ## 🔥 Développement actuel
 
@@ -78,7 +78,6 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
-| 🎮 **Grimoix Petit Dragon** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | — | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **La Jungle de l'Arcade** | 🔵 Développement actif | Développement maintenu actif manuellement par le créateur. Dernière mise à jour il y a 10 jour(s). | 07/10/2026 | 89.5 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/la-jungle-de-l-arcade-latest/la-jungle-de-l-arcade-v188-20261004-2101.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
 | 🎮 **Tikowiko Music V3** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 17/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **ProxyVpn** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 17/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
@@ -91,6 +90,7 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **Tiko Express** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 30/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko City Builder** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 27/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Grimoix Petit Dragon** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Histoire pour Enfants** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **L'Attaque des Dieux** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Planète Sharky** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
