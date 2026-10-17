@@ -4,15 +4,12 @@
 # Pour revenir au calcul automatique, supprime la ligne via le workflow.
 #
 
-histoire-pour-enfants|yellow
 la-jungle-de-l-arcade|blue
 jackpot-sucr-casino|yellow
 l-attaque-des-dieux|yellow
 tapas-fiesta|yellow
 snack-attack-|yellow
 Grimoix-petit-dragon|yellow
-planete-sharky-game|red
-ProxYvpn|red
 TikowikoMusic|red
 TikowikoMusicV2|red
 tikowikocosystme|red
@@ -20,5 +17,11 @@ tikowikocity|red
 pousseville|red
 tikowikodelivery|red
 tiko-express|red
-TikowikoMusicV3|blue
-la-petite-boulangerie|blue
+TikowikoMusicV3|red
+super-winner-de-la-fortune|red
+histoire-pour-enfants|red
+planete-sharky-game|red
+ProxYvpn|red
+la-petite-boulangerie|red
+tikowikocitybulder|red
+SmoothinCreams|red
