@@ -19,7 +19,7 @@
 >
 > 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.
 
-**22 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 1 en test développeur · 0 en développement actuel · 0 en correction · 1 sur Google Play Test · 1 disponibles uniquement sur GitHub · 19 indisponibles · 0 téléchargements APK**
+**23 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 1 en test développeur · 0 en développement actuel · 0 en correction · 1 sur Google Play Test · 1 disponibles uniquement sur GitHub · 20 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -86,7 +86,8 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | 🎮 **Cantilune** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 18/10/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Tikowiko Music V3** | 🩷 Disponible sur GitHub uniquement | APK de test disponible uniquement sur GitHub Releases, pas sur Google Play. Dernière mise à jour il y a 1 jour(s). | 17/10/2026 | 49.6 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikomusicv3-latest/TikowikoMusicV3-v12-20261017-2050.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikomusicv3-latest) |
 | 🎮 **La Jungle de l'Arcade** | 🟢 Disponible / test | Application déclarée disponible en version de test par le créateur. Dernière mise à jour il y a 11 jour(s). | 07/10/2026 | 89.5 Mo | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | [Voir la Release GitHub](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
-| 🎮 **ProxyVpn** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 18/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **bloqs** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 19/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **ProxyVpn** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 19/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Ecosylune** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 15/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Jackpot Sucré Casino** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 15/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **La Petite Boulangerie** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 13/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
