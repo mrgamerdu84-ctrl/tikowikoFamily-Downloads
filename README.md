@@ -19,7 +19,7 @@
 >
 > 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.
 
-**23 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 1 en test développeur · 0 en développement actuel · 0 en correction · 1 sur Google Play Test · 1 disponibles uniquement sur GitHub · 20 indisponibles · 0 téléchargements APK**
+**23 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 1 en test développeur · 1 en développement actuel · 1 en correction · 1 sur Google Play Test · 1 disponibles uniquement sur GitHub · 19 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -47,7 +47,7 @@ _Aucun projet en réflexion actuellement._
 
 ## 🔥 Développement actuel
 
-_Aucun développement récent détecté._
+- 🟠 Correction active **Bloqs Builder** · mise à jour 23/10/2026
 
 Les applications les plus récemment mises à jour apparaissent en premier dans le catalogue.
 
@@ -61,7 +61,7 @@ Les applications les plus récemment mises à jour apparaissent en premier dans 
 
 ## 🛠️ Applications en correction de bugs
 
-_Aucune application signalée actuellement._
+- **Bloqs Builder**
 
 Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt** : une application par ligne. Tu peux écrire soit le nom du dépôt, soit le nom affiché dans le catalogue.
 
@@ -84,9 +84,9 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
 | 🎮 **Cantilune** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 18/10/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
+| 🎮 **Bloqs Builder** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 0 jour(s). | 23/10/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
 | 🎮 **Tikowiko Music V3** | 🩷 Disponible sur GitHub uniquement | APK de test disponible uniquement sur GitHub Releases, pas sur Google Play. Dernière mise à jour il y a 0 jour(s). | 23/10/2026 | 49.6 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikomusicv3-latest/TikowikoMusicV3-v14-20261023-0958.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikomusicv3-latest) |
-| 🎮 **La Jungle de l'Arcade** | 🟢 Disponible / test | Application déclarée disponible en version de test par le créateur. Dernière mise à jour il y a 15 jour(s). | 07/10/2026 | 89.5 Mo | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | [Voir la Release GitHub](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
-| 🎮 **Bloqs Builder** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 22/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **La Jungle de l'Arcade** | 🟢 Disponible / test | Application déclarée disponible en version de test par le créateur. Dernière mise à jour il y a 16 jour(s). | 07/10/2026 | 89.5 Mo | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | [Voir la Release GitHub](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
 | 🎮 **ProxyVpn** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 19/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Ecosylune** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 15/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Jackpot Sucré Casino** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 15/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
