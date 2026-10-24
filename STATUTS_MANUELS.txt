@@ -22,7 +22,7 @@ snack-attack-|red
 l-attaque-des-dieux|red
 jackpot-sucr-casino|red
 Grimoix-petit-dragon|red
-TikowikoMusicV3|pink
 la-jungle-de-l-arcade|green
 cantilune|yellow
 ProxYvpn|red
+TikowikoMusicV3|red
