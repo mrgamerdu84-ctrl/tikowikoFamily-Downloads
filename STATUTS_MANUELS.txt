@@ -14,7 +14,6 @@ tiko-express|red
 super-winner-de-la-fortune|red
 histoire-pour-enfants|red
 planete-sharky-game|red
-ProxYvpn|red
 la-petite-boulangerie|red
 tikowikocitybulder|red
 SmoothinCreams|red
@@ -26,3 +25,4 @@ Grimoix-petit-dragon|red
 TikowikoMusicV3|pink
 la-jungle-de-l-arcade|green
 cantilune|yellow
+ProxYvpn|red
