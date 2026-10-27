@@ -19,7 +19,7 @@
 >
 > 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.
 
-**24 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 1 en test développeur · 0 en développement actuel · 0 en correction · 1 sur Google Play Test · 0 disponibles uniquement sur GitHub · 22 indisponibles · 0 téléchargements APK**
+**25 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 1 en test développeur · 0 en développement actuel · 0 en correction · 1 sur Google Play Test · 0 disponibles uniquement sur GitHub · 23 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -85,6 +85,7 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 |---|---|---|---:|---:|---:|---|---|
 | 🎮 **Cantilune** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 18/10/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **La Jungle de l'Arcade** | 🟢 Disponible / test | Application déclarée disponible en version de test par le créateur. Dernière mise à jour il y a 0 jour(s). | 27/10/2026 | 43.0 Mo | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | [Voir la Release GitHub](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
+| 🎮 **jordan-entreprise-demolition-city** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 27/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Histoire pour Enfants** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 26/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko Music V3** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 26/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **pole-nord-magique** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 25/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
