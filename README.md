@@ -84,7 +84,7 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
 | 🎮 **Cantilune** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 18/10/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
-| 🎮 **La Jungle de l'Arcade** | 🟢 Disponible / test | Application déclarée disponible en version de test par le créateur. Dernière mise à jour il y a 0 jour(s). | 27/10/2026 | Google Play | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | Version test sur le Store |
+| 🎮 **La Jungle de l'Arcade** | 🟢 Disponible / test | Application déclarée disponible en version de test par le créateur. Dernière mise à jour il y a 0 jour(s). | 27/10/2026 | 92.3 Mo | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | [Voir la Release GitHub](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
 | 🎮 **Histoire pour Enfants** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 26/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Tikowiko Music V3** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 26/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **pole-nord-magique** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 25/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
