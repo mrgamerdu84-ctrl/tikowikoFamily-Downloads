@@ -85,7 +85,7 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 |---|---|---|---:|---:|---:|---|---|
 | 🎮 **Cantilune** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 18/10/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **La Jungle de l'Arcade** | 🟢 Disponible / test | Application déclarée disponible en version de test par le créateur. Dernière mise à jour il y a 1 jour(s). | 28/10/2026 | 43.0 Mo | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | [Voir la Release GitHub](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
-| 🎮 **retro-city-gang** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 29/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Retro City Gang** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **block-riot** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 29/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **jordan-entreprise-demolition-city** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 27/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **Histoire pour Enfants** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 26/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
