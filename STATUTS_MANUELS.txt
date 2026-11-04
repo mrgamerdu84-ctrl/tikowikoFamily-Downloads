@@ -25,5 +25,5 @@ Grimoix-petit-dragon|red
 la-jungle-de-l-arcade|green
 cantilune|yellow
 ProxYvpn|red
-TikowikoMusicV3|red
+TikowikoMusicV3|pink
 retro-city-gang|red
