@@ -19,7 +19,7 @@
 >
 > 🆓 **Pour le moment, tous les jeux et applications proposés ici sont gratuits et sans publicité.** Aucun paiement n’est nécessaire actuellement. À l’avenir, certains jeux pourront éventuellement utiliser un système de cœurs ou de crédits à financer pour continuer à jouer, mais ce système n’est pas encore actif.
 
-**28 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 1 en test développeur · 2 en développement actuel · 2 en correction · 1 sur Google Play Test · 0 disponibles uniquement sur GitHub · 24 indisponibles · 0 téléchargements APK**
+**28 projets référencés · 0 passés par Lovable à vérifier · 0 en réflexion · 2 en test développeur · 1 en développement actuel · 1 en correction · 1 sur Google Play Test · 0 disponibles uniquement sur GitHub · 24 indisponibles · 0 téléchargements APK**
 
 > ⚠️ Certaines APK sont encore en développement et peuvent donc contenir quelques bugs.
 >
@@ -43,12 +43,12 @@ _Aucun projet en réflexion actuellement._
 
 ## 🟡 Tests développeur
 
+- **Tikowiko Music V3** — test en cours par le développeur ; téléchargement public temporairement bloqué.
 - **Cantilune** — test en cours par le développeur ; téléchargement public temporairement bloqué.
 
 ## 🔥 Développement actuel
 
 - 🟠 Correction active **BETA retro-city-gang** · mise à jour 05/11/2026
-- 🟠 Correction active **Tikowiko Music V3** · mise à jour 05/11/2026
 
 Les applications les plus récemment mises à jour apparaissent en premier dans le catalogue.
 
@@ -63,7 +63,6 @@ _Aucune APK GitHub uniquement signalée actuellement._
 ## 🛠️ Applications en correction de bugs
 
 - **BETA retro-city-gang**
-- **Tikowiko Music V3**
 
 Pour modifier cette liste, édite simplement le fichier **CORRECTIONS_BUGS.txt** : une application par ligne. Tu peux écrire soit le nom du dépôt, soit le nom affiché dans le catalogue.
 
@@ -85,9 +84,9 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 
 | Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
 |---|---|---|---:|---:|---:|---|---|
+| 🎮 **Tikowiko Music V3** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 05/11/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **Cantilune** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 18/10/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
 | 🎮 **BETA retro-city-gang** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 0 jour(s). | 05/11/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
-| 🎮 **Tikowiko Music V3** | 🟠 Correction active | Des corrections de bugs ou correctifs sont en cours. Dernière mise à jour il y a 0 jour(s). | 05/11/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
 | 🎮 **La Jungle de l'Arcade** | 🟢 Disponible / test | Application déclarée disponible en version de test par le créateur. Dernière mise à jour il y a 0 jour(s). | 04/11/2026 | 43.0 Mo | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | [Voir la Release GitHub](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
 | 🎮 **Retro City Gang** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 | 🎮 **block-riot** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 29/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |

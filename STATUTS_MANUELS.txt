@@ -26,4 +26,4 @@ la-jungle-de-l-arcade|green
 cantilune|yellow
 ProxYvpn|red
 retro-city-gang|red
-TikowikoMusicV3|orange
+TikowikoMusicV3|yellow
