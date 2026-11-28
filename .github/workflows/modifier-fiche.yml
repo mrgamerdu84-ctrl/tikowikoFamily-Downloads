@@ -1,0 +1,69 @@
+name: Modifier la fiche d’une application
+run-name: "📝 Fiche — ${{ inputs.application }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      application:
+        description: "Nom exact de l'application (ex. retro-city-gang)"
+        required: true
+        type: string
+      description:
+        description: "Description publique (280 caractères max). Vide = conserver, - = effacer"
+        required: false
+        type: string
+      date_sortie:
+        description: "Date de sortie finale : AAAA-MM-JJ, AAAA-MM ou AAAA. Vide = conserver, - = indéterminée"
+        required: false
+        type: string
+      type_date:
+        description: "Précision de la date (une nouvelle date est estimée par défaut)"
+        required: true
+        type: choice
+        default: conserver
+        options:
+          - conserver
+          - estimee
+          - prevue
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalogue-public
+  cancel-in-progress: false
+
+jobs:
+  fiche:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Récupérer le catalogue
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Modifier la fiche publique
+        env:
+          FICHE_APP: ${{ inputs.application }}
+          FICHE_DESCRIPTION: ${{ inputs.description }}
+          FICHE_DATE: ${{ inputs.date_sortie }}
+          FICHE_KIND: ${{ inputs.type_date }}
+        run: python3 scripts/catalog_metadata.py --app "$FICHE_APP" --kind "$FICHE_KIND"
+      - name: Actualiser uniquement le catalogue (sans modifier les Releases)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          CATALOG_METADATA_ONLY: "1"
+        run: python3 scripts/update_catalog.py
+      - name: Enregistrer la fiche et le catalogue
+        run: |
+          set -e
+          if git diff --quiet FICHES_APPLICATIONS.json README.md; then
+            echo "Aucun changement."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add FICHES_APPLICATIONS.json README.md
+          git commit -m "Met à jour une fiche du catalogue [skip ci]"
+          git push origin HEAD:main
+          echo "Fiche mise à jour. Les couleurs et les Releases n'ont pas été modifiées." >> "$GITHUB_STEP_SUMMARY"

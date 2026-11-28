@@ -1,0 +1,147 @@
+{
+  "beta-retro-city-gang": {
+    "description": "Branche de test de Rétro City Gang, jeu urbain rétro avec missions et exploration.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "block-riot": {
+    "description": "Projet de jeu Block Riot ; détails de gameplay à confirmer.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "bloqs": {
+    "description": "Jeu de construction et d’aventure avec création de bâtiments et progression.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "cantilune": {
+    "description": "Projet de jeu dans l’univers de Cantilune ; détails de gameplay à confirmer.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "grimoix-petit-dragon": {
+    "description": "Projet de jeu dans un univers fantastique de petit dragon.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "histoire-pour-enfants": {
+    "description": "Bibliothèque d’histoires et de comptines pour enfants avec un univers de hibou conteur.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "jackpot-sucr-casino": {
+    "description": "Jeu sur le thème du casino et des récompenses virtuelles.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "jordan-entreprise-demolition-city": {
+    "description": "Simulation d’entreprise de démolition en ville.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "l-attaque-des-dieux": {
+    "description": "Projet de jeu d’action sur le thème des dieux et de la mythologie.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "la-jungle-de-l-arcade": {
+    "description": "Jeu d’arcade et d’aventure dans la jungle, avec des animaux et des mini-jeux.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "la-petite-boulangerie": {
+    "description": "Jeu autour de l’univers de la boulangerie.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "planete-sharky-game": {
+    "description": "Projet de jeu d’aventure et de simulation.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "pole-nord-magique": {
+    "description": "Projet ludique dans l’univers magique du pôle Nord.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "pousseville": {
+    "description": "Projet de jeu de développement et d’aménagement d’une ville.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "proxyvpn": {
+    "description": "Application Android de filtrage DNS local utilisant une connexion VPN.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "retro-city-gang": {
+    "description": "Aventure urbaine rétro avec personnages, missions, véhicules et exploration de la ville.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "smoothincreams": {
+    "description": "Projet ludique sur le thème des smoothies et des glaces.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "snack-attack-": {
+    "description": "Projet ludique sur le thème des snacks.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "super-winner-de-la-fortune": {
+    "description": "Projet de jeu sur le thème de la fortune et des récompenses virtuelles.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "tapas-fiesta": {
+    "description": "Projet ludique autour de la cuisine et des tapas.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "tiko-express": {
+    "description": "Simulation de transport et de livraison.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "tikowikocity": {
+    "description": "Projet de jeu dans un univers urbain.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "tikowikocitybulder": {
+    "description": "Jeu de construction et d’aménagement urbain.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "tikowikoconvertie": {
+    "description": "Outil de création et de conversion de jeux : analyse de projets, aperçu et préparation d’exports.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "tikowikocosystme": {
+    "description": "Projet de jeu Ecosylune ; détails de gameplay à confirmer.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "tikowikodelivery": {
+    "description": "Jeu de livraison et de déplacements.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "tikowikomusic": {
+    "description": "Lecteur musical Android, première édition.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "tikowikomusicv2": {
+    "description": "Deuxième édition du lecteur musical Android.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  },
+  "tikowikomusicv3": {
+    "description": "Lecteur musical personnalisable avec platines animées et fonctions d’écoute.",
+    "sortie": null,
+    "type_date": "indeterminee"
+  }
+}

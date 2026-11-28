@@ -4,6 +4,10 @@ import os
 import re
 import urllib.request
 from datetime import datetime, timezone
+from catalog_metadata import load_metadata, fields
+
+METADATA_ONLY = os.environ.get("CATALOG_METADATA_ONLY") == "1"
+APP_METADATA = load_metadata()
 
 OWNER = "mrgamerdu84-ctrl"
 REPO = "tikowikoFamily-Downloads"
@@ -88,6 +92,8 @@ def api_get(url):
         return json.load(response)
 
 def api_patch(url, payload):
+    if METADATA_ONLY:
+        return None
     token = os.environ.get("GITHUB_TOKEN", "")
     if not token:
         return None
@@ -104,6 +110,8 @@ def api_patch(url, payload):
         return json.load(response)
 
 def api_delete(url):
+    if METADATA_ONLY:
+        return False
     token = os.environ.get("GITHUB_TOKEN", "")
     if not token:
         return False
@@ -412,6 +420,14 @@ for release in releases:
     apps[repo_name] = display_guess
     app_keys_folded[folded] = repo_name
 
+# Une fiche renseignée explicitement peut aussi référencer un projet sans APK.
+for repo_name in APP_METADATA:
+    folded = canonical_key(repo_name)
+    display_guess = repo_name.replace("-", " ").replace("_", " ").title()
+    if folded not in app_keys_folded and not is_deleted_app(repo_name, display_guess):
+        apps[repo_name] = display_guess
+        app_keys_folded[folded] = repo_name
+
 # Conserver toutes les versions historiques, afficher seulement la -latest
 # la plus récente de chaque jeu canonique.
 def newest_release_for(repo_name):
@@ -442,7 +458,10 @@ for repo_name, display_name in apps.items():
     sync_app_release_visibility(repo_name, color_key in ("orange", "purple", "cyan", "yellow", "red"))
 
     ts = release_timestamp(release)
+    description, planned_release = fields(APP_METADATA, repo_name)
     base = {
+        "description": description,
+        "planned_release": planned_release,
         "name": display_name,
         "status": f"{color_icon} {progress_label}",
         "reason": reason,
@@ -521,7 +540,7 @@ for repo_name, display_name in apps.items():
             "ready": False,
             "download_blocked": True,
         })
-    elif release and apk:
+    elif release and apk and (not METADATA_ONLY or not release.get("draft")):
         rows.append({
             **base,
             "date": formatted_date(release.get("published_at") or release.get("updated_at")),
@@ -613,7 +632,7 @@ catalog = [
     '',
     '## 🔥 Développement actuel',
     '',
-    *([f"- {row['status']} **{row['name']}** · mise à jour {row['date']}" for row in rows if row["color_key"] in ("orange", "blue")] or ["_Aucun développement récent détecté._"]),
+    *([f"- {row['status']} **{row['name']}** — {row['description']} · Sortie : {row['planned_release']} · mise à jour {row['date']}" for row in rows if row["color_key"] in ("orange", "blue")] or ["_Aucun développement récent détecté._"]),
     '',
     'Les applications les plus récemment mises à jour apparaissent en premier dans le catalogue.',
     '',
@@ -647,12 +666,14 @@ catalog = [
     '',
     '## 📱 Catalogue complet',
     '',
-    '| Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |',
-    '|---|---|---|---:|---:|---:|---|---|',
+    '> 📅 La sortie prévisionnelle concerne la version publique finale. Une date estimée ou prévue est indicative et peut évoluer ; « À déterminer » signifie qu’aucune date n’a été fixée. Elle ne modifie ni la couleur ni l’accès aux APK.',
+    '',
+    '| Application | Statut | Description | Sortie prévisionnelle | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |',
+    '|---|---|---|---|---|---:|---:|---:|---|---|',
 ]
 for item in rows:
     catalog.append(
-        f"| 🎮 **{item['name']}** | {item['status']} | {item['reason']} | {item['date']} | {item['size']} | "
+        f"| 🎮 **{item['name']}** | {item['status']} | {item['description']} | {item['planned_release']} | {item['reason']} | {item['date']} | {item['size']} | "
         f"{item['downloads']} | {item['download']} | {item['details']} |"
     )
 
@@ -679,7 +700,9 @@ catalog += [
     '## 🔄 Mises à jour automatiques',
     '',
     'Quand le Builder publie un nouvel APK, sa Release publique met automatiquement ce catalogue à jour.',
-    'Un futur projet non encore référencé sera ajouté à sa première Release APK (même privée), ou dès sa sélection dans les statuts manuels.',
+    'Un futur projet non encore référencé sera ajouté à sa première Release APK (même privée), dès sa sélection dans les statuts manuels ou à la création d’une fiche.',
+    '',
+    'Le créateur peut modifier une description ou une date via **Actions → Modifier la fiche d’une application → Run workflow**. Une fiche est indépendante du statut et ne publie aucune APK.',
     '',
     '---',
     '',

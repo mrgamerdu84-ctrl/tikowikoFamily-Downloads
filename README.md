@@ -47,8 +47,8 @@ _Aucun projet en réflexion actuellement._
 
 ## 🔥 Développement actuel
 
-- 🟠 Correction active **Tikowikoconvertie** · mise à jour 15/11/2026
-- 🟠 Correction active **BETA retro-city-gang** · mise à jour 06/11/2026
+- 🟠 Correction active **Tikowikoconvertie** — Outil de création et de conversion de jeux : analyse de projets, aperçu et préparation d’exports. · Sortie : À déterminer · mise à jour 15/11/2026
+- 🟠 Correction active **BETA retro-city-gang** — Branche de test de Rétro City Gang, jeu urbain rétro avec missions et exploration. · Sortie : À déterminer · mise à jour 06/11/2026
 
 Les applications les plus récemment mises à jour apparaissent en premier dans le catalogue.
 
@@ -83,37 +83,39 @@ Chaque ligne du catalogue explique automatiquement pourquoi la couleur a été c
 
 ## 📱 Catalogue complet
 
-| Application | Statut | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
-|---|---|---|---:|---:|---:|---|---|
-| 🎮 **Cantilune** | 🟡 Test développeur | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 18/10/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
-| 🎮 **Tikowikoconvertie** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 12 jour(s). | 15/11/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
-| 🎮 **BETA retro-city-gang** | 🟠 Correction active | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 21 jour(s). | 06/11/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
-| 🎮 **Tikowiko Music V3** | 🩷 Disponible sur GitHub uniquement | APK de test disponible uniquement sur GitHub Releases, pas sur Google Play. Dernière mise à jour il y a 2 jour(s). | 25/11/2026 | 49.6 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikomusicv3-latest/TikowikoMusicV3-v23-20261125-1904.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikomusicv3-latest) |
-| 🎮 **La Jungle de l'Arcade** | 🟢 Disponible / test | Application déclarée disponible en version de test par le créateur. Dernière mise à jour il y a 17 jour(s). | 10/11/2026 | 43.0 Mo | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | [Voir la Release GitHub](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
-| 🎮 **Retro City Gang** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **block-riot** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 29/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **jordan-entreprise-demolition-city** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 27/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Histoire pour Enfants** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 26/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **pole-nord-magique** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 25/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Bloqs Builder** | 🔴 Pas disponible | Nouvelle APK en attente de validation du créateur. | 25/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **ProxyVpn** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 19/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Ecosylune** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 15/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Jackpot Sucré Casino** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 15/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **La Petite Boulangerie** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 13/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Pousseville** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 08/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Tikowiko Delivery** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 07/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Tikowiko Music** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 07/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Tiko Express** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 30/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 29/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Tikowiko City Builder** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | 27/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Grimoix Petit Dragon** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **L'Attaque des Dieux** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Planète Sharky** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **SmoothinCreams** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Snack Attack** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Super Winner de la Fortune** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Tapas Fiesta** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
-| 🎮 **Tikowiko City** | 🔴 Pas disponible | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+> 📅 La sortie prévisionnelle concerne la version publique finale. Une date estimée ou prévue est indicative et peut évoluer ; « À déterminer » signifie qu’aucune date n’a été fixée. Elle ne modifie ni la couleur ni l’accès aux APK.
+
+| Application | Statut | Description | Sortie prévisionnelle | Pourquoi cette couleur ? | Mise à jour | Taille | Téléchargements | Télécharger | Détails |
+|---|---|---|---|---|---:|---:|---:|---|---|
+| 🎮 **Cantilune** | 🟡 Test développeur | Projet de jeu dans l’univers de Cantilune ; détails de gameplay à confirmer. | À déterminer | Le développeur teste actuellement cette application avant une éventuelle mise à disposition publique. | 18/10/2026 | — | 0 | 🟡 Indisponible · test développeur en cours | 🧪 Test développeur |
+| 🎮 **Tikowikoconvertie** | 🟠 Correction active | Outil de création et de conversion de jeux : analyse de projets, aperçu et préparation d’exports. | À déterminer | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 12 jour(s). | 15/11/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
+| 🎮 **BETA retro-city-gang** | 🟠 Correction active | Branche de test de Rétro City Gang, jeu urbain rétro avec missions et exploration. | À déterminer | Des corrections de bugs ou correctifs sont indiqués dans la dernière version. Dernière mise à jour il y a 21 jour(s). | 06/11/2026 | — | 0 | 🟠 Indisponible · correction de bugs en cours | 🛠️ Correction en cours |
+| 🎮 **Tikowiko Music V3** | 🩷 Disponible sur GitHub uniquement | Lecteur musical personnalisable avec platines animées et fonctions d’écoute. | À déterminer | APK de test disponible uniquement sur GitHub Releases, pas sur Google Play. Dernière mise à jour il y a 2 jour(s). | 25/11/2026 | 49.6 Mo | 0 | [⬇️ Télécharger l'APK](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/download/tikowikomusicv3-latest/TikowikoMusicV3-v23-20261125-1904.apk?download=1) | [Voir la Release](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/tikowikomusicv3-latest) |
+| 🎮 **La Jungle de l'Arcade** | 🟢 Disponible / test | Jeu d’arcade et d’aventure dans la jungle, avec des animaux et des mini-jeux. | À déterminer | Application déclarée disponible en version de test par le créateur. Dernière mise à jour il y a 17 jour(s). | 10/11/2026 | 43.0 Mo | 0 | [▶️ Ouvrir sur Google Play](https://play.google.com/store/apps/details?id=com.planete.sharky.game) | [Voir la Release GitHub](https://github.com/mrgamerdu84-ctrl/tikowikoFamily-Downloads/releases/tag/la-jungle-de-l-arcade-latest) |
+| 🎮 **Retro City Gang** | 🔴 Pas disponible | Aventure urbaine rétro avec personnages, missions, véhicules et exploration de la ville. | À déterminer | Application déclarée indisponible par le créateur. | 29/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **block-riot** | 🔴 Pas disponible | Projet de jeu Block Riot ; détails de gameplay à confirmer. | À déterminer | Nouvelle APK en attente de validation du créateur. | 29/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **jordan-entreprise-demolition-city** | 🔴 Pas disponible | Simulation d’entreprise de démolition en ville. | À déterminer | Nouvelle APK en attente de validation du créateur. | 27/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Histoire pour Enfants** | 🔴 Pas disponible | Bibliothèque d’histoires et de comptines pour enfants avec un univers de hibou conteur. | À déterminer | Application déclarée indisponible par le créateur. | 26/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **pole-nord-magique** | 🔴 Pas disponible | Projet ludique dans l’univers magique du pôle Nord. | À déterminer | Nouvelle APK en attente de validation du créateur. | 25/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Bloqs Builder** | 🔴 Pas disponible | Jeu de construction et d’aventure avec création de bâtiments et progression. | À déterminer | Nouvelle APK en attente de validation du créateur. | 25/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **ProxyVpn** | 🔴 Pas disponible | Application Android de filtrage DNS local utilisant une connexion VPN. | À déterminer | Application déclarée indisponible par le créateur. | 19/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Ecosylune** | 🔴 Pas disponible | Projet de jeu Ecosylune ; détails de gameplay à confirmer. | À déterminer | Application déclarée indisponible par le créateur. | 15/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Jackpot Sucré Casino** | 🔴 Pas disponible | Jeu sur le thème du casino et des récompenses virtuelles. | À déterminer | Application déclarée indisponible par le créateur. | 15/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **La Petite Boulangerie** | 🔴 Pas disponible | Jeu autour de l’univers de la boulangerie. | À déterminer | Application déclarée indisponible par le créateur. | 13/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Pousseville** | 🔴 Pas disponible | Projet de jeu de développement et d’aménagement d’une ville. | À déterminer | Application déclarée indisponible par le créateur. | 08/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tikowiko Delivery** | 🔴 Pas disponible | Jeu de livraison et de déplacements. | À déterminer | Application déclarée indisponible par le créateur. | 07/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tikowiko Music** | 🔴 Pas disponible | Lecteur musical Android, première édition. | À déterminer | Application déclarée indisponible par le créateur. | 07/10/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tiko Express** | 🔴 Pas disponible | Simulation de transport et de livraison. | À déterminer | Application déclarée indisponible par le créateur. | 30/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tikowiko Music V2** | 🔴 Pas disponible | Deuxième édition du lecteur musical Android. | À déterminer | Application déclarée indisponible par le créateur. | 29/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tikowiko City Builder** | 🔴 Pas disponible | Jeu de construction et d’aménagement urbain. | À déterminer | Application déclarée indisponible par le créateur. | 27/09/2026 | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Grimoix Petit Dragon** | 🔴 Pas disponible | Projet de jeu dans un univers fantastique de petit dragon. | À déterminer | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **L'Attaque des Dieux** | 🔴 Pas disponible | Projet de jeu d’action sur le thème des dieux et de la mythologie. | À déterminer | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Planète Sharky** | 🔴 Pas disponible | Projet de jeu d’aventure et de simulation. | À déterminer | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **SmoothinCreams** | 🔴 Pas disponible | Projet ludique sur le thème des smoothies et des glaces. | À déterminer | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Snack Attack** | 🔴 Pas disponible | Projet ludique sur le thème des snacks. | À déterminer | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Super Winner de la Fortune** | 🔴 Pas disponible | Projet de jeu sur le thème de la fortune et des récompenses virtuelles. | À déterminer | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tapas Fiesta** | 🔴 Pas disponible | Projet ludique autour de la cuisine et des tapas. | À déterminer | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
+| 🎮 **Tikowiko City** | 🔴 Pas disponible | Projet de jeu dans un univers urbain. | À déterminer | Application déclarée indisponible par le créateur. | — | — | 0 | 🔴 APK indisponible | ⛔ Indisponible |
 
 ## 📊 Statistiques
 
@@ -136,7 +138,9 @@ Android peut demander l’autorisation d’installer une application provenant d
 ## 🔄 Mises à jour automatiques
 
 Quand le Builder publie un nouvel APK, sa Release publique met automatiquement ce catalogue à jour.
-Un futur projet non encore référencé sera ajouté à sa première Release APK (même privée), ou dès sa sélection dans les statuts manuels.
+Un futur projet non encore référencé sera ajouté à sa première Release APK (même privée), dès sa sélection dans les statuts manuels ou à la création d’une fiche.
+
+Le créateur peut modifier une description ou une date via **Actions → Modifier la fiche d’une application → Run workflow**. Une fiche est indépendante du statut et ne publie aucune APK.
 
 ---
 
